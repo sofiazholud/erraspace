@@ -1,8 +1,8 @@
 /* Базові стилі */
 body {
   font-family: 'Cormorant Garamond', serif;
-  background-color: #f5f5f5;
-  color: #222;
+  background-color: #1a2a1a;
+  color: #ffffff;
   margin: 0;
   padding: 20px;
   line-height: 1.6;
@@ -50,33 +50,30 @@ h1 {
   max-width: 80%;
   margin: 0 auto;
 }
+
 /* CTA */
 .cta {
   text-align: center;
-  margin: 20px 0; /* менший відступ */
+  margin: 20px 0;
 }
-
 .cta-button {
   display: inline-block;
-  margin: 10px 15px;        
-  padding: 14px 24px;       
-  background: #4caf50;      
-  color: #fff;             
+  margin: 10px 15px;
+  padding: 14px 24px;
+  background: #4caf50;
+  color: #fff;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.2rem;        
+  font-size: 1.2rem;
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 .cta-button:hover {
   background: #45a049;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-
-
 
 /* Секції */
 section {
@@ -130,7 +127,6 @@ h2 {
   height: auto;
   object-fit: cover;
   aspect-ratio: 4 / 5;
-  object-fit: cover;
 }
 .card p {
   margin: 10px 0;
@@ -152,16 +148,13 @@ h2 {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-
 .modal.show {
   display: flex;
   opacity: 1;
 }
-
 .modal.hide {
   opacity: 0;
 }
-
 .modal-content {
   background: #1a2a1a;
   color: #fff;
@@ -175,17 +168,14 @@ h2 {
   transform: scale(0.95);
   transition: transform 0.3s ease;
 }
-
 .modal.show .modal-content {
   transform: scale(1);
 }
-
 .modal-content h2 {
   margin-top: 0;
   font-size: 2rem;
   letter-spacing: 1px;
 }
-
 .close {
   float: right;
   font-size: 2.4rem;
@@ -246,27 +236,6 @@ a[href^="tel"]:hover { color: #ddd !important; }
 }
 .contact-block a[href*="instagram.com"]:hover { color: #ddd !important; }
 
-/* /* CTA */
-.cta { text-align: center; margin: 30px 0; }
-.cta-button {
-  display: inline-block;
-  margin: 15px 40px;
-  padding: 22px 38px;
-  background: #ffffff;
-  color: #1a2a1a;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.6rem;
-  transition: background 0.3s;
-}
-.cta-button:hover {
-  background: #ddd;
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(255,255,255,0.4);
-}
-.cta-button { cursor: pointer; } */
-
 /* Футер */
 footer {
   text-align: center;
@@ -290,9 +259,10 @@ footer { position: relative; bottom: 0; width: 100%; }
   section { padding: 20px 10px; }
   h1 { font-size: 2rem; letter-spacing: 0.2em; }
   h2 { font-size: 1.8rem; letter-spacing: 1px; }
-  .directions-grid { grid-template-columns: 1fr;
-                   gap: 20px;
-                   }
+  .directions-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
   .card img { max-height: 250px; }
   .card p { font-size: 1.18rem; }
 
@@ -307,15 +277,17 @@ footer { position: relative; bottom: 0; width: 100%; }
     line-height: 2.1;
     padding: 30px;
   }
-  .modal-content h2 { font-size: 1.8rem;
-                    letter-spacing: 0.05em;
-                    }
+  .modal-content h2 {
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+  }
   .modal-content p {
     font-size: 1.7rem;
-    line-height: 2; 
+    line-height: 2;
   }
   .close { font-size: 2.5rem; }
 
+  /* ✅ Виправлені кнопки CTA */
   .cta {
     display: flex;
     flex-direction: column;
