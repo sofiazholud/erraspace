@@ -58,14 +58,14 @@ h1 {
 
 .cta-button {
   display: inline-block;
-  margin: 10px 15px;        /* компактніший відступ */
-  padding: 14px 24px;       /* менші внутрішні відступи */
-  background: #4caf50;      /* контрастний зелений фон */
-  color: #fff;              /* білий текст */
+  margin: 10px 15px;        
+  padding: 14px 24px;       
+  background: #4caf50;      
+  color: #fff;             
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.2rem;        /* трохи менший розмір шрифту */
+  font-size: 1.2rem;        
   transition: all 0.3s ease;
   cursor: pointer;
 }
