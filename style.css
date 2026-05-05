@@ -50,6 +50,33 @@ h1 {
   max-width: 80%;
   margin: 0 auto;
 }
+/* CTA */
+.cta {
+  text-align: center;
+  margin: 20px 0; /* менший відступ */
+}
+
+.cta-button {
+  display: inline-block;
+  margin: 10px 15px;        /* компактніший відступ */
+  padding: 14px 24px;       /* менші внутрішні відступи */
+  background: #4caf50;      /* контрастний зелений фон */
+  color: #fff;              /* білий текст */
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;        /* трохи менший розмір шрифту */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
 
 /* Секції */
 section {
@@ -219,7 +246,7 @@ a[href^="tel"]:hover { color: #ddd !important; }
 }
 .contact-block a[href*="instagram.com"]:hover { color: #ddd !important; }
 
-/* CTA */
+/* /* CTA */
 .cta { text-align: center; margin: 30px 0; }
 .cta-button {
   display: inline-block;
@@ -238,7 +265,7 @@ a[href^="tel"]:hover { color: #ddd !important; }
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(255,255,255,0.4);
 }
-.cta-button { cursor: pointer; }
+.cta-button { cursor: pointer; } */
 
 /* Футер */
 footer {
