@@ -1,3 +1,7 @@
+@font-face {
+  font-display: swap;
+}
+
 /* Базові стилі */
 body {
   font-family: 'Cormorant Garamond', serif;
