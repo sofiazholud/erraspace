@@ -308,6 +308,15 @@ footer {
   width: 100%;
   box-sizing: border-box;
 }
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+footer a:hover {
+  color: #ffffff;
+}
 
 /* Анімація */
 section, footer { animation: fadeInUp 0.8s ease both; }
