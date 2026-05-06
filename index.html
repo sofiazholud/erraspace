@@ -4,8 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ERRA SPACE — студія фітнесу та йоги у Вишгороді та Міжріччі</title>
-  <meta name="description" content="ERRA SPACE — сучасна студія фітнесу та йоги у Вишгороді та Міжріччі. Запишись на пробне заняття та відкрий нові можливості для тіла й душі.">
-  
+  <meta name="description" content="ERRA SPACE — сучасна студія фітнесу та йоги у Вишгороді та Міжріччі. Флай йога, пілатес, йога Айенгара. Запишись на пробне заняття та відкрий нові можливості для тіла й душі.">
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://erraspace.ua/">
+  <link rel="alternate" hreflang="uk" href="https://erraspace.ua/">
+  <link rel="alternate" hreflang="en" href="https://erraspace.ua/?lang=en">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ERRA SPACE — студія фітнесу та йоги у Вишгороді">
+  <meta property="og:description" content="Флай йога, пілатес, йога Айенгара у Вишгороді та Міжріччі. Запишись на пробне заняття.">
+  <meta property="og:image" content="https://erraspace.ua/fly-yoga.JPG">
+  <meta property="og:url" content="https://erraspace.ua">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ERRA SPACE — студія фітнесу та йоги">
+  <meta name="twitter:description" content="Флай йога, пілатес, йога Айенгара у Вишгороді та Міжріччі.">
+  <meta name="twitter:image" content="https://erraspace.ua/fly-yoga.JPG">
 
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
@@ -26,117 +44,149 @@
     <h1 id="title">ERRA SPACE</h1>
     <p class="hero-text" id="subtitle">Простір, який піклується не лише про фізичний, а і про внутрішній стан.</p>
   </header>
- <main>
-  
-  <!-- Соцмережі -->
-  <section>
-  <h2 id="social-title">Ми в соцмережах</h2>
-  <div class="social-icons">
-    <a href="https://www.instagram.com/erraspace.ua?utm_source=site&utm_medium=social&utm_content=instagram" 
-       target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Instagram">
-       <img src="instagram.svg" alt="Instagram">
-    </a>
 
-    <a href="https://www.facebook.com/people/dance_yoga_fitness_/100070016075579/?utm_source=site&utm_medium=social&utm_content=facebook" 
-       target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Facebook">
-       <img src="facebook.svg" alt="Facebook">
-    </a>
+  <main>
 
-    <a href="https://www.tiktok.com/@erraspace.ua?utm_source=site&utm_medium=social&utm_content=tiktok" 
-       target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE TikTok">
-       <img src="tiktok.svg" alt="TikTok">
-    </a>
-
-    <a href="https://www.threads.net/@erraspace.ua?utm_source=site&utm_medium=social&utm_content=threads" 
-       target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Threads">
-       <img src="threads.svg" alt="Threads">
-    </a>
-
-    <a href="https://t.me/ERRA_SPASE?utm_source=site&utm_medium=social&utm_content=telegram" 
-       target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Telegram">
-       <img src="telegram.svg" alt="Telegram">
-    </a>
-  </div>
-</section>
-   
-<!-- CTA -->
-  <div class="cta">
-  <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=cta&utm_content=signup" 
-     id="cta-button" class="cta-button" aria-label="Записатися на заняття онлайн">
-     Записатися на заняття
-  </a>
-
-  <a href="https://instasport.ua/uk/club/erraspacevy/schedule/day?utm_source=site&utm_medium=cta&utm_content=schedule" 
-     id="btn-schedule" class="cta-button" aria-label="Переглянути розклад занять">
-     Розклад
-  </a>
-
-  <a href="https://instasport.ua/uk/club/erraspacevy/subscription?utm_source=site&utm_medium=cta&utm_content=subscriptions" 
-     id="btn-price" class="cta-button" aria-label="Переглянути абонементи студії">
-     Абонементи
-  </a>
-</div>
-
-  <!-- Напрямки -->
-  <section>
-    <h2 id="directions-title">Напрямки</h2>
-    <div class="directions-grid">
-      <div class="card" onclick="openModal('fly-yoga')"><img src="fly-yoga.JPG" alt="Fly Yoga" width="400" height="500"><p id="dir-fly-yoga">Флай Йога</p></div>
-      <div class="card" onclick="openModal('ishvara-yoga')"><img src="ishvara-yoga.jpg" alt="Ishvara Yoga" width="400" height="500" loading="lazy"><p id="dir-ishvara-yoga">Ішвара Йога</p></div>
-      <div class="card" onclick="openModal('iyengar-yoga')"><img src="iyengar-yoga.jpg" alt="Iyengar Yoga" width="400" height="500" loading="lazy"><p id="dir-iyengar-yoga">Йога Айенгара</p></div>
-      <div class="card" onclick="openModal('adho-yoga')"><img src="ADHOyoga.jpg" alt="Adho Yoga" width="400" height="500" loading="lazy"><p id="dir-adho-yoga">Адхо-йога</p></div>
-      <div class="card" onclick="openModal('pregnancy-yoga')"><img src="pregnancy-yoga.jpg" alt="Pregnancy Yoga" width="400" height="500" loading="lazy"><p id="dir-pregnancy-yoga">Йога для вагітних</p></div>
-      <div class="card" onclick="openModal('fly-kids')"><img src="kids-fly-yoga.jpg" alt="Kids Fly Yoga" width="400" height="500" loading="lazy"><p id="dir-fly-kids">Флай Кідс</p></div>
-      <div class="card" onclick="openModal('pilates')"><img src="pilates.JPG" alt="Pilates" width="400" height="500" loading="lazy"><p id="dir-pilates">Пілатес</p></div>
-      <div class="card" onclick="openModal('functional-training')"><img src="functional-training.JPG" alt="Functional Training" width="400" height="500" loading="lazy"><p id="dir-functional-training">Функціональні тренування</p></div>      
-      <div class="card" onclick="openModal('private-lesson')"><img src="private-lesson.JPG" alt="Private lesson" width="400" height="500" loading="lazy"><p id="dir-private-lesson">Індивідуальне тренування</p></div>
+    <!-- Банер для нових клієнтів -->
+    <div class="new-client-banner">
+      <p>🎁 <strong id="banner-text">Перше заняття — безкоштовно.</strong> <span id="banner-subtext">Запишись і переконайся особисто.</span></p>
     </div>
-  </section>
 
-  <!-- Модальні вікна -->
-  <div id="fly-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('fly-yoga')">&times;</span><h2 id="modal-title-fly-yoga">Флай Йога</h2><p id="modal-desc-fly-yoga">Практика у спеціальних гамаках, що дарує відчуття польоту та легкості. Вона допомагає зняти напругу з хребта, розвиває гнучкість і додає енергії. Ідеально підходить для тих, хто хоче поєднати фізичну активність із глибоким розслабленням.</p></div></div>
-  <div id="ishvara-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ishvara-yoga')">&times;</span><h2 id="modal-title-ishvara-yoga">Ішвара Йога</h2><p id= "modal-desc-ishvara-yoga">Це один із напрямків хатха йоги, що відрізняється від інших стилів двома особливостями. Перша – це внутрішні принципи роботи з тілом. Вони універсальні, їх лише десять. Вони дають відповідь на запитання “чому у вас не виходить будь-яка асана”, де помилка і як її виправити. Ці принципи дають розуміння, як правильно робиться будь-яка асана. Внутрішні принципи роботи з тілом вирішують практично дві задачі. Завдання перше: як зібрати все тіло в одне ціле, як створити цілісність. Завдання друге: як узгодити роботу рухової мускулатури.</p></div></div>
-  <div id="iyengar-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('iyengar-yoga')">&times;</span><h2 id="modal-title-iyengar-yoga">Йога Айенгара</h2><p id="modal-desc-iyengar-yoga">Методика, що акцентує увагу на точності виконання асан і правильному вирівнюванні тіла. Використання допоміжних матеріалів робить практику доступною для всіх рівнів та сприяє поступовому й безпечному розвитку.</p></div></div>
-  <div id="pilates" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('pilates')">&times;</span><h2 id="modal-title-pilates">Пілатес</h2><p id="modal-desc-pilates">Система вправ для зміцнення м’язів, розвитку гнучкості та формування здорової постави. Пілатес допомагає відчути контроль над тілом, покращує координацію та дарує відчуття легкості у рухах.</p></div></div>
-  <!-- <div id="fly-pilates" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('fly-pilates')">&times;</span><h2 id="modal-title-fly-pilates">Флай Пілатес</h2><p id="modal-desc-fly-pilates">Поєднання класичного пілатесу з елементами роботи у гамаках. Це сучасний формат тренувань, який робить вправи більш динамічними, додає нові відчуття та допомагає швидше досягати результатів.</p></div></div> -->
-  <div id="functional-training" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('functional-training')">&times;</span><h2 id="modal-title-functional-training">Функціональні тренування</h2><p id="modal-desc-functional-training">Комплекс вправ, спрямований на розвиток сили, витривалості та мобільності. Такі заняття допомагають підготувати тіло до щоденних навантажень, покращують фізичну форму та додають енергії.</p></div></div>
-  <div id="fly-kids" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('fly-kids')">&times;</span><h2 id="modal-title-fly-kids">Флай Кідс</h2><p id="modal-desc-fly-kids">Веселі та безпечні заняття у гамаках для дітей. Вони розвивають гнучкість, координацію та впевненість у собі, даруючи малюкам радість руху й нові емоції.</p></div></div>
-  <div id="pregnancy-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('pregnancy-yoga')">&times;</span><h2 id="modal-title-pregnancy-yoga">Йога для вагітних</h2><p id="modal-desc-pregnancy-yoga">М’які практики, що підтримують фізичний стан і емоційний баланс майбутніх мам. Вправи адаптовані для різних етапів вагітності та допомагають підготувати тіло до пологів.</p></div></div>
-  <div id="adho-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('adho-yoga')">&times;</span><h2 id="modal-title-adho-yoga">Адхо-йога</h2><p id="modal-desc-adho-yoga">пропонує практику, в якій представлені в однаковій мірі, як гнучкість так і силова робота, як статика так і динаміка, як витривалість так і баланс, також глибокі дихальні практика, медитативна робота і релаксація. Все в одній системі. 
-  ADHO yoga- максимально базується на доказовій науці, що на рівні фізіології відбувається під час практики, щоб кожен процес був описаний мовою науки, як і результат.</p></div></div>
-  <div id="private-lesson" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('private-lesson')">&times;</span><h2 id="modal-title-private-lesson">Індивідуальне тренування</h2><p id="modal-desc-private-lesson">Персональний формат тренування, який враховує ваші потреби та рівень підготовки.</p></div></div>
-
-
-
-  <!-- Контакти -->
+    <!-- Соцмережі -->
     <section>
-        <h2 id="contacts-title">Контакти ERRASPACE — студія йоги та фітнесу у Вишгороді та Міжріччі</h2>
-        <div class="contact-blocks">
-
-            <!-- Адреса 1 -->
-            <div class="contact-block">
-                <p id="address-1">📍 Студія ERRASPACE у Вишгороді: пр. Шевченка 6А</p>
-                <p>📞 <span id="phone-label-1">Адміністратор:</span> <a href="tel:+380632072462">+380 63 207 24 62</a></p>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Вишгород,+пр.+Шевченка+6А" id="nav-btn-1" target="_blank" class="nav-button">Навігація</a>
-            </div>
-
-            <!-- Адреса 2 -->
-            <div class="contact-block">
-                <p id="address-2">📍 ERRASPACE у КМ Міжріччя: вул. Фісташкова 60</p>
-                <p>📞 <span id="phone-label-2">Адміністратор:</span> <a href="tel:+380632072462">+380 63 207 24 62</a></p>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=КМ+Міжріччя,+вул.+Фісташкова+60" id="nav-btn-2" target="_blank" class="nav-button">Навігація</a>
-                <p>Instagram: <a href="https://www.instagram.com/erraspace.ua_mr" target="_blank">@erraspace_mr</a></p>
-            </div>
-
-        </div>
+      <h2 id="social-title">Ми в соцмережах</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/erraspace.ua?utm_source=site&utm_medium=social&utm_content=instagram"
+           target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Instagram">
+           <img src="instagram.svg" alt="Instagram ERRA SPACE">
+        </a>
+        <a href="https://www.facebook.com/people/dance_yoga_fitness_/100070016075579/?utm_source=site&utm_medium=social&utm_content=facebook"
+           target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Facebook">
+           <img src="facebook.svg" alt="Facebook ERRA SPACE">
+        </a>
+        <a href="https://www.tiktok.com/@erraspace.ua?utm_source=site&utm_medium=social&utm_content=tiktok"
+           target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE TikTok">
+           <img src="tiktok.svg" alt="TikTok ERRA SPACE">
+        </a>
+        <a href="https://www.threads.net/@erraspace.ua?utm_source=site&utm_medium=social&utm_content=threads"
+           target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Threads">
+           <img src="threads.svg" alt="Threads ERRA SPACE">
+        </a>
+        <a href="https://t.me/ERRA_SPASE?utm_source=site&utm_medium=social&utm_content=telegram"
+           target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Telegram">
+           <img src="telegram.svg" alt="Telegram ERRA SPACE">
+        </a>
+      </div>
     </section>
+
+    <!-- CTA -->
+    <div class="cta">
+      <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=cta&utm_content=signup"
+         id="cta-button" class="cta-button primary" aria-label="Записатися на заняття онлайн">
+         Записатися на заняття
+      </a>
+      <a href="https://instasport.ua/uk/club/erraspacevy/schedule/day?utm_source=site&utm_medium=cta&utm_content=schedule"
+         id="btn-schedule" class="cta-button" aria-label="Переглянути розклад занять">
+         Розклад
+      </a>
+      <a href="https://instasport.ua/uk/club/erraspacevy/subscription?utm_source=site&utm_medium=cta&utm_content=subscriptions"
+         id="btn-price" class="cta-button" aria-label="Переглянути абонементи студії">
+         Абонементи
+      </a>
+    </div>
+
+    <!-- Напрямки -->
+    <section>
+      <h2 id="directions-title">Напрямки</h2>
+      <div class="directions-grid">
+        <div class="card" onclick="openModal('fly-yoga')"><img src="fly-yoga.JPG" alt="Флай йога у гамаках — ERRA SPACE Вишгород" width="400" height="500"><p id="dir-fly-yoga">Флай Йога</p></div>
+        <div class="card" onclick="openModal('ishvara-yoga')"><img src="ishvara-yoga.jpg" alt="Ішвара Йога — хатха йога у студії ERRA SPACE" width="400" height="500" loading="lazy"><p id="dir-ishvara-yoga">Ішвара Йога</p></div>
+        <div class="card" onclick="openModal('iyengar-yoga')"><img src="iyengar-yoga.jpg" alt="Йога Айенгара — точне вирівнювання тіла, ERRA SPACE" width="400" height="500" loading="lazy"><p id="dir-iyengar-yoga">Йога Айенгара</p></div>
+        <div class="card" onclick="openModal('adho-yoga')"><img src="ADHOyoga.jpg" alt="Адхо-йога — сила і гнучкість, студія ERRA SPACE" width="400" height="500" loading="lazy"><p id="dir-adho-yoga">Адхо-йога</p></div>
+        <div class="card" onclick="openModal('pregnancy-yoga')"><img src="pregnancy-yoga.jpg" alt="Йога для вагітних — м'які практики у ERRA SPACE" width="400" height="500" loading="lazy"><p id="dir-pregnancy-yoga">Йога для вагітних</p></div>
+        <div class="card" onclick="openModal('fly-kids')"><img src="kids-fly-yoga.jpg" alt="Флай Кідс — йога у гамаках для дітей, ERRA SPACE" width="400" height="500" loading="lazy"><p id="dir-fly-kids">Флай Кідс</p></div>
+        <div class="card" onclick="openModal('pilates')"><img src="pilates.JPG" alt="Пілатес — зміцнення м'язів та постави, ERRA SPACE" width="400" height="500" loading="lazy"><p id="dir-pilates">Пілатес</p></div>
+        <div class="card" onclick="openModal('functional-training')"><img src="functional-training.JPG" alt="Функціональні тренування — сила і витривалість, ERRA SPACE" width="400" height="500" loading="lazy"><p id="dir-functional-training">Функціональні тренування</p></div>
+        <div class="card" onclick="openModal('private-lesson')"><img src="private-lesson.JPG" alt="Індивідуальне тренування — персональний підхід, ERRA SPACE" width="400" height="500" loading="lazy"><p id="dir-private-lesson">Індивідуальне тренування</p></div>
+      </div>
+    </section>
+
+    <!-- Модальні вікна -->
+    <div id="fly-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('fly-yoga')">&times;</span><h2 id="modal-title-fly-yoga">Флай Йога</h2><p id="modal-desc-fly-yoga">Практика у спеціальних гамаках, що дарує відчуття польоту та легкості. Вона допомагає зняти напругу з хребта, розвиває гнучкість і додає енергії. Ідеально підходить для тих, хто хоче поєднати фізичну активність із глибоким розслабленням.</p></div></div>
+    <div id="ishvara-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ishvara-yoga')">&times;</span><h2 id="modal-title-ishvara-yoga">Ішвара Йога</h2><p id="modal-desc-ishvara-yoga">Це напрям хатха-йоги, що вирізняється увагою до внутрішніх принципів роботи з тілом. Вони пояснюють, чому певні асани не виходять, де помилка і як її виправити. Практика допомагає зібрати тіло в цілісність, узгодити роботу м'язів і поступово підвищувати якість виконання асан.</p></div></div>
+    <div id="iyengar-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('iyengar-yoga')">&times;</span><h2 id="modal-title-iyengar-yoga">Йога Айенгара</h2><p id="modal-desc-iyengar-yoga">Методика, що акцентує увагу на точності виконання асан і правильному вирівнюванні тіла. Використання допоміжних матеріалів робить практику доступною для всіх рівнів та сприяє поступовому й безпечному розвитку.</p></div></div>
+    <div id="pilates" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('pilates')">&times;</span><h2 id="modal-title-pilates">Пілатес</h2><p id="modal-desc-pilates">Система вправ для зміцнення м'язів, розвитку гнучкості та формування здорової постави. Пілатес допомагає відчути контроль над тілом, покращує координацію та дарує відчуття легкості у рухах.</p></div></div>
+    <div id="functional-training" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('functional-training')">&times;</span><h2 id="modal-title-functional-training">Функціональні тренування</h2><p id="modal-desc-functional-training">Комплекс вправ, спрямований на розвиток сили, витривалості та мобільності. Такі заняття допомагають підготувати тіло до щоденних навантажень, покращують фізичну форму та додають енергії.</p></div></div>
+    <div id="fly-kids" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('fly-kids')">&times;</span><h2 id="modal-title-fly-kids">Флай Кідс</h2><p id="modal-desc-fly-kids">Веселі та безпечні заняття у гамаках для дітей. Вони розвивають гнучкість, координацію та впевненість у собі, даруючи малюкам радість руху й нові емоції.</p></div></div>
+    <div id="pregnancy-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('pregnancy-yoga')">&times;</span><h2 id="modal-title-pregnancy-yoga">Йога для вагітних</h2><p id="modal-desc-pregnancy-yoga">М'які практики, що підтримують фізичний стан і емоційний баланс майбутніх мам. Вправи адаптовані для різних етапів вагітності та допомагають підготувати тіло до пологів.</p></div></div>
+    <div id="adho-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('adho-yoga')">&times;</span><h2 id="modal-title-adho-yoga">Адхо-йога</h2><p id="modal-desc-adho-yoga">Практика, яка поєднує гнучкість і силову роботу, статику й динаміку, витривалість і баланс, а також дихальні та медитативні техніки. ADHO yoga базується на науковому підході до фізіології практики, щоб кожен процес і результат були зрозумілі й відчутні.</p></div></div>
+    <div id="private-lesson" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('private-lesson')">&times;</span><h2 id="modal-title-private-lesson">Індивідуальне тренування</h2><p id="modal-desc-private-lesson">Персональний формат тренування, який враховує ваші потреби та рівень підготовки.</p></div></div>
+
+    <!-- Контакти -->
+    <section>
+      <h2 id="contacts-title">Контакти</h2>
+      <p class="contacts-subtitle" id="contacts-subtitle">Студія йоги та фітнесу у Вишгороді та Міжріччі</p>
+      <div class="contact-blocks">
+        <div class="contact-block">
+          <p id="address-1">📍 Студія ERRASPACE у Вишгороді: пр. Шевченка 6А</p>
+          <p>📞 <span id="phone-label-1">Адміністратор:</span> <a href="tel:+380632072462">+380 63 207 24 62</a></p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Вишгород,+пр.+Шевченка+6А" id="nav-btn-1" target="_blank" class="nav-button">Навігація</a>
+        </div>
+        <div class="contact-block">
+          <p id="address-2">📍 ERRASPACE у КМ Міжріччя: вул. Фісташкова 60</p>
+          <p>📞 <span id="phone-label-2">Адміністратор:</span> <a href="tel:+380632072462">+380 63 207 24 62</a></p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=КМ+Міжріччя,+вул.+Фісташкова+60" id="nav-btn-2" target="_blank" class="nav-button">Навігація</a>
+          <p>Instagram: <a href="https://www.instagram.com/erraspace.ua_mr" target="_blank">@erraspace_mr</a></p>
+        </div>
+      </div>
+    </section>
+
   </main>
-    <!-- Футер -->
-    <footer>
-        <p id="footer-text">© 2026 Erra Studio. Всі права захищені.</p>
-    </footer>
-  
- <!-- Google tag (gtag.js) -->
+
+  <!-- Футер -->
+  <footer>
+    <p id="footer-text">© 2026 Erra Studio. Всі права захищені.</p>
+  </footer>
+
+  <!-- Schema.org: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "ERRA SPACE",
+    "url": "https://erraspace.ua",
+    "telephone": "+380632072462",
+    "sameAs": [
+      "https://www.instagram.com/erraspace.ua",
+      "https://www.facebook.com/people/dance_yoga_fitness_/100070016075579",
+      "https://t.me/ERRA_SPASE"
+    ],
+    "location": [
+      {
+        "@type": "Place",
+        "name": "ERRA SPACE Вишгород",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "пр. Шевченка 6А",
+          "addressLocality": "Вишгород",
+          "addressCountry": "UA"
+        }
+      },
+      {
+        "@type": "Place",
+        "name": "ERRA SPACE Міжріччя",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "вул. Фісташкова 60",
+          "addressLocality": "Міжріччя",
+          "addressCountry": "UA"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPHN8R7NDH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
