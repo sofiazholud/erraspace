@@ -1,5 +1,5 @@
-// Поточна мова
-let currentLang = 'ua';
+// Поточна мова — зчитуємо збережену або UA за замовчуванням
+let currentLang = localStorage.getItem('erraLang') || 'ua';
 
 // Переклади
 const translations = {
@@ -8,14 +8,16 @@ const translations = {
     socialTitle: "Ми в соцмережах",
     directionsTitle: "Напрямки",
     contactsTitle: "Контакти",
+    contactsSubtitle: "Студія йоги та фітнесу у Вишгороді та Міжріччі",
     footerText: "© 2026 Erra Studio. Всі права захищені.",
     phoneLabel1: "Адміністратор:",
     phoneLabel2: "Адміністратор:",
+    bannerText: "Перше заняття — безкоштовно.",
+    bannerSubtext: "Запишись і переконайся особисто.",
     "dir-fly-yoga": "Флай Йога",
     "dir-ishvara-yoga": "Ішвара Йога",
     "dir-iyengar-yoga": "Йога Айенгара",
     "dir-pilates": "Пілатес",
-    // "dir-fly-pilates": "Флай Пілатес",
     "dir-functional-training": "Функціональні тренування",
     "dir-fly-kids": "Флай Кідс",
     "dir-pregnancy-yoga": "Йога для вагітних",
@@ -29,23 +31,20 @@ const translations = {
     "btn-schedule": "Розклад",
     "btn-price": "Абонементи",
 
-    // Модальні заголовки та описи
     "modal-title-fly-yoga": "Флай Йога",
     "modal-desc-fly-yoga": "Практика у спеціальних гамаках, що дарує відчуття польоту та легкості. Вона допомагає зняти напругу з хребта, розвиває гнучкість і додає енергії. Ідеально підходить для тих, хто хоче поєднати фізичну активність із глибоким розслабленням.",
     "modal-title-ishvara-yoga": "Ішвара Йога",
-    "modal-desc-ishvara-yoga": "Це напрям хатха-йоги, що вирізняється увагою до внутрішніх принципів роботи з тілом. Вони пояснюють, чому певні асани не виходять, де помилка і як її виправити. Практика допомагає зібрати тіло в цілісність, узгодити роботу м’язів і поступово підвищувати якість виконання асан.",
+    "modal-desc-ishvara-yoga": "Це напрям хатха-йоги, що вирізняється увагою до внутрішніх принципів роботи з тілом. Вони пояснюють, чому певні асани не виходять, де помилка і як її виправити. Практика допомагає зібрати тіло в цілісність, узгодити роботу м'язів і поступово підвищувати якість виконання асан.",
     "modal-title-iyengar-yoga": "Йога Айенгара",
     "modal-desc-iyengar-yoga": "Методика, що акцентує увагу на точності виконання асан і правильному вирівнюванні тіла. Використання допоміжних матеріалів робить практику доступною для всіх рівнів та сприяє поступовому й безпечному розвитку.",
     "modal-title-pilates": "Пілатес",
-    "modal-desc-pilates": "Система вправ для зміцнення м’язів, розвитку гнучкості та формування здорової постави. Пілатес допомагає відчути контроль над тілом, покращує координацію та дарує відчуття легкості у рухах.",
-    // "modal-title-fly-pilates": "Флай Пілатес",
-    // "modal-desc-fly-pilates": "Поєднання класичного пілатесу з елементами роботи у гамаках. Це сучасний формат тренувань, який робить вправи більш динамічними, додає нові відчуття та допомагає швидше досягати результатів.",
+    "modal-desc-pilates": "Система вправ для зміцнення м'язів, розвитку гнучкості та формування здорової постави. Пілатес допомагає відчути контроль над тілом, покращує координацію та дарує відчуття легкості у рухах.",
     "modal-title-functional-training": "Функціональні тренування",
     "modal-desc-functional-training": "Комплекс вправ, спрямований на розвиток сили, витривалості та мобільності. Заняття готують тіло до щоденних навантажень, покращують фізичну форму та підвищують загальну працездатність.",
     "modal-title-fly-kids": "Флай Кідс",
     "modal-desc-fly-kids": "Веселі та безпечні заняття у гамаках для дітей. Вони розвивають гнучкість, координацію та впевненість у собі, даруючи малюкам радість руху й нові емоції.",
     "modal-title-pregnancy-yoga": "Йога для вагітних",
-    "modal-desc-pregnancy-yoga": "М’які практики, що підтримують фізичний стан і емоційний баланс майбутніх мам. Вправи адаптовані для різних етапів вагітності та допомагають підготувати тіло до пологів.",
+    "modal-desc-pregnancy-yoga": "М'які практики, що підтримують фізичний стан і емоційний баланс майбутніх мам. Вправи адаптовані для різних етапів вагітності та допомагають підготувати тіло до пологів.",
     "modal-title-adho-yoga": "Адхо-йога",
     "modal-desc-adho-yoga": "Практика, яка поєднує гнучкість і силову роботу, статику й динаміку, витривалість і баланс, а також дихальні та медитативні техніки. ADHO yoga базується на науковому підході до фізіології практики, щоб кожен процес і результат були зрозумілі й відчутні.",
     "modal-title-private-lesson": "Індивідуальні тренування",
@@ -56,14 +55,16 @@ const translations = {
     socialTitle: "We are on social media",
     directionsTitle: "Directions",
     contactsTitle: "Contacts",
+    contactsSubtitle: "Yoga and fitness studio in Vyshhorod and Mizhrichchia",
     footerText: "© 2026 Erra Studio. All rights reserved.",
     phoneLabel1: "Administrator:",
     phoneLabel2: "Administrator:",
+    bannerText: "First class — free of charge.",
+    bannerSubtext: "Sign up and see for yourself.",
     "dir-fly-yoga": "Fly Yoga",
     "dir-ishvara-yoga": "Ishvara Yoga",
     "dir-iyengar-yoga": "Iyengar Yoga",
     "dir-pilates": "Pilates",
-    // "dir-fly-pilates": "Fly Pilates",
     "dir-functional-training": "Functional Training",
     "dir-fly-kids": "Fly Kids",
     "dir-pregnancy-yoga": "Pregnancy Yoga",
@@ -77,7 +78,6 @@ const translations = {
     "btn-schedule": "Schedule",
     "btn-price": "Subscriptions",
 
-    // Modal titles and descriptions
     "modal-title-fly-yoga": "Fly Yoga",
     "modal-desc-fly-yoga": "Practice in special hammocks that gives a feeling of flight and lightness. It helps relieve spinal tension, develops flexibility and boosts energy. Ideal for those who want to combine physical activity with deep relaxation.",
     "modal-title-ishvara-yoga": "Ishvara Yoga",
@@ -86,8 +86,6 @@ const translations = {
     "modal-desc-iyengar-yoga": "A method that emphasizes precision in asana execution and correct body alignment. Use of props makes the practice accessible to all levels and supports gradual, safe progress.",
     "modal-title-pilates": "Pilates",
     "modal-desc-pilates": "A system of exercises to strengthen muscles, increase flexibility and develop healthy posture. Pilates improves body control, coordination and provides a sense of ease in movement.",
-    // "modal-title-fly-pilates": "Fly Pilates",
-    // "modal-desc-fly-pilates": "A blend of classical Pilates with hammock-based elements. This modern training format makes exercises more dynamic, introduces new sensations and helps achieve results faster.",
     "modal-title-functional-training": "Functional Training",
     "modal-desc-functional-training": "A set of exercises aimed at building strength, endurance and mobility. These sessions prepare the body for daily demands, improve fitness and increase overall performance.",
     "modal-title-fly-kids": "Fly Kids",
@@ -97,13 +95,15 @@ const translations = {
     "modal-title-adho-yoga": "Adho Yoga",
     "modal-desc-adho-yoga": "A practice combining flexibility and strength work, static and dynamic elements, endurance and balance, along with breathing, meditative techniques and relaxation. ADHO yoga is grounded in scientific understanding of physiological processes during practice, making outcomes clear and measurable.",
     "modal-title-private-lesson": "Private lesson",
-    "modal-desc-private-lesson": "A personalized training format tailored to your needs and fitness level"
-}
+    "modal-desc-private-lesson": "A personalized training format tailored to your needs and fitness level."
+  }
 };
 
 // Функція перемикання мови
 function setLanguage(lang) {
   currentLang = lang;
+  localStorage.setItem('erraLang', lang);
+
   const dict = translations[lang] || {};
 
   // Універсальний цикл: підставляє значення для елементів, id яких збігаються з ключами
@@ -114,18 +114,21 @@ function setLanguage(lang) {
     }
   }
 
-  // Ручні винятки для ключів, які у словнику мають camelCase, а в HTML — з дефісами
+  // Ручні винятки для ключів із camelCase у словнику
   const safeGet = id => document.getElementById(id);
-  if (safeGet("subtitle")) safeGet("subtitle").textContent = dict.subtitle || "";
-  if (safeGet("social-title")) safeGet("social-title").textContent = dict.socialTitle || "";
-  if (safeGet("directions-title")) safeGet("directions-title").textContent = dict.directionsTitle || "";
-  if (safeGet("contacts-title")) safeGet("contacts-title").textContent = dict.contactsTitle || "";
-  if (safeGet("footer-text")) safeGet("footer-text").textContent = dict.footerText || "";
-  if (safeGet("phone-label-1")) safeGet("phone-label-1").textContent = dict.phoneLabel1 || "";
-  if (safeGet("phone-label-2")) safeGet("phone-label-2").textContent = dict.phoneLabel2 || "";
+  if (safeGet("subtitle"))          safeGet("subtitle").textContent          = dict.subtitle || "";
+  if (safeGet("social-title"))      safeGet("social-title").textContent      = dict.socialTitle || "";
+  if (safeGet("directions-title"))  safeGet("directions-title").textContent  = dict.directionsTitle || "";
+  if (safeGet("contacts-title"))    safeGet("contacts-title").textContent    = dict.contactsTitle || "";
+  if (safeGet("contacts-subtitle")) safeGet("contacts-subtitle").textContent = dict.contactsSubtitle || "";
+  if (safeGet("footer-text"))       safeGet("footer-text").textContent       = dict.footerText || "";
+  if (safeGet("phone-label-1"))     safeGet("phone-label-1").textContent     = dict.phoneLabel1 || "";
+  if (safeGet("phone-label-2"))     safeGet("phone-label-2").textContent     = dict.phoneLabel2 || "";
+  if (safeGet("banner-text"))       safeGet("banner-text").textContent       = dict.bannerText || "";
+  if (safeGet("banner-subtext"))    safeGet("banner-subtext").textContent    = dict.bannerSubtext || "";
 }
 
-// Відкриття модального вікна (підстановка тексту перед показом)
+// Відкриття модального вікна
 function openModal(id) {
   const modal = document.getElementById(id);
   if (!modal) return;
@@ -173,7 +176,7 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
-// Застосувати мову при завантаженні сторінки
+// Застосувати збережену мову при завантаженні сторінки
 document.addEventListener('DOMContentLoaded', () => {
   setLanguage(currentLang);
 });
