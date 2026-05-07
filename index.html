@@ -4,25 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ERRA SPACE — студія фітнесу та йоги у Вишгороді та Міжріччі</title>
-  <meta name="description" content="ERRA SPACE — сучасна студія фітнесу та йоги у Вишгороді та Міжріччі. Флай йога, пілатес, йога Айенгара. Запишись на пробне заняття та відкрий нові можливості для тіла й душі.">
+  <meta name="description" content="ERRA SPACE — простір, де тіло знаходить опору, а розум — тишу. Йога, пілатес і фітнес у Вишгороді та Міжріччі.">
 
-  <!-- Canonical & hreflang -->
   <link rel="canonical" href="https://erraspace.ua/">
   <link rel="alternate" hreflang="uk" href="https://erraspace.ua/">
   <link rel="alternate" hreflang="en" href="https://erraspace.ua/?lang=en">
 
-  <!-- Open Graph -->
   <meta property="og:title" content="ERRA SPACE — студія фітнесу та йоги у Вишгороді">
-  <meta property="og:description" content="Флай йога, пілатес, йога Айенгара у Вишгороді та Міжріччі. Запишись на пробне заняття.">
+  <meta property="og:description" content="Простір, де тіло знаходить опору, а розум — тишу. Йога, пілатес, фітнес у Вишгороді та Міжріччі.">
   <meta property="og:image" content="https://erraspace.ua/fly-yoga.JPG">
   <meta property="og:url" content="https://erraspace.ua">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="uk_UA">
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ERRA SPACE — студія фітнесу та йоги">
-  <meta name="twitter:description" content="Флай йога, пілатес, йога Айенгара у Вишгороді та Міжріччі.">
+  <meta name="twitter:description" content="Простір, де тіло знаходить опору, а розум — тишу.">
   <meta name="twitter:image" content="https://erraspace.ua/fly-yoga.JPG">
 
   <link rel="stylesheet" href="style.css">
@@ -42,10 +39,24 @@
   <!-- Шапка -->
   <header>
     <h1 id="title">ERRA SPACE</h1>
-    <p class="hero-text" id="subtitle">Простір, який піклується не лише про фізичний, а і про внутрішній стан.</p>
+    <p class="hero-text" id="subtitle">Простір, де тіло знаходить опору, а розум — тишу.</p>
   </header>
 
+  <!-- Навігація між сторінками -->
+  <nav class="page-nav">
+    <a href="index.html" class="page-nav-link active" id="nav-home">Головна</a>
+    <a href="classes.html" class="page-nav-link" id="nav-classes">Напрямки</a>
+    <a href="locations.html" class="page-nav-link" id="nav-locations">Локації</a>
+    <a href="about.html" class="page-nav-link" id="nav-about">Про нас</a>
+  </nav>
+
   <main>
+
+    <!-- Банер для нових клієнтів -->
+    <div class="new-client-banner">
+      <p id="banner-text">🎁 Перше заняття — безкоштовно.</p>
+      <p id="banner-subtext" style="font-size:0.9rem; margin-top:6px; color:rgba(255,255,255,0.75);">Запишись і переконайся особисто.</p>
+    </div>
 
     <!-- Соцмережі -->
     <section>
@@ -115,7 +126,7 @@
     <div id="fly-kids" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('fly-kids')">&times;</span><h2 id="modal-title-fly-kids">Флай Кідс</h2><p id="modal-desc-fly-kids">Веселі та безпечні заняття у гамаках для дітей. Вони розвивають гнучкість, координацію та впевненість у собі, даруючи малюкам радість руху й нові емоції.</p></div></div>
     <div id="pregnancy-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('pregnancy-yoga')">&times;</span><h2 id="modal-title-pregnancy-yoga">Йога для вагітних</h2><p id="modal-desc-pregnancy-yoga">М'які практики, що підтримують фізичний стан і емоційний баланс майбутніх мам. Вправи адаптовані для різних етапів вагітності та допомагають підготувати тіло до пологів.</p></div></div>
     <div id="adho-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('adho-yoga')">&times;</span><h2 id="modal-title-adho-yoga">Адхо-йога</h2><p id="modal-desc-adho-yoga">Практика, яка поєднує гнучкість і силову роботу, статику й динаміку, витривалість і баланс, а також дихальні та медитативні техніки. ADHO yoga базується на науковому підході до фізіології практики, щоб кожен процес і результат були зрозумілі й відчутні.</p></div></div>
-    <div id="private-lesson" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('private-lesson')">&times;</span><h2 id="modal-title-private-lesson">Індивідуальне тренування</h2><p id="modal-desc-private-lesson">Персональний формат тренування, який враховує ваші потреби та рівень підготовки.</p></div></div>
+    <div id="private-lesson" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('private-lesson')">&times;</span><h2 id="modal-title-private-lesson">Індивідуальне тренування</h2><p id="modal-desc-private-lesson">Персональний формат тренування, який враховує ваші цілі, стан здоров'я та рівень підготовки. Тренер будує програму спеціально під вас — без шаблонів, лише те, що потрібно саме вашому тілу.</p></div></div>
 
     <!-- Контакти -->
     <section>
@@ -138,14 +149,13 @@
 
   </main>
 
-<footer>
-  <p id="footer-text">© 2026 Erra Studio. Всі права захищені.</p>
-  <p style="margin-top:8px; font-size:.85em;">
-    <a href="oferta.html">Публічна оферта</a>
-  </p>
-</footer>
+  <footer>
+    <p id="footer-text">© 2026 Erra Studio. Всі права захищені.</p>
+    <p style="margin-top:8px; font-size:.85em;">
+      <a href="oferta.html">Публічна оферта</a>
+    </p>
+  </footer>
 
-  <!-- Schema.org: LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -183,7 +193,6 @@
   }
   </script>
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPHN8R7NDH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
