@@ -272,14 +272,22 @@
     }
     .print-btn:hover { background: var(--accent, #8a7560); color: #fff; }
 
+    /* ── Print hint ── */
+    .print-hint {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: .9rem;
+      color: #999;
+      margin-top: 10px;
+    }
+
     @media print {
-  @page { size: A4; margin: 15mm 20mm; }
-  .back-link, .print-btn { display: none; }
-  .statement-block { border: 1px solid #ccc; }
-  .field-row .field-line { border-bottom: 1px solid #999; }
-  body { background: white !important; }
-  .oferta-wrap { padding: 20px 0; }
-}
+      @page { size: A4; margin: 15mm 20mm; }
+      .back-link, .print-btn, .print-hint { display: none; }
+      .statement-block { border: 1px solid #ccc; }
+      .field-row .field-line { border-bottom: 1px solid #999; }
+      body { background: white !important; color: #1a1a1a !important; }
+      .oferta-wrap { padding: 20px 0; }
+    }
   </style>
 </head>
 <body>
@@ -487,13 +495,11 @@
       <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:28px;">
         <button class="print-btn" onclick="window.print()">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-          Надрукувати
-        </button>
-        <button class="print-btn" id="pdf-btn" onclick="downloadPDF()">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Завантажити PDF
+          Надрукувати / Зберегти PDF
         </button>
       </div>
+      <p class="print-hint">На телефоні: поділитися → Надрукувати → Зберегти як PDF</p>
+
     </div>
 
   </div><!-- /oferta-wrap -->
@@ -507,11 +513,11 @@
     gtag('config', 'G-YPHN8R7NDH');
   </script>
 
-<script>
-function downloadPDF() {
-  window.print();
-}
-</script>
+  <script>
+  function downloadPDF() {
+    window.print();
+  }
+  </script>
 
 </body>
 </html>
