@@ -14,6 +14,14 @@ const translations = {
     phoneLabel2: "Адміністратор:",
     bannerText: "🎁 Пробне заняття — 250 грн.",
     bannerSubtext: "Запишись і переконайся особисто.",
+    "hero-location": "Вишгород · Міжріччя",
+    "hero-tagline": "Не знаєш з чого почати?\nМи підкажемо.",
+    "hero-sub": "Йога, пілатес і фітнес поруч із домом — м'яко, безпечно, без «фітнес-агресії».",
+    "hero-main-btn": "Допоможіть мені обрати",
+    "hero-secondary-link": "або переглянути всі напрямки",
+    "trust-1": "🎁 Пробне заняття — 250 грн",
+    "trust-2": "Підійде для новачків",
+    "trust-3": "Безпечне навантаження",
     "nav-home": "Головна",
     "nav-classes": "Напрямки",
     "nav-locations": "Локації",
@@ -153,6 +161,14 @@ const translations = {
     phoneLabel2: "Administrator:",
     bannerText: "🎁 Trial class — 250 UAH.",
     bannerSubtext: "Sign up and see for yourself.",
+    "hero-location": "Vyshhorod · Mizhrichchia",
+    "hero-tagline": "Not sure where to start?\nWe'll help you choose.",
+    "hero-sub": "Yoga, pilates and fitness close to home — gentle, safe, without 'fitness aggression'.",
+    "hero-main-btn": "Help me choose",
+    "hero-secondary-link": "or browse all classes",
+    "trust-1": "🎁 Trial class — 250 UAH",
+    "trust-2": "Perfect for beginners",
+    "trust-3": "Safe for your body",
     "nav-home": "Home",
     "nav-classes": "Classes",
     "nav-locations": "Locations",
@@ -310,6 +326,11 @@ function setLanguage(lang) {
   if (safeGet("phone-label-2"))     safeGet("phone-label-2").textContent     = dict.phoneLabel2 || "";
   if (safeGet("banner-text"))       safeGet("banner-text").textContent       = dict.bannerText || "";
   if (safeGet("banner-subtext"))    safeGet("banner-subtext").textContent    = dict.bannerSubtext || "";
+
+  // hero-tagline має перенос рядка
+  if (safeGet("hero-tagline") && dict["hero-tagline"]) {
+    safeGet("hero-tagline").innerHTML = dict["hero-tagline"].replace("\n", "<br>");
+  }
 }
 
 // Відкриття модального вікна
