@@ -37,9 +37,26 @@
   </div>
 
   <!-- Шапка -->
-  <header>
+  <header class="hero-header">
+    <p class="hero-location" id="hero-location">Вишгород · Міжріччя</p>
     <h1 id="title">ERRA SPACE</h1>
-    <p class="hero-text" id="subtitle">Простір, де тіло знаходить опору, а розум — тишу.</p>
+    <p class="hero-tagline" id="hero-tagline">Не знаєш з чого почати?<br>Ми підкажемо.</p>
+    <p class="hero-sub" id="hero-sub">Йога, пілатес і фітнес поруч із домом — м'яко, безпечно, без «фітнес-агресії».</p>
+
+    <!-- Головний CTA -->
+    <div class="hero-cta">
+      <a href="#for-whom"
+         class="cta-button primary hero-main-btn" id="hero-main-btn">Допоможіть мені обрати</a>
+      <a href="classes.html"
+         class="hero-secondary-link" id="hero-secondary-link">або переглянути всі напрямки</a>
+    </div>
+
+    <!-- Мікродовіра -->
+    <div class="hero-trust">
+      <span id="trust-1">🎁 Пробне заняття — 250 грн</span>
+      <span id="trust-2">Підійде для новачків</span>
+      <span id="trust-3">Безпечне навантаження</span>
+    </div>
   </header>
 
   <!-- Навігація між сторінками -->
@@ -51,12 +68,6 @@
   </nav>
 
   <main>
-
-    <!-- Банер для нових клієнтів -->
-    <div class="new-client-banner">
-      <p id="banner-text">🎁 Пробне заняття — 250 грн.</p>
-      <p id="banner-subtext" style="font-size:0.9rem; margin-top:6px; color:rgba(255,255,255,0.75);">Запишись і переконайся особисто.</p>
-    </div>
 
     <!-- Соцмережі -->
     <section>
@@ -85,21 +96,7 @@
       </div>
     </section>
 
-    <!-- CTA -->
-    <div class="cta">
-      <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=cta&utm_content=signup"
-         id="cta-button" class="cta-button primary" aria-label="Записатися на заняття онлайн">
-         Записатися на заняття
-      </a>
-      <a href="https://instasport.ua/uk/club/erraspacevy/schedule/day?utm_source=site&utm_medium=cta&utm_content=schedule"
-         id="btn-schedule" class="cta-button" aria-label="Переглянути розклад занять">
-         Розклад
-      </a>
-      <a href="https://instasport.ua/uk/club/erraspacevy/subscription?utm_source=site&utm_medium=cta&utm_content=subscriptions"
-         id="btn-price" class="cta-button" aria-label="Переглянути абонементи студії">
-         Абонементи
-      </a>
-    </div>
+
 
     <!-- БЛОК "Обери заняття під свій стан" -->
     <section>
