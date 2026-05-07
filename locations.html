@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Локації — ERRA SPACE</title>
+  <meta name="description" content="Студія ERRA SPACE у Вишгороді (пр. Шевченка 6А) та у КМ Міжріччя (вул. Фісташкова 60). Контакти, адреси, навігація.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="lang-switch">
+    <button onclick="setLanguage('ua')">UA</button>
+    <button onclick="setLanguage('en')">EN</button>
+  </div>
+
+  <header>
+    <h1><a href="index.html" style="color:inherit;text-decoration:none;">ERRA SPACE</a></h1>
+    <p class="hero-text" id="subtitle">Простір, де тіло знаходить опору, а розум — тишу.</p>
+  </header>
+
+  <nav class="page-nav">
+    <a href="index.html" class="page-nav-link" id="nav-home">Головна</a>
+    <a href="classes.html" class="page-nav-link" id="nav-classes">Напрямки</a>
+    <a href="locations.html" class="page-nav-link active" id="nav-locations">Локації</a>
+    <a href="about.html" class="page-nav-link" id="nav-about">Про нас</a>
+  </nav>
+
+  <main>
+
+    <section>
+      <h2 id="contacts-title">Наші студії</h2>
+      <p class="contacts-subtitle" id="contacts-subtitle">Дві локації — поруч із домом</p>
+
+      <div class="contact-blocks">
+
+        <!-- Вишгород -->
+        <div class="contact-block">
+          <p style="font-size:1.4rem; margin-bottom:12px;">🏙️</p>
+          <p style="font-size:1.2rem; font-weight:700; letter-spacing:1px; margin-bottom:14px;" id="loc-vysh-name">ERRA SPACE Вишгород</p>
+          <p id="address-1">📍 пр. Шевченка 6А, Вишгород</p>
+          <p>📞 <span id="phone-label-1">Адміністратор:</span> <a href="tel:+380632072462">+380 63 207 24 62</a></p>
+          <p id="loc-vysh-instagram">📸 Instagram: <a href="https://www.instagram.com/erraspace.ua" target="_blank" style="color:#fff;font-weight:bold;">@erraspace.ua</a></p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Вишгород,+пр.+Шевченка+6А"
+             id="nav-btn-1" target="_blank" class="nav-button">Навігація</a>
+          <div style="margin-top:16px;">
+            <a href="https://instasport.ua/uk/club/erraspacevy/schedule/day?utm_source=site&utm_medium=locations&utm_content=schedule-vysh"
+               class="cta-button" style="margin:6px 0; display:block;" id="loc-btn-schedule-1">Розклад — Вишгород</a>
+          </div>
+        </div>
+
+        <!-- Міжріччя -->
+        <div class="contact-block">
+          <p style="font-size:1.4rem; margin-bottom:12px;">🌿</p>
+          <p style="font-size:1.2rem; font-weight:700; letter-spacing:1px; margin-bottom:14px;" id="loc-mr-name">ERRA SPACE Міжріччя</p>
+          <p id="address-2">📍 вул. Фісташкова 60, КМ Міжріччя</p>
+          <p>📞 <span id="phone-label-2">Адміністратор:</span> <a href="tel:+380632072462">+380 63 207 24 62</a></p>
+          <p id="loc-mr-instagram">📸 Instagram: <a href="https://www.instagram.com/erraspace.ua_mr" target="_blank" style="color:#fff;font-weight:bold;">@erraspace_mr</a></p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=КМ+Міжріччя,+вул.+Фісташкова+60"
+             id="nav-btn-2" target="_blank" class="nav-button">Навігація</a>
+          <div style="margin-top:16px;">
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=locations&utm_content=signup-mr"
+               class="cta-button primary" style="margin:6px 0; display:block;" id="loc-btn-signup-2">Записатися</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Соцмережі -->
+    <section>
+      <h2 id="social-title">Ми в соцмережах</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/erraspace.ua" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="instagram.svg" alt="Instagram ERRA SPACE">
+        </a>
+        <a href="https://www.facebook.com/people/dance_yoga_fitness_/100070016075579/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <img src="facebook.svg" alt="Facebook ERRA SPACE">
+        </a>
+        <a href="https://www.tiktok.com/@erraspace.ua" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <img src="tiktok.svg" alt="TikTok ERRA SPACE">
+        </a>
+        <a href="https://t.me/ERRA_SPASE" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+          <img src="telegram.svg" alt="Telegram ERRA SPACE">
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p id="footer-text">© 2026 Erra Studio. Всі права захищені.</p>
+    <p style="margin-top:8px; font-size:.85em;">
+      <a href="oferta.html">Публічна оферта</a>
+    </p>
+  </footer>
+
+</body>
+</html>
