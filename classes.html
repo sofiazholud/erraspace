@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Напрямки — ERRA SPACE</title>
+  <meta name="description" content="Всі напрямки занять ERRA SPACE: Флай-йога, Йога Айенгара, Ішвара-йога, Адхо-йога, Пілатес, Функціональні тренування, Флай Кідс, Йога для вагітних, Індивідуальні тренування.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="lang-switch">
+    <button onclick="setLanguage('ua')">UA</button>
+    <button onclick="setLanguage('en')">EN</button>
+  </div>
+
+  <header>
+    <h1><a href="index.html" style="color:inherit;text-decoration:none;">ERRA SPACE</a></h1>
+    <p class="hero-text" id="subtitle">Простір, де тіло знаходить опору, а розум — тишу.</p>
+  </header>
+
+  <nav class="page-nav">
+    <a href="index.html" class="page-nav-link" id="nav-home">Головна</a>
+    <a href="classes.html" class="page-nav-link active" id="nav-classes">Напрямки</a>
+    <a href="locations.html" class="page-nav-link" id="nav-locations">Локації</a>
+    <a href="about.html" class="page-nav-link" id="nav-about">Про нас</a>
+  </nav>
+
+  <main>
+
+    <div class="cta">
+      <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=cta&utm_content=signup"
+         class="cta-button primary" id="cta-button">Записатися на заняття</a>
+      <a href="https://instasport.ua/uk/club/erraspacevy/schedule/day?utm_source=site&utm_medium=cta&utm_content=schedule"
+         class="cta-button" id="btn-schedule">Розклад</a>
+    </div>
+
+    <!-- Йога -->
+    <section>
+      <h2 id="classes-yoga-title">🧘 Йога</h2>
+      <p class="section-subtitle" id="classes-yoga-subtitle">М'який, свідомий підхід до тіла та внутрішнього стану</p>
+
+      <div class="classes-group">
+        <div class="class-item">
+          <div class="class-item-title" id="c-fly-yoga-title">Флай Йога</div>
+          <div class="class-item-desc" id="c-fly-yoga-desc">Практика у спеціальних гамаках, що дарує відчуття польоту та легкості. Допомагає зняти напругу з хребта, розвиває гнучкість і додає енергії. Ідеально для тих, хто хоче поєднати рух із глибоким розслабленням.</div>
+        </div>
+        <div class="class-item">
+          <div class="class-item-title" id="c-iyengar-yoga-title">Йога Айенгара</div>
+          <div class="class-item-desc" id="c-iyengar-yoga-desc">Методика, що акцентує увагу на точності виконання асан і правильному вирівнюванні тіла. Використання пропсів робить практику доступною для будь-якого рівня підготовки.</div>
+        </div>
+        <div class="class-item">
+          <div class="class-item-title" id="c-ishvara-yoga-title">Ішвара Йога</div>
+          <div class="class-item-desc" id="c-ishvara-yoga-desc">Напрям хатха-йоги з увагою до внутрішніх принципів роботи з тілом. Практика пояснює причини труднощів в асанах та допомагає зібрати тіло в цілісність.</div>
+        </div>
+        <div class="class-item">
+          <div class="class-item-title" id="c-adho-yoga-title">Адхо-йога</div>
+          <div class="class-item-desc" id="c-adho-yoga-desc">Поєднання гнучкості та сили, статики й динаміки, дихальних і медитативних технік. Базується на науковому підході до фізіології — кожен результат зрозумілий і відчутний.</div>
+        </div>
+        <div class="class-item">
+          <div class="class-item-title" id="c-pregnancy-yoga-title">Йога для вагітних</div>
+          <div class="class-item-desc" id="c-pregnancy-yoga-desc">М'які практики для підтримки фізичного стану та емоційного балансу майбутніх мам. Вправи адаптовані для різних термінів вагітності та допомагають підготуватися до пологів.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Фітнес -->
+    <section>
+      <h2 id="classes-fitness-title">💪 Фітнес</h2>
+      <p class="section-subtitle" id="classes-fitness-subtitle">Сила, витривалість і баланс — без «фітнес-агресії»</p>
+
+      <div class="classes-group">
+        <div class="class-item">
+          <div class="class-item-title" id="c-pilates-title">Пілатес</div>
+          <div class="class-item-desc" id="c-pilates-desc">Система вправ для зміцнення м'язів, розвитку гнучкості та формування здорової постави. Покращує координацію та дарує відчуття легкості у рухах.</div>
+        </div>
+        <div class="class-item">
+          <div class="class-item-title" id="c-functional-title">Функціональні тренування</div>
+          <div class="class-item-desc" id="c-functional-desc">Комплекс вправ для розвитку сили, витривалості та мобільності. Готує тіло до щоденних навантажень, покращує фізичну форму та підвищує загальну працездатність.</div>
+        </div>
+        <div class="class-item">
+          <div class="class-item-title" id="c-private-title">Індивідуальні тренування</div>
+          <div class="class-item-desc" id="c-private-desc">Персональний формат, що враховує ваші цілі, стан здоров'я та рівень підготовки. Тренер будує програму спеціально під вас — без шаблонів, лише те, що потрібно саме вашому тілу.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Дітям -->
+    <section>
+      <h2 id="classes-kids-title">🧒 Для дітей</h2>
+      <p class="section-subtitle" id="classes-kids-subtitle">Рух, радість і впевненість у собі з раннього віку</p>
+
+      <div class="classes-group">
+        <div class="class-item">
+          <div class="class-item-title" id="c-fly-kids-title">Флай Кідс</div>
+          <div class="class-item-desc" id="c-fly-kids-desc">Веселі та безпечні заняття у гамаках для дітей. Розвивають гнучкість, координацію та впевненість у собі, даруючи малюкам радість руху й нові емоції.</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p id="footer-text">© 2026 Erra Studio. Всі права захищені.</p>
+    <p style="margin-top:8px; font-size:.85em;">
+      <a href="oferta.html">Публічна оферта</a>
+    </p>
+  </footer>
+
+</body>
+</html>
