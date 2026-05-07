@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Про нас — ERRA SPACE</title>
+  <meta name="description" content="ERRA SPACE — це більше, ніж студія. Це безпечний простір для руху, відновлення й балансу тіла та розуму у Вишгороді та Міжріччі.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="lang-switch">
+    <button onclick="setLanguage('ua')">UA</button>
+    <button onclick="setLanguage('en')">EN</button>
+  </div>
+
+  <header>
+    <h1><a href="index.html" style="color:inherit;text-decoration:none;">ERRA SPACE</a></h1>
+    <p class="hero-text" id="subtitle">Простір, де тіло знаходить опору, а розум — тишу.</p>
+  </header>
+
+  <nav class="page-nav">
+    <a href="index.html" class="page-nav-link" id="nav-home">Головна</a>
+    <a href="classes.html" class="page-nav-link" id="nav-classes">Напрямки</a>
+    <a href="locations.html" class="page-nav-link" id="nav-locations">Локації</a>
+    <a href="about.html" class="page-nav-link active" id="nav-about">Про нас</a>
+  </nav>
+
+  <main>
+
+    <!-- Місія -->
+    <section>
+      <h2 id="about-mission-title">Наша місія</h2>
+      <p class="section-subtitle" id="about-mission-subtitle">Не просто студія — простір турботи про людину</p>
+      <p style="max-width:680px; margin:0 auto; font-size:1.1rem; line-height:1.9; color:rgba(255,255,255,0.88);" id="about-mission-text">
+        ERRA SPACE — це місце, де кожне заняття стає актом турботи про себе. Ми поєднуємо рух, усвідомленість і спокій у форматі, який органічно вписується в повсякденне життя — поруч із домом, без зайвого шуму й «фітнес-агресії».
+      </p>
+    </section>
+
+    <!-- Цінності -->
+    <section>
+      <h2 id="about-values-title">Наші цінності</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card-icon">🌿</div>
+          <div class="about-card-title" id="val-1-title">Спокій і підтримка</div>
+          <div class="about-card-text" id="val-1-text">Ми створюємо середовище, де можна бути собою — без порівнянь, без тиску, без оцінок. Тут ваш темп є правильним темпом.</div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">🎯</div>
+          <div class="about-card-title" id="val-2-title">Професійність</div>
+          <div class="about-card-text" id="val-2-text">Досвідчені тренери, коректна робота з тілом і безпечне навантаження — основа кожного заняття. Результат без шкоди для здоров'я.</div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">🤝</div>
+          <div class="about-card-title" id="val-3-title">Ком'юніті</div>
+          <div class="about-card-text" id="val-3-text">Ми — не масмаркет. Ми — спільнота людей, які обирають свідомий рух. Тут знайомляться, підтримують і надихають одне одного.</div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">⚖️</div>
+          <div class="about-card-title" id="val-4-title">Тіло + внутрішній стан</div>
+          <div class="about-card-text" id="val-4-text">Фізична форма та внутрішній баланс — для нас це єдине ціле. Кожне заняття працює з обома вимірами одночасно.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Для кого -->
+    <section>
+      <h2 id="about-who-title">Для кого ми</h2>
+      <p class="section-subtitle" id="about-who-subtitle">ERRA SPACE відкритий для всіх, хто шукає свідомий рух</p>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card-icon">👩‍🦰</div>
+          <div class="about-card-title" id="who-1-title">Жінки та чоловіки</div>
+          <div class="about-card-text" id="who-1-text">Для тих, хто шукає м'який, усвідомлений підхід до фізичної активності — незалежно від рівня підготовки.</div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">🤰</div>
+          <div class="about-card-title" id="who-2-title">Вагітні</div>
+          <div class="about-card-text" id="who-2-text">Спеціальні програми для підтримки тіла та емоційного стану на кожному етапі вагітності.</div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">🧒</div>
+          <div class="about-card-title" id="who-3-title">Діти</div>
+          <div class="about-card-text" id="who-3-text">Fly Kids — заняття, що розвивають гнучкість, координацію та любов до руху з дитинства.</div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">🌱</div>
+          <div class="about-card-title" id="who-4-title">Початківці та досвідчені</div>
+          <div class="about-card-text" id="who-4-text">Ми зустрічаємо кожного там, де він є зараз. Без вимог — лише бажання рухатися вперед.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta">
+      <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=about&utm_content=signup"
+         class="cta-button primary" id="cta-button">Записатися на заняття</a>
+      <a href="classes.html" class="cta-button" id="about-btn-classes">Переглянути напрямки</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p id="footer-text">© 2026 Erra Studio. Всі права захищені.</p>
+    <p style="margin-top:8px; font-size:.85em;">
+      <a href="oferta.html">Публічна оферта</a>
+    </p>
+  </footer>
+
+</body>
+</html>
