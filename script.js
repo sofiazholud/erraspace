@@ -4,7 +4,7 @@ let currentLang = localStorage.getItem('erraLang') || 'ua';
 // Переклади
 const translations = {
   ua: {
-    subtitle: "Простір, який піклується не лише про фізичний, а і про внутрішній стан.",
+    subtitle: "Простір, де тіло знаходить опору, а розум — тишу.",
     socialTitle: "Ми в соцмережах",
     directionsTitle: "Напрямки",
     contactsTitle: "Контакти",
@@ -12,8 +12,12 @@ const translations = {
     footerText: "© 2026 Erra Studio. Всі права захищені.",
     phoneLabel1: "Адміністратор:",
     phoneLabel2: "Адміністратор:",
-    bannerText: "Перше заняття — безкоштовно.",
+    bannerText: "🎁 Перше заняття — безкоштовно.",
     bannerSubtext: "Запишись і переконайся особисто.",
+    "nav-home": "Головна",
+    "nav-classes": "Напрямки",
+    "nav-locations": "Локації",
+    "nav-about": "Про нас",
     "dir-fly-yoga": "Флай Йога",
     "dir-ishvara-yoga": "Ішвара Йога",
     "dir-iyengar-yoga": "Йога Айенгара",
@@ -48,10 +52,10 @@ const translations = {
     "modal-title-adho-yoga": "Адхо-йога",
     "modal-desc-adho-yoga": "Практика, яка поєднує гнучкість і силову роботу, статику й динаміку, витривалість і баланс, а також дихальні та медитативні техніки. ADHO yoga базується на науковому підході до фізіології практики, щоб кожен процес і результат були зрозумілі й відчутні.",
     "modal-title-private-lesson": "Індивідуальні тренування",
-    "modal-desc-private-lesson": "Персональний формат тренування, який враховує ваші потреби та рівень підготовки."
+    "modal-desc-private-lesson": "Персональний формат тренування, який враховує ваші цілі, стан здоров'я та рівень підготовки. Тренер будує програму спеціально під вас — без шаблонів, лише те, що потрібно саме вашому тілу."
   },
   en: {
-    subtitle: "A space that cares not only about the physical but also the inner state.",
+    subtitle: "A space where the body finds support, and the mind finds stillness.",
     socialTitle: "We are on social media",
     directionsTitle: "Directions",
     contactsTitle: "Contacts",
@@ -59,8 +63,12 @@ const translations = {
     footerText: "© 2026 Erra Studio. All rights reserved.",
     phoneLabel1: "Administrator:",
     phoneLabel2: "Administrator:",
-    bannerText: "First class — free of charge.",
+    bannerText: "🎁 First class — free of charge.",
     bannerSubtext: "Sign up and see for yourself.",
+    "nav-home": "Home",
+    "nav-classes": "Classes",
+    "nav-locations": "Locations",
+    "nav-about": "About",
     "dir-fly-yoga": "Fly Yoga",
     "dir-ishvara-yoga": "Ishvara Yoga",
     "dir-iyengar-yoga": "Iyengar Yoga",
@@ -93,9 +101,9 @@ const translations = {
     "modal-title-pregnancy-yoga": "Pregnancy Yoga",
     "modal-desc-pregnancy-yoga": "Gentle practices that support the physical condition and emotional balance of expectant mothers. Exercises are adapted for different pregnancy stages and help prepare the body for childbirth.",
     "modal-title-adho-yoga": "Adho Yoga",
-    "modal-desc-adho-yoga": "A practice combining flexibility and strength work, static and dynamic elements, endurance and balance, along with breathing, meditative techniques and relaxation. ADHO yoga is grounded in scientific understanding of physiological processes during practice, making outcomes clear and measurable.",
-    "modal-title-private-lesson": "Private lesson",
-    "modal-desc-private-lesson": "A personalized training format tailored to your needs and fitness level."
+    "modal-desc-adho-yoga": "A practice combining flexibility and strength work, static and dynamic elements, endurance and balance, along with breathing and meditative techniques. ADHO yoga is grounded in scientific understanding of physiological processes during practice, making outcomes clear and measurable.",
+    "modal-title-private-lesson": "Private Lesson",
+    "modal-desc-private-lesson": "A personalized training format tailored to your goals, health condition and fitness level. Your trainer builds a program specifically for you — no templates, only what your body truly needs."
   }
 };
 
@@ -106,7 +114,7 @@ function setLanguage(lang) {
 
   const dict = translations[lang] || {};
 
-  // Універсальний цикл: підставляє значення для елементів, id яких збігаються з ключами
+  // Універсальний цикл
   for (const key in dict) {
     const el = document.getElementById(key);
     if (el) {
@@ -114,7 +122,7 @@ function setLanguage(lang) {
     }
   }
 
-  // Ручні винятки для ключів із camelCase у словнику
+  // Ручні винятки для camelCase ключів
   const safeGet = id => document.getElementById(id);
   if (safeGet("subtitle"))          safeGet("subtitle").textContent          = dict.subtitle || "";
   if (safeGet("social-title"))      safeGet("social-title").textContent      = dict.socialTitle || "";
@@ -176,7 +184,7 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
-// Застосувати збережену мову при завантаженні сторінки
+// Застосувати збережену мову при завантаженні
 document.addEventListener('DOMContentLoaded', () => {
   setLanguage(currentLang);
 });
