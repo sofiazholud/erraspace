@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ERRA SPACE — студія фітнесу та йоги у Вишгороді та Міжріччі</title>
-  <meta name="description" content="ERRA SPACE — простір, де тіло знаходить опору, а розум — тишу. Йога, пілатес і фітнес у Вишгороді та Міжріччі.">
+  <meta name="description" content="ERRA SPACE — йога і фітнес без болю та тиску. Пробне заняття — 250 грн. Вишгород та Міжріччя.">
 
   <link rel="canonical" href="https://erraspace.ua/">
   <link rel="alternate" hreflang="uk" href="https://erraspace.ua/">
   <link rel="alternate" hreflang="en" href="https://erraspace.ua/?lang=en">
 
   <meta property="og:title" content="ERRA SPACE — студія фітнесу та йоги у Вишгороді">
-  <meta property="og:description" content="Простір, де тіло знаходить опору, а розум — тишу. Йога, пілатес, фітнес у Вишгороді та Міжріччі.">
+  <meta property="og:description" content="Йога і фітнес без болю та тиску. Пробне заняття — 250 грн.">
   <meta property="og:image" content="https://erraspace.ua/fly-yoga.JPG">
   <meta property="og:url" content="https://erraspace.ua">
   <meta property="og:type" content="website">
@@ -19,7 +19,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ERRA SPACE — студія фітнесу та йоги">
-  <meta name="twitter:description" content="Простір, де тіло знаходить опору, а розум — тишу.">
+  <meta name="twitter:description" content="Йога і фітнес без болю та тиску. Пробне — 250 грн.">
   <meta name="twitter:image" content="https://erraspace.ua/fly-yoga.JPG">
 
   <link rel="stylesheet" href="style.css">
@@ -36,27 +36,17 @@
     <button onclick="setLanguage('en')">EN</button>
   </div>
 
-  <!-- Шапка -->
+  <!-- Шапка / Hero — чистий перший екран -->
   <header class="hero-header">
     <p class="hero-location" id="hero-location">Вишгород · Міжріччя</p>
     <h1 id="title">ERRA SPACE</h1>
-    <p class="hero-tagline" id="hero-tagline">Не знаєш з чого почати?<br>Ми підкажемо.</p>
-    <p class="hero-sub" id="hero-sub">Йога, пілатес і фітнес поруч із домом — м'яко, безпечно, без «фітнес-агресії».</p>
-
-    <!-- Головний CTA -->
-    <div class="hero-cta">
-      <a href="#for-whom"
-         class="cta-button primary hero-main-btn" id="hero-main-btn">Допоможіть мені обрати</a>
-      <a href="classes.html"
-         class="hero-secondary-link" id="hero-secondary-link">або переглянути всі напрямки</a>
-    </div>
-
-    <!-- Мікродовіра -->
-    <div class="hero-trust">
-      <span id="trust-1">🎁 Пробне заняття — 250 грн</span>
-      <span id="trust-2">Підійде для новачків</span>
-      <span id="trust-3">Безпечне навантаження</span>
-    </div>
+    <p class="hero-sub" id="hero-sub">Йога і фітнес — поруч із домом</p>
+    <a href="https://t.me/ERRA_SPASE"
+       target="_blank" rel="noopener noreferrer"
+       class="cta-button primary hero-main-btn" id="hero-main-btn">
+      Пробне заняття — 250 грн
+    </a>
+    <p class="hero-trust-line" id="hero-trust-line">Підійде для новачків · Безпечне навантаження</p>
   </header>
 
   <!-- Навігація між сторінками -->
@@ -68,6 +58,21 @@
   </nav>
 
   <main>
+
+    <!-- Відгуки -->
+    <section class="reviews-section">
+      <h2 id="reviews-title">Відгуки</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <p class="review-text" id="review-1-text">«Було страшно йти, але тут спокійно і без тиску. Вже третій місяць поспіль.»</p>
+          <p class="review-author" id="review-1-author">— Оксана</p>
+        </div>
+        <div class="review-card">
+          <p class="review-text" id="review-2-text">«Болів поперек після роботи за комп'ютером. Після флай-йоги стало значно легше.»</p>
+          <p class="review-author" id="review-2-author">— Марина</p>
+        </div>
+      </div>
+    </section>
 
     <!-- Соцмережі -->
     <section>
@@ -96,12 +101,10 @@
       </div>
     </section>
 
-
-
     <!-- БЛОК "Обери заняття під свій стан" -->
-    <section>
+    <section id="for-whom">
       <h2 id="for-whom-title">Обери заняття під свій стан</h2>
-      <p class="section-subtitle" id="for-whom-subtitle">У ERRA SPACE ми допомагаємо знайти формат, у якому тілу безпечно, а розуму — спокійно.</p>
+      <p class="section-subtitle" id="for-whom-subtitle">Не знаєш з чого почати? Ми підкажемо.</p>
       <div class="for-whom-grid">
 
         <div class="for-whom-card">
@@ -109,7 +112,8 @@
           <div class="for-whom-card-title" id="fw-1-title">Я новачок і хвилююся</div>
           <div class="for-whom-card-text" id="fw-1-text">М'які заняття з увагою до тіла, дихання і опори. Без гонитви й «треба через біль».</div>
           <div class="for-whom-rec" id="fw-1-rec">Рекомендуємо: Ішвара-йога, Йога Айенгара</div>
-          <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=forwhom&utm_content=beginner"
+          <a href="https://t.me/ERRA_SPASE"
+             target="_blank" rel="noopener noreferrer"
              class="cta-button primary for-whom-btn" id="fw-1-btn">Записатися на пробне заняття</a>
         </div>
 
@@ -118,7 +122,8 @@
           <div class="for-whom-card-title" id="fw-2-title">Болить спина / сидяча робота</div>
           <div class="for-whom-card-text" id="fw-2-text">Знімаємо напругу, розвантажуємо хребет, повертаємо легкість руху.</div>
           <div class="for-whom-rec" id="fw-2-rec">Рекомендуємо: Флай-йога, Пілатес</div>
-          <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=forwhom&utm_content=back"
+          <a href="https://t.me/ERRA_SPASE"
+             target="_blank" rel="noopener noreferrer"
              class="cta-button primary for-whom-btn" id="fw-2-btn">Записатися</a>
         </div>
 
@@ -127,7 +132,8 @@
           <div class="for-whom-card-title" id="fw-3-title">Хочу навантаження і тонус</div>
           <div class="for-whom-card-text" id="fw-3-text">Динамічні, силові заняття без хаосу — з відчуттям тіла і контролю.</div>
           <div class="for-whom-rec" id="fw-3-rec">Рекомендуємо: Адхо-йога, Функціональні тренування</div>
-          <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=forwhom&utm_content=tone"
+          <a href="https://t.me/ERRA_SPASE"
+             target="_blank" rel="noopener noreferrer"
              class="cta-button primary for-whom-btn" id="fw-3-btn">Записатися</a>
         </div>
 
@@ -136,7 +142,8 @@
           <div class="for-whom-card-title" id="fw-4-title">Вагітність</div>
           <div class="for-whom-card-text" id="fw-4-text">Безпечний простір і уважний супровід на кожному етапі.</div>
           <div class="for-whom-rec" id="fw-4-rec">Рекомендуємо: Йога для вагітних</div>
-          <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=forwhom&utm_content=pregnancy"
+          <a href="https://t.me/ERRA_SPASE"
+             target="_blank" rel="noopener noreferrer"
              class="cta-button primary for-whom-btn" id="fw-4-btn">Записатися</a>
         </div>
 
@@ -192,10 +199,11 @@
 
     <!-- Завершальний емоційний блок -->
     <section class="closing-block">
-      <p class="closing-text" id="closing-text">Ти не маєш бути готовою.</p>
+      <p class="closing-text" id="closing-text">Не треба бути готовим.</p>
       <p class="closing-subtext" id="closing-subtext">Достатньо просто прийти.</p>
       <div class="cta" style="margin-top:24px;">
-        <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=closing&utm_content=signup"
+        <a href="https://t.me/ERRA_SPASE"
+           target="_blank" rel="noopener noreferrer"
            class="cta-button primary" id="closing-btn">Записатися на пробне заняття</a>
       </div>
     </section>
@@ -208,6 +216,15 @@
       <a href="oferta.html">Публічна оферта</a>
     </p>
   </footer>
+
+  <!-- Sticky кнопка (мобільна) -->
+  <div class="sticky-cta" id="sticky-cta">
+    <a href="https://t.me/ERRA_SPASE"
+       target="_blank" rel="noopener noreferrer"
+       class="sticky-cta-btn" id="sticky-cta-btn">
+      Пробне заняття — 250 грн
+    </a>
+  </div>
 
   <script type="application/ld+json">
   {
