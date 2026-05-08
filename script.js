@@ -15,37 +15,25 @@ const translations = {
     bannerText: "🎁 Пробне заняття — 250 грн.",
     bannerSubtext: "Запишись і переконайся особисто.",
     "hero-location": "Вишгород · Міжріччя",
-    "hero-tagline": "Не знаєш з чого почати?\nМи підкажемо.",
-    "hero-sub": "Йога, пілатес і фітнес поруч із домом — м'яко, безпечно, без «фітнес-агресії».",
-    "hero-main-btn": "Допоможіть мені обрати",
-    "hero-secondary-link": "або переглянути всі напрямки",
-    "trust-1": "🎁 Пробне заняття — 250 грн",
-    "trust-2": "Підійде для новачків",
-    "trust-3": "Безпечне навантаження",
+    "hero-sub": "Йога і фітнес — поруч із домом",
+    "hero-main-btn": "Пробне заняття — 250 грн",
+    "hero-trust-line": "Підійде для новачків · Безпечне навантаження",
+    "sticky-cta-btn": "Пробне заняття — 250 грн",
     "nav-home": "Головна",
     "nav-classes": "Напрямки",
     "nav-locations": "Локації",
     "nav-about": "Про нас",
-    "dir-fly-yoga": "Флай Йога",
-    "dir-ishvara-yoga": "Ішвара Йога",
-    "dir-iyengar-yoga": "Йога Айенгара",
-    "dir-pilates": "Пілатес",
-    "dir-functional-training": "Функціональні тренування",
-    "dir-fly-kids": "Флай Кідс",
-    "dir-pregnancy-yoga": "Йога для вагітних",
-    "dir-adho-yoga": "Адхо-йога",
-    "dir-private-lesson": "Індивідуальні тренування",
-    "cta-button": "Записатися на заняття",
-    "address-1": "📍 Вишгород, пр. Шевченка 6А",
-    "address-2": "📍 КМ Міжріччя, вул. Фісташкова 60",
-    "nav-btn-1": "Навігація",
-    "nav-btn-2": "Навігація",
-    "btn-schedule": "Розклад",
-    "btn-price": "Абонементи",
+
+    // Відгуки
+    "reviews-title": "Відгуки",
+    "review-1-text": "«Було страшно йти, але тут спокійно і без тиску. Вже третій місяць поспіль.»",
+    "review-1-author": "— Оксана",
+    "review-2-text": "«Болів поперек після роботи за комп'ютером. Після флай-йоги стало значно легше.»",
+    "review-2-author": "— Марина",
 
     // Блок "для кого"
     "for-whom-title": "Обери заняття під свій стан",
-    "for-whom-subtitle": "У ERRA SPACE ми допомагаємо знайти формат, у якому тілу безпечно, а розуму — спокійно.",
+    "for-whom-subtitle": "Не знаєш з чого почати? Ми підкажемо.",
     "fw-1-title": "Я новачок і хвилююся",
     "fw-1-text": "М'які заняття з увагою до тіла, дихання і опори. Без гонитви й «треба через біль».",
     "fw-1-rec": "Рекомендуємо: Ішвара-йога, Йога Айенгара",
@@ -64,8 +52,25 @@ const translations = {
     "fw-4-btn": "Записатися",
     "for-whom-hint": "Ми підкажемо формат, якщо сумніваєтесь — просто напишіть нам.",
 
+    "dir-fly-yoga": "Флай Йога",
+    "dir-ishvara-yoga": "Ішвара Йога",
+    "dir-iyengar-yoga": "Йога Айенгара",
+    "dir-pilates": "Пілатес",
+    "dir-functional-training": "Функціональні тренування",
+    "dir-fly-kids": "Флай Кідс",
+    "dir-pregnancy-yoga": "Йога для вагітних",
+    "dir-adho-yoga": "Адхо-йога",
+    "dir-private-lesson": "Індивідуальні тренування",
+    "cta-button": "Записатися на заняття",
+    "address-1": "📍 Вишгород, пр. Шевченка 6А",
+    "address-2": "📍 КМ Міжріччя, вул. Фісташкова 60",
+    "nav-btn-1": "Навігація",
+    "nav-btn-2": "Навігація",
+    "btn-schedule": "Розклад",
+    "btn-price": "Абонементи",
+
     // Завершальний блок
-    "closing-text": "Ти не маєш бути готовою.",
+    "closing-text": "Не треба бути готовим.",
     "closing-subtext": "Достатньо просто прийти.",
     "closing-btn": "Записатися на пробне заняття",
 
@@ -162,37 +167,25 @@ const translations = {
     bannerText: "🎁 Trial class — 250 UAH.",
     bannerSubtext: "Sign up and see for yourself.",
     "hero-location": "Vyshhorod · Mizhrichchia",
-    "hero-tagline": "Not sure where to start?\nWe'll help you choose.",
-    "hero-sub": "Yoga, pilates and fitness close to home — gentle, safe, without 'fitness aggression'.",
-    "hero-main-btn": "Help me choose",
-    "hero-secondary-link": "or browse all classes",
-    "trust-1": "🎁 Trial class — 250 UAH",
-    "trust-2": "Perfect for beginners",
-    "trust-3": "Safe for your body",
+    "hero-sub": "Yoga and fitness — close to home",
+    "hero-main-btn": "Trial class — 250 UAH",
+    "hero-trust-line": "Perfect for beginners · Safe for your body",
+    "sticky-cta-btn": "Trial class — 250 UAH",
     "nav-home": "Home",
     "nav-classes": "Classes",
     "nav-locations": "Locations",
     "nav-about": "About",
-    "dir-fly-yoga": "Fly Yoga",
-    "dir-ishvara-yoga": "Ishvara Yoga",
-    "dir-iyengar-yoga": "Iyengar Yoga",
-    "dir-pilates": "Pilates",
-    "dir-functional-training": "Functional Training",
-    "dir-fly-kids": "Fly Kids",
-    "dir-pregnancy-yoga": "Pregnancy Yoga",
-    "dir-adho-yoga": "Adho Yoga",
-    "dir-private-lesson": "Private Lesson",
-    "cta-button": "Book a class",
-    "address-1": "📍 Vyshhorod, Shevchenka Ave 6A",
-    "address-2": "📍 KM Mizhrichchia, Fistashkova St 60",
-    "nav-btn-1": "Navigation",
-    "nav-btn-2": "Navigation",
-    "btn-schedule": "Schedule",
-    "btn-price": "Subscriptions",
+
+    // Reviews
+    "reviews-title": "Reviews",
+    "review-1-text": "\"I was nervous to go, but it's calm here with no pressure. Already my third month.\"",
+    "review-1-author": "— Oksana",
+    "review-2-text": "\"My lower back hurt from desk work. After fly yoga it got much better.\"",
+    "review-2-author": "— Maryna",
 
     // For whom block
-    "for-whom-title": "Choose a class for your state of mind",
-    "for-whom-subtitle": "At ERRA SPACE we help you find a format where your body feels safe and your mind — calm.",
+    "for-whom-title": "Choose a class for your state",
+    "for-whom-subtitle": "Not sure where to start? We'll help you choose.",
     "fw-1-title": "I'm a beginner and I'm nervous",
     "fw-1-text": "Gentle classes with attention to body, breath and grounding. No rush, no 'push through the pain'.",
     "fw-1-rec": "We recommend: Ishvara Yoga, Iyengar Yoga",
@@ -209,7 +202,24 @@ const translations = {
     "fw-4-text": "A safe space with attentive support at every stage.",
     "fw-4-rec": "We recommend: Pregnancy Yoga",
     "fw-4-btn": "Book a class",
-    "for-whom-hint": "Not sure which format is right for you? Just reach out — we'll help you choose.",
+    "for-whom-hint": "Not sure which format is right for you? Just reach out — we'll help.",
+
+    "dir-fly-yoga": "Fly Yoga",
+    "dir-ishvara-yoga": "Ishvara Yoga",
+    "dir-iyengar-yoga": "Iyengar Yoga",
+    "dir-pilates": "Pilates",
+    "dir-functional-training": "Functional Training",
+    "dir-fly-kids": "Fly Kids",
+    "dir-pregnancy-yoga": "Pregnancy Yoga",
+    "dir-adho-yoga": "Adho Yoga",
+    "dir-private-lesson": "Private Lesson",
+    "cta-button": "Book a class",
+    "address-1": "📍 Vyshhorod, Shevchenka Ave 6A",
+    "address-2": "📍 KM Mizhrichchia, Fistashkova St 60",
+    "nav-btn-1": "Navigation",
+    "nav-btn-2": "Navigation",
+    "btn-schedule": "Schedule",
+    "btn-price": "Subscriptions",
 
     // Closing block
     "closing-text": "You don't have to be ready.",
@@ -326,11 +336,6 @@ function setLanguage(lang) {
   if (safeGet("phone-label-2"))     safeGet("phone-label-2").textContent     = dict.phoneLabel2 || "";
   if (safeGet("banner-text"))       safeGet("banner-text").textContent       = dict.bannerText || "";
   if (safeGet("banner-subtext"))    safeGet("banner-subtext").textContent    = dict.bannerSubtext || "";
-
-  // hero-tagline має перенос рядка
-  if (safeGet("hero-tagline") && dict["hero-tagline"]) {
-    safeGet("hero-tagline").innerHTML = dict["hero-tagline"].replace("\n", "<br>");
-  }
 }
 
 // Відкриття модального вікна
@@ -381,7 +386,21 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
-// Застосувати збережену мову при завантаженні
+// Sticky CTA — ховати коли hero-кнопка у viewport
 document.addEventListener('DOMContentLoaded', () => {
   setLanguage(currentLang);
+
+  const stickyCta = document.getElementById('sticky-cta');
+  if (stickyCta) {
+    const heroBtn = document.getElementById('hero-main-btn');
+    if (heroBtn && 'IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          stickyCta.classList.toggle('hidden', entry.isIntersecting);
+        },
+        { threshold: 0.1 }
+      );
+      observer.observe(heroBtn);
+    }
+  }
 });
