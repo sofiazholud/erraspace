@@ -710,7 +710,7 @@ section, footer { animation: fadeInUp 0.8s ease both; }
   }
   .card { border-radius: 8px; }
   .card img { aspect-ratio: 3 / 4; max-height: none; }
-  .card p { font-size: 0.6rem; margin: 4px 0; padding: 0 2px; }
+  .card p { font-size: 0.85rem; margin: 4px 0; padding: 0 2px; }
 
   /* Описи напрямків — збільшено для мобільного */
   .class-item {
