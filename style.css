@@ -794,3 +794,148 @@ section, footer { animation: fadeInUp 0.8s ease both; }
   .trainer-desc { font-size: 0.98rem; }
   .trainer-info { padding: 16px 14px 20px; }
 }
+
+/* ═══ ДОДАТИ В КІНЕЦЬ style.css ═══ */
+
+/* ── Нові стилі відгуків ── */
+.reviews-rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.reviews-google-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reviews-score {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+.reviews-stars {
+  color: #FBBC05;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+.reviews-count {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.5);
+  font-style: italic;
+}
+.reviews-google-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.25s;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.04em;
+}
+.reviews-google-btn:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border-color: rgba(255,255,255,0.5);
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.review-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.review-meta {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  margin-top: 2px;
+}
+.review-stars-small {
+  color: #FBBC05;
+  font-size: 0.95rem;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* ── FAQ ── */
+.faq-section { text-align: left; }
+.faq-list {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq-item {
+  background: rgba(232,228,210,0.06);
+  border: 1px solid rgba(232,228,210,0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+.faq-item:hover { background: rgba(232,228,210,0.1); }
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  text-align: left;
+  gap: 12px;
+}
+.faq-icon {
+  font-size: 1.4rem;
+  color: rgba(255,255,255,0.5);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.faq-question.open .faq-icon {
+  transform: rotate(45deg);
+  color: #fff;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.faq-answer p {
+  padding: 0 22px 20px;
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.75;
+}
+@media (max-width: 480px) {
+  .faq-question { font-size: 1rem; padding: 14px 16px; }
+  .faq-answer p { padding: 0 16px 16px; }
+}
