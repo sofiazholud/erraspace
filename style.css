@@ -601,6 +601,76 @@ footer a {
 }
 footer a:hover { color: #ffffff; }
 
+/* ── Тренери ── */
+.trainers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+.trainer-card {
+  background: rgba(232,228,210,0.07);
+  border: 1px solid rgba(232,228,210,0.11);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+.trainer-card:hover {
+  background: rgba(232,228,210,0.12);
+}
+.trainer-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: rgba(232,228,210,0.06);
+}
+.trainer-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+.trainer-info {
+  padding: 20px 22px 24px;
+}
+.trainer-category {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.42);
+  margin-bottom: 6px;
+}
+.trainer-name {
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin: 0 0 6px;
+  color: #fff;
+}
+.trainer-directions {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.50);
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+.trainer-desc {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.84);
+  line-height: 1.72;
+  margin: 0;
+}
+/* Широка картка директора */
+.trainer-card.director {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.trainer-card.director .trainer-photo {
+  aspect-ratio: 3 / 4;
+}
+
 /* Анімація */
 section, footer { animation: fadeInUp 0.8s ease both; }
 @keyframes fadeInUp {
@@ -715,4 +785,12 @@ section, footer { animation: fadeInUp 0.8s ease both; }
 
   .about-grid { grid-template-columns: 1fr; }
   .about-card-text { font-size: 1rem; }
+
+  /* Тренери — одна колонка на мобільному */
+  .trainers-grid { grid-template-columns: 1fr; gap: 16px; }
+  .trainer-card.director { grid-template-columns: 1fr; }
+  .trainer-card.director .trainer-photo { aspect-ratio: 1 / 1; }
+  .trainer-name { font-size: 1.25rem; }
+  .trainer-desc { font-size: 0.98rem; }
+  .trainer-info { padding: 16px 14px 20px; }
 }
