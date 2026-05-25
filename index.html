@@ -30,13 +30,11 @@
 </head>
 <body>
 
-  <!-- Перемикач мов -->
   <div class="lang-switch">
     <button onclick="setLanguage('ua')">UA</button>
     <button onclick="setLanguage('en')">EN</button>
   </div>
 
-  <!-- Шапка / Hero — чистий перший екран -->
   <header class="hero-header">
     <p class="hero-location" id="hero-location">Вишгород · Міжріччя</p>
     <h1 id="title">ERRA SPACE</h1>
@@ -49,7 +47,6 @@
     <p class="hero-trust-line" id="hero-trust-line">Підійде для новачків · Безпечне навантаження</p>
   </header>
 
-  <!-- Навігація між сторінками -->
   <nav class="page-nav">
     <a href="index.html" class="page-nav-link active" id="nav-home">Головна</a>
     <a href="prices.html" class="page-nav-link" id="nav-prices">Ціни</a>
@@ -88,56 +85,51 @@
       </div>
     </section>
 
-    <!-- БЛОК "Обери заняття під свій стан" -->
-<section id="for-whom">
-  <h2 id="for-whom-title">Обери заняття під свій стан</h2>
-  <p class="section-subtitle" id="for-whom-subtitle">Не знаєш з чого почати? Ми підкажемо.</p>
-  <div class="for-whom-grid">
+    <!-- Для кого -->
+    <section id="for-whom">
+      <h2 id="for-whom-title">Обери заняття під свій стан</h2>
+      <p class="section-subtitle" id="for-whom-subtitle">Не знаєш з чого почати? Ми підкажемо.</p>
+      <div class="for-whom-grid">
+        <div class="for-whom-card">
+          <div class="for-whom-icon">🧘‍♀️</div>
+          <div class="for-whom-card-title" id="fw-1-title">Я новачок і хвилююся</div>
+          <div class="for-whom-card-text" id="fw-1-text">М'які заняття з увагою до тіла, дихання і опори. Без гонитви й «треба через біль».</div>
+          <div class="for-whom-rec" id="fw-1-rec">Рекомендуємо: Ішвара-йога, Йога Айенгара</div>
+          <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%99%8F%0A%0A%D0%AF%20%D0%BD%D0%BE%D0%B2%D0%B0%D1%87%D0%BE%D0%BA%20%D1%96%20%D1%85%D0%B2%D0%B8%D0%BB%D1%8E%D1%8E%D1%81%D1%8F%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%BC%27%D1%8F%D0%BA%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D1%82%D1%8F"
+             target="_blank" rel="noopener noreferrer"
+             class="cta-button primary for-whom-btn" id="fw-1-btn">Записатися на пробне заняття</a>
+        </div>
+        <div class="for-whom-card">
+          <div class="for-whom-icon">💻</div>
+          <div class="for-whom-card-title" id="fw-2-title">Болить спина / сидяча робота</div>
+          <div class="for-whom-card-text" id="fw-2-text">Знімаємо напругу, розвантажуємо хребет, повертаємо легкість руху.</div>
+          <div class="for-whom-rec" id="fw-2-rec">Рекомендуємо: Флай-йога, Пілатес</div>
+          <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%92%BB%0A%0A%D0%91%D0%BE%D0%BB%D0%B8%D1%82%D1%8C%20%D1%81%D0%BF%D0%B8%D0%BD%D0%B0%20%2F%20%D1%81%D0%B8%D0%B4%D1%8F%D1%87%D0%B0%20%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C%20%D0%A4%D0%BB%D0%B0%D0%B9-%D0%B9%D0%BE%D0%B3%D0%B0%20%D1%82%D0%B0%20%D0%9F%D1%96%D0%BB%D0%B0%D1%82%D0%B5%D1%81"
+             target="_blank" rel="noopener noreferrer"
+             class="cta-button primary for-whom-btn" id="fw-2-btn">Записатися</a>
+        </div>
+        <div class="for-whom-card">
+          <div class="for-whom-icon">🔥</div>
+          <div class="for-whom-card-title" id="fw-3-title">Хочу навантаження і тонус</div>
+          <div class="for-whom-card-text" id="fw-3-text">Динамічні, силові заняття без хаосу — з відчуттям тіла і контролю.</div>
+          <div class="for-whom-rec" id="fw-3-rec">Рекомендуємо: Адхо-йога, Функціональні тренування</div>
+          <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%94%A5%0A%0A%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F%20%D1%96%20%D1%82%D0%BE%D0%BD%D1%83%D1%81%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C%20%D0%90%D0%B4%D1%85%D0%BE-%D0%B9%D0%BE%D0%B3%D0%B0%20%D1%82%D0%B0%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%96%20%D1%82%D1%80%D0%B5%D0%BD%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F"
+             target="_blank" rel="noopener noreferrer"
+             class="cta-button primary for-whom-btn" id="fw-3-btn">Записатися</a>
+        </div>
+        <div class="for-whom-card">
+          <div class="for-whom-icon">🤍</div>
+          <div class="for-whom-card-title" id="fw-4-title">Вагітність</div>
+          <div class="for-whom-card-text" id="fw-4-text">Безпечний простір і уважний супровід на кожному етапі.</div>
+          <div class="for-whom-rec" id="fw-4-rec">Рекомендуємо: Йога для вагітних</div>
+          <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%A4%8D%0A%0A%D0%92%D0%B0%D0%B3%D1%96%D1%82%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C%20%D0%B9%D0%BE%D0%B3%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D0%B0%D0%B3%D1%96%D1%82%D0%BD%D0%B8%D1%85"
+             target="_blank" rel="noopener noreferrer"
+             class="cta-button primary for-whom-btn" id="fw-4-btn">Записатися</a>
+        </div>
+      </div>
+      <p class="for-whom-hint" id="for-whom-hint">Ми підкажемо формат, якщо сумніваєтесь — просто напишіть нам.</p>
+    </section>
 
-    <div class="for-whom-card">
-      <div class="for-whom-icon">🧘‍♀️</div>
-      <div class="for-whom-card-title" id="fw-1-title">Я новачок і хвилююся</div>
-      <div class="for-whom-card-text" id="fw-1-text">М'які заняття з увагою до тіла, дихання і опори. Без гонитви й «треба через біль».</div>
-      <div class="for-whom-rec" id="fw-1-rec">Рекомендуємо: Ішвара-йога, Йога Айенгара</div>
-      <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%99%8F%0A%0A%D0%AF%20%D0%BD%D0%BE%D0%B2%D0%B0%D1%87%D0%BE%D0%BA%20%D1%96%20%D1%85%D0%B2%D0%B8%D0%BB%D1%8E%D1%8E%D1%81%D1%8F%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%BC%27%D1%8F%D0%BA%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D1%82%D1%8F"
-         target="_blank" rel="noopener noreferrer"
-         class="cta-button primary for-whom-btn" id="fw-1-btn">Записатися на пробне заняття</a>
-    </div>
-
-    <div class="for-whom-card">
-      <div class="for-whom-icon">💻</div>
-      <div class="for-whom-card-title" id="fw-2-title">Болить спина / сидяча робота</div>
-      <div class="for-whom-card-text" id="fw-2-text">Знімаємо напругу, розвантажуємо хребет, повертаємо легкість руху.</div>
-      <div class="for-whom-rec" id="fw-2-rec">Рекомендуємо: Флай-йога, Пілатес</div>
-      <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%92%BB%0A%0A%D0%91%D0%BE%D0%BB%D0%B8%D1%82%D1%8C%20%D1%81%D0%BF%D0%B8%D0%BD%D0%B0%20%2F%20%D1%81%D0%B8%D0%B4%D1%8F%D1%87%D0%B0%20%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C%20%D0%A4%D0%BB%D0%B0%D0%B9-%D0%B9%D0%BE%D0%B3%D0%B0%20%D1%82%D0%B0%20%D0%9F%D1%96%D0%BB%D0%B0%D1%82%D0%B5%D1%81"
-         target="_blank" rel="noopener noreferrer"
-         class="cta-button primary for-whom-btn" id="fw-2-btn">Записатися</a>
-    </div>
-
-    <div class="for-whom-card">
-      <div class="for-whom-icon">🔥</div>
-      <div class="for-whom-card-title" id="fw-3-title">Хочу навантаження і тонус</div>
-      <div class="for-whom-card-text" id="fw-3-text">Динамічні, силові заняття без хаосу — з відчуттям тіла і контролю.</div>
-      <div class="for-whom-rec" id="fw-3-rec">Рекомендуємо: Адхо-йога, Функціональні тренування</div>
-      <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%94%A5%0A%0A%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F%20%D1%96%20%D1%82%D0%BE%D0%BD%D1%83%D1%81%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C%20%D0%90%D0%B4%D1%85%D0%BE-%D0%B9%D0%BE%D0%B3%D0%B0%20%D1%82%D0%B0%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%96%20%D1%82%D1%80%D0%B5%D0%BD%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F"
-         target="_blank" rel="noopener noreferrer"
-         class="cta-button primary for-whom-btn" id="fw-3-btn">Записатися</a>
-    </div>
-
-    <div class="for-whom-card">
-      <div class="for-whom-icon">🤍</div>
-      <div class="for-whom-card-title" id="fw-4-title">Вагітність</div>
-      <div class="for-whom-card-text" id="fw-4-text">Безпечний простір і уважний супровід на кожному етапі.</div>
-      <div class="for-whom-rec" id="fw-4-rec">Рекомендуємо: Йога для вагітних</div>
-      <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%A4%8D%0A%0A%D0%92%D0%B0%D0%B3%D1%96%D1%82%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C%20%D0%B9%D0%BE%D0%B3%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D0%B0%D0%B3%D1%96%D1%82%D0%BD%D0%B8%D1%85"
-         target="_blank" rel="noopener noreferrer"
-         class="cta-button primary for-whom-btn" id="fw-4-btn">Записатися</a>
-    </div>
-
-  </div>
-  <p class="for-whom-hint" id="for-whom-hint">Ми підкажемо формат, якщо сумніваєтесь — просто напишіть нам.</p>
-</section>
-    
     <!-- Напрямки -->
     <section>
       <h2 id="directions-title">Напрямки</h2>
@@ -184,178 +176,72 @@
       </div>
     </section>
 
-<!-- ═══ БЛОК ВІДГУКІВ ═══ -->
-<!-- Вставити в index.html перед завершальним блоком (.closing-block) -->
+    <!-- Відгуки -->
+    <section class="reviews-section">
+      <h2 id="reviews-title">Відгуки</h2>
+      <p class="section-subtitle" id="reviews-subtitle">Що кажуть наші клієнти</p>
 
-<section class="reviews-section">
-  <h2 id="reviews-title">Відгуки</h2>
-  <p class="section-subtitle" id="reviews-subtitle">Що кажуть наші клієнти</p>
-
-  <!-- Рейтинг Google -->
-  <div class="reviews-rating-row">
-    <div class="reviews-google-badge">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
-        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-      </svg>
-      <span class="reviews-score">5.0</span>
-      <div class="reviews-stars">★★★★★</div>
-      <span class="reviews-count" id="reviews-count">3 відгуки</span>
-    </div>
-    <a href="https://share.google/4hTzPG47UY7pCV8C4"
-       target="_blank" rel="noopener noreferrer"
-       class="reviews-google-btn" id="reviews-google-btn">
-      Читати в Google
-    </a>
-  </div>
-
-  <!-- Картки відгуків -->
-  <div class="reviews-grid">
-
-    <div class="review-card">
-      <div class="review-header">
-        <div class="review-avatar" style="background:rgba(234,67,53,0.2); color:#EA4335;">Я</div>
-        <div>
-          <div class="review-name">Яна Пономаренко</div>
-          <div class="review-meta" id="review-1-meta">Local Guide · рік тому</div>
+      <div class="reviews-rating-row">
+        <div class="reviews-google-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+          <span class="reviews-score">5.0</span>
+          <div class="reviews-stars">★★★★★</div>
+          <span class="reviews-count" id="reviews-count">3 відгуки</span>
         </div>
-        <div class="review-stars-small">★★★★★</div>
+        <a href="https://maps.app.goo.gl/r5swhJfu5CrqNYNb6"
+           target="_blank" rel="noopener noreferrer"
+           class="reviews-google-btn" id="reviews-google-btn">Читати в Google</a>
       </div>
-      <p class="review-text" id="review-1-text">«Я і моя дитина вже рік як займаємось в цьому прекрасному місці. Близькість до дому і кваліфікація тренерів на вищому рівні! Дякую що ви є!»</p>
-    </div>
 
-    <div class="review-card">
-      <div class="review-header">
-        <div class="review-avatar" style="background:rgba(66,133,244,0.2); color:#4285F4;">А</div>
-        <div>
-          <div class="review-name">Анна Колпачова</div>
-          <div class="review-meta" id="review-2-meta">2 тижні тому</div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background:rgba(234,67,53,0.2); color:#EA4335;">Я</div>
+            <div>
+              <div class="review-name">Яна Пономаренко</div>
+              <div class="review-meta" id="review-1-meta">Local Guide · рік тому</div>
+            </div>
+            <div class="review-stars-small">★★★★★</div>
+          </div>
+          <p class="review-text" id="review-1-text">«Я і моя дитина вже рік як займаємось в цьому прекрасному місці. Близькість до дому і кваліфікація тренерів на вищому рівні! Дякую що ви є!»</p>
         </div>
-        <div class="review-stars-small">★★★★★</div>
-      </div>
-      <p class="review-text" id="review-2-text">«Чудова студія, багато цікавих напрямків, і є неймовірно круті тренери! Це супер профі у напрямку пілатесу всіх рівнів.»</p>
-    </div>
 
-    <div class="review-card">
-      <div class="review-header">
-        <div class="review-avatar" style="background:rgba(52,168,83,0.2); color:#34A853;">Н</div>
-        <div>
-          <div class="review-name">Наталя Трофімова</div>
-          <div class="review-meta" id="review-3-meta">рік тому</div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background:rgba(66,133,244,0.2); color:#4285F4;">А</div>
+            <div>
+              <div class="review-name">Анна Колпачова</div>
+              <div class="review-meta" id="review-2-meta">2 тижні тому</div>
+            </div>
+            <div class="review-stars-small">★★★★★</div>
+          </div>
+          <p class="review-text" id="review-2-text">«Чудова студія, багато цікавих напрямків, і є неймовірно круті тренери! Це супер профі у напрямку пілатесу всіх рівнів.»</p>
         </div>
-        <div class="review-stars-small">★★★★★</div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background:rgba(52,168,83,0.2); color:#34A853;">Н</div>
+            <div>
+              <div class="review-name">Наталя Трофімова</div>
+              <div class="review-meta" id="review-3-meta">рік тому</div>
+            </div>
+            <div class="review-stars-small">★★★★★</div>
+          </div>
+          <p class="review-text" id="review-3-text">«★★★★★»</p>
+        </div>
       </div>
-      <p class="review-text" id="review-3-text">«★★★★★»</p>
-    </div>
 
-  </div>
-
-  <div style="text-align:center; margin-top:24px;">
-    <a href="https://share.google/4hTzPG47UY7pCV8C4"
-       target="_blank" rel="noopener noreferrer"
-       class="cta-button" id="reviews-btn-more">Залишити відгук в Google</a>
-  </div>
-</section>
-
-
-<!-- ═══ CSS — додати в style.css ═══ -->
-<!--
-.reviews-rating-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 28px;
-}
-.reviews-google-badge {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.reviews-score {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1;
-}
-.reviews-stars {
-  color: #FBBC05;
-  font-size: 1.3rem;
-  letter-spacing: 2px;
-}
-.reviews-count {
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.5);
-  font-style: italic;
-}
-.reviews-google-btn {
-  display: inline-block;
-  padding: 10px 22px;
-  border: 1px solid rgba(255,255,255,0.3);
-  border-radius: 8px;
-  color: rgba(255,255,255,0.8);
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: all 0.25s;
-  font-family: 'Cormorant Garamond', serif;
-  letter-spacing: 0.04em;
-}
-.reviews-google-btn:hover {
-  background: rgba(255,255,255,0.1);
-  color: #fff;
-  border-color: rgba(255,255,255,0.5);
-}
-.review-card {
-  background: rgba(232,228,210,0.06);
-  border-radius: 12px;
-  padding: 22px 24px;
-  border: 1px solid rgba(232,228,210,0.10);
-  text-align: left;
-}
-.review-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 14px;
-}
-.review-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  font-weight: 700;
-  flex-shrink: 0;
-}
-.review-name {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
-}
-.review-meta {
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.4);
-  margin-top: 2px;
-}
-.review-stars-small {
-  color: #FBBC05;
-  font-size: 0.95rem;
-  margin-left: auto;
-  flex-shrink: 0;
-}
-.review-text {
-  font-size: 1rem;
-  color: rgba(255,255,255,0.82);
-  line-height: 1.7;
-  font-style: italic;
-  margin: 0;
-}
--->
+      <div style="text-align:center; margin-top:24px;">
+        <a href="https://maps.app.goo.gl/r5swhJfu5CrqNYNb6"
+           target="_blank" rel="noopener noreferrer"
+           class="cta-button" id="reviews-btn-more">Залишити відгук в Google</a>
+      </div>
+    </section>
 
     <!-- Завершальний емоційний блок -->
     <section class="closing-block">
@@ -377,7 +263,6 @@
     </p>
   </footer>
 
-  <!-- Sticky кнопка (мобільна) -->
   <div class="sticky-cta" id="sticky-cta">
     <a href="https://t.me/ERRA_SPASE"
        target="_blank" rel="noopener noreferrer"
