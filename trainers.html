@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* ── Trainer cards ── */
     .trainers-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -71,8 +70,6 @@
       line-height: 1.72;
       margin: 0;
     }
-
-    /* Director highlight */
     .trainer-card.director {
       grid-column: 1 / -1;
       display: grid;
@@ -81,7 +78,6 @@
     .trainer-card.director .trainer-photo {
       aspect-ratio: 3 / 4;
     }
-
     @media (max-width: 768px) {
       .trainer-card.director {
         grid-template-columns: 1fr;
@@ -114,11 +110,11 @@
   </header>
 
   <nav class="page-nav">
-    <a href="index.html"    class="page-nav-link" id="nav-home">Головна</a>
-    <a href="classes.html"  class="page-nav-link" id="nav-classes">Напрямки</a>
-    <a href="trainers.html" class="page-nav-link active" id="nav-trainers">Тренери</a>
+    <a href="index.html"     class="page-nav-link" id="nav-home">Головна</a>
+    <a href="classes.html"   class="page-nav-link" id="nav-classes">Напрямки</a>
+    <a href="trainers.html"  class="page-nav-link active" id="nav-trainers">Тренери</a>
     <a href="locations.html" class="page-nav-link" id="nav-locations">Локації</a>
-    <a href="about.html"    class="page-nav-link" id="nav-about">Про нас</a>
+    <a href="about.html"     class="page-nav-link" id="nav-about">Про нас</a>
   </nav>
 
   <main>
@@ -129,168 +125,149 @@
 
       <div class="trainers-grid">
 
-  <!-- 1. Альона Єрохіна — директор -->
-  <div class="trainer-card director">
-    <div class="trainer-photo">
-      <img src="erokhina.jpg" alt="Альона Єрохіна" loading="lazy">
-    </div>
-    <div class="trainer-info">
-      <div class="trainer-category" id="t-erokhina-cat">ТОП · Керівниця студії</div>
-      <div class="trainer-name" id="t-erokhina-name">Альона Єрохіна</div>
-      <div class="trainer-directions" id="t-erokhina-dir">Йога · Флай-йога</div>
-      <p class="trainer-desc" id="t-erokhina-desc">
-        <strong>🌿 Про підхід:</strong><br>
-        Засновниця та керівниця ERRA SPACE. Для Альони йога — це не лише практика на килимку, а те, що проходить крізь кожен момент життя. Через тіло ми вчимося керувати увагою, думками та станом.
+        <!-- 1. Альона Єрохіна -->
+        <div class="trainer-card director">
+          <div class="trainer-photo">
+            <img src="erokhina.jpg" alt="Альона Єрохіна" loading="lazy">
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-category" id="t-erokhina-cat">ТОП · Керівниця студії</div>
+            <div class="trainer-name" id="t-erokhina-name">Альона Єрохіна</div>
+            <div class="trainer-directions" id="t-erokhina-dir">Йога · Флай-йога</div>
+            <p class="trainer-desc" id="t-erokhina-desc">
+              <strong>🌿 Про підхід:</strong><br>
+              Засновниця та керівниця ERRA SPACE. Для Альони йога — це не лише практика на килимку, а те, що проходить крізь кожен момент життя. Через тіло ми вчимося керувати увагою, думками та станом.
+              <br><br><strong>🪁 Флай-йога:</strong><br>
+              Відчуття опори та легкості одночасно — декомпресія, мобільність і сила без тиску на тіло. Особлива увага безпеці у гамаку, правильним підводкам і відбудові.
+              <br><br><strong>👩‍🏫 Також навчає викладачів:</strong><br>
+              Передає методику, логіку побудови занять і принципи безпечної роботи з групою.
+              <br><br><strong>✨ У практиці:</strong><br>
+              Відбудова асан, пранаяма, робота з диханням, м'яка стабілізація корпусу, фокус і внутрішній спокій.
+            </p>
+          </div>
+        </div>
 
-        <br><br><strong>🪁 Флай-йога:</strong><br>
-        Відчуття опори та легкості одночасно — декомпресія, мобільність і сила без тиску на тіло. Особлива увага безпеці у гамаку, правильним підводкам і відбудові.
+        <!-- 2. Арнаутова Світлана -->
+        <div class="trainer-card">
+          <div class="trainer-photo">
+            <img src="arnautova.jpg" alt="Арнаутова Світлана" loading="lazy">
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-category" id="t-arnautova-cat">Майстер</div>
+            <div class="trainer-name" id="t-arnautova-name">Арнаутова Світлана</div>
+            <div class="trainer-directions" id="t-arnautova-dir">Флай Кідс</div>
+            <p class="trainer-desc" id="t-arnautova-desc">
+              <strong>📌 4 принципи роботи:</strong><br>
+              Індивідуальний підхід до кожної дитини · дисципліна як основа продуктивності · командна робота · здоров'я через рух.
+              <br><br><strong>🤝 Підхід до дітей:</strong><br>
+              Знає, як допомогти дитині повірити в себе. Коли дитина боїться нового елементу — підтримує, дає впевненість і радіє разом із нею першим досягненням.
+              <br><br><strong>🎯 Результат:</strong><br>
+              Переконана: після першого місяця тренувань — перші результати, помітні і дитині, і батькам.
+            </p>
+          </div>
+        </div>
 
-        <br><br><strong>👩‍🏫 Також навчає викладачів:</strong><br>
-        Передає методику, логіку побудови занять і принципи безпечної роботи з групою.
+        <!-- 3. Марина Данілова -->
+        <div class="trainer-card">
+          <div class="trainer-photo">
+            <img src="danilova.jpg" alt="Марина Данілова" loading="lazy">
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-category" id="t-danilova-cat">Майстер</div>
+            <div class="trainer-name" id="t-danilova-name">Марина Данілова</div>
+            <div class="trainer-directions" id="t-danilova-dir">Пілатес · Флай-йога · Флай-пілатес</div>
+            <p class="trainer-desc" id="t-danilova-desc">
+              <strong>🌿 Про підхід:</strong><br>
+              В команді ERRA SPACE майже з відкриття студії. Поєднує пілатес і флай-напрямки: сила без перенапруги, стабілізація центру, мобільність і контроль дихання.
+              <br><br><strong>🎯 Головний принцип:</strong><br>
+              Не «терпіти», а чути тіло — працювати поступово й якісно. Підходить тим, хто хоче тренування з увагою до деталей і м'яким прогресом.
+              <br><br><strong>📜 Кваліфікація:</strong><br>
+              Флай-йога (авт. курс Альони Єрохіної) · пілатес (Анна Ковтун) · функціональні тренування (Академія Фітнесу-Україна) · флай-пілатес (FGEGM).
+            </p>
+          </div>
+        </div>
 
-        <br><br><strong>✨ У практиці:</strong><br>
-        Відбудова асан, пранаяма, робота з диханням, м'яка стабілізація корпусу, фокус і внутрішній спокій.
-      </p>
-    </div>
-  </div>
+        <!-- 4. Підгорна Яна -->
+        <div class="trainer-card">
+          <div class="trainer-photo">
+            <img src="pidgorna.jpg" alt="Підгорна Яна" loading="lazy">
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-category" id="t-pidgorna-cat">ТОП</div>
+            <div class="trainer-name" id="t-pidgorna-name">Підгорна Яна</div>
+            <div class="trainer-directions" id="t-pidgorna-dir">Функціональні тренування</div>
+            <p class="trainer-desc" id="t-pidgorna-desc">
+              <strong>📌 Спеціалізація:</strong><br>
+              Сертифікований тренер з функціонального тренування. Фокус — на природних, багатосуглобових рухах, які допомагають тілу гармонійно функціонувати у реальному житті.
+              <br><br><strong>👤 Для кого:</strong><br>
+              Тягне ногу, болить спина або важко підніматися сходами — Яна знає, що робити.
+              <br><br><strong>✨ Формат:</strong><br>
+              Функціональне тренування зі стретчингом — для міцності, рухливості та легкості щодня.
+            </p>
+          </div>
+        </div>
 
-  <!-- 2. Арнаутова Світлана -->
-  <div class="trainer-card">
-    <div class="trainer-photo">
-      <img src="arnautova.jpg" alt="Арнаутова Світлана" loading="lazy">
-    </div>
-    <div class="trainer-info">
-      <div class="trainer-category" id="t-arnautova-cat">Майстер</div>
-      <div class="trainer-name" id="t-arnautova-name">Арнаутова Світлана</div>
-      <div class="trainer-directions" id="t-arnautova-dir">Флай Кідс</div>
-      <p class="trainer-desc" id="t-arnautova-desc">
-        <strong>📌 4 принципи роботи:</strong><br>
-        Індивідуальний підхід до кожної дитини · дисципліна як основа продуктивності · командна робота · здоров'я через рух.
+        <!-- 5. Анна Аніс -->
+        <div class="trainer-card">
+          <div class="trainer-photo">
+            <img src="anis.jpg" alt="Анна Аніс" loading="lazy">
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-category" id="t-anis-cat">ТОП</div>
+            <div class="trainer-name" id="t-anis-name">Анна Аніс</div>
+            <div class="trainer-directions" id="t-anis-dir">Йога Айенгара · Йогатерапія · Пілатес</div>
+            <p class="trainer-desc" id="t-anis-desc">
+              <strong>📖 Досвід:</strong><br>
+              Понад 5 років викладає йогу, 3 роки — пілатес, 14 років особистої практики.
+              <br><br><strong>📌 Методика:</strong><br>
+              Поєднує йогу Айенгара, йогатерапію та пілатес з принципами методів Франкліна і Фельденкрайза.
+              <br><br><strong>👤 Для кого:</strong><br>
+              Біль або обмеження рухливості · відновлення після травм · бажання рухатися розумніше, а не інтенсивніше.
+              <br><br><strong>🎯 Головна мета:</strong><br>
+              Безпека і відсутність болю. Якість руху важливіша за складність.
+            </p>
+          </div>
+        </div>
 
-        <br><br><strong>🤝 Підхід до дітей:</strong><br>
-        Знає, як допомогти дитині повірити в себе. Коли дитина боїться нового елементу — підтримує, дає впевненість і радіє разом із нею першим досягненням.
+        <!-- 6. Євгенія Богомол -->
+        <div class="trainer-card">
+          <div class="trainer-photo">
+            <img src="bogomol.jpg" alt="Євгенія Богомол" loading="lazy">
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-category" id="t-bogomol-cat">ТОП</div>
+            <div class="trainer-name" id="t-bogomol-name">Євгенія Богомол</div>
+            <div class="trainer-directions" id="t-bogomol-dir">Ішвара Йога</div>
+            <p class="trainer-desc" id="t-bogomol-desc">
+              <strong>🌿 Про напрям:</strong><br>
+              Сертифікований викладач за методикою Ішвара йоги. Практикує понад шість років. Ішвара — це йога внутрішньої цілісності.
+              <br><br><strong>📌 На заняттях:</strong><br>
+              Відлаштовує злагоджену роботу м'язів, приділяє велику увагу глибоким м'язам спини та рухливості кульшових суглобів.
+              <br><br><strong>🎯 Головна мета:</strong><br>
+              Позбавити від напруги зовнішніх м'язів, відчути легкість у спині та знайти внутрішній баланс у всьому тілі.
+            </p>
+          </div>
+        </div>
 
-        <br><br><strong>🎯 Результат:</strong><br>
-        Переконана: після першого місяця тренувань — перші результати, помітні і дитині, і батькам.
-      </p>
-    </div>
-  </div>
-
-  <!-- 3. Марина Данілова -->
-  <div class="trainer-card">
-    <div class="trainer-photo">
-      <img src="danilova.jpg" alt="Марина Данілова" loading="lazy">
-    </div>
-    <div class="trainer-info">
-      <div class="trainer-category" id="t-danilova-cat">Майстер</div>
-      <div class="trainer-name" id="t-danilova-name">Марина Данілова</div>
-      <div class="trainer-directions" id="t-danilova-dir">Пілатес · Флай-йога · Флай-пілатес</div>
-      <p class="trainer-desc" id="t-danilova-desc">
-        <strong>🌿 Про підхід:</strong><br>
-        В команді ERRA SPACE майже з відкриття студії. Поєднує пілатес і флай-напрямки: сила без перенапруги, стабілізація центру, мобільність і контроль дихання.
-
-        <br><br><strong>🎯 Головний принцип:</strong><br>
-        Не «терпіти», а чути тіло — працювати поступово й якісно. Підходить тим, хто хоче тренування з увагою до деталей і м'яким прогресом.
-
-        <br><br><strong>📜 Кваліфікація:</strong><br>
-        Флай-йога (авт. курс Альони Єрохіної) · пілатес (Анна Ковтун) · функціональні тренування (Академія Фітнесу-Україна) · флай-пілатес (FGEGM).
-      </p>
-    </div>
-  </div>
-
-  <!-- 4. Підгорна Яна -->
-  <div class="trainer-card">
-    <div class="trainer-photo">
-      <img src="pidgorna.jpg" alt="Підгорна Яна" loading="lazy">
-    </div>
-    <div class="trainer-info">
-      <div class="trainer-category" id="t-pidgorna-cat">ТОП</div>
-      <div class="trainer-name" id="t-pidgorna-name">Підгорна Яна</div>
-      <div class="trainer-directions" id="t-pidgorna-dir">Функціональні тренування</div>
-      <p class="trainer-desc" id="t-pidgorna-desc">
-        <strong>📌 Спеціалізація:</strong><br>
-        Сертифікований тренер з функціонального тренування. Фокус — на природних, багатосуглобових рухах, які допомагають тілу гармонійно функціонувати у реальному житті.
-
-        <br><br><strong>👤 Для кого:</strong><br>
-        Тягне ногу, болить спина або важко підніматися сходами — Яна знає, що робити.
-
-        <br><br><strong>✨ Формат:</strong><br>
-        Функціональне тренування зі стретчингом — для міцності, рухливості та легкості щодня.
-      </p>
-    </div>
-  </div>
-
-  <!-- 5. Анна Аніс -->
-  <div class="trainer-card">
-    <div class="trainer-photo">
-      <img src="anis.jpg" alt="Анна Аніс" loading="lazy">
-    </div>
-    <div class="trainer-info">
-      <div class="trainer-category" id="t-anis-cat">ТОП</div>
-      <div class="trainer-name" id="t-anis-name">Анна Аніс</div>
-      <div class="trainer-directions" id="t-anis-dir">Йога Айенгара · Йогатерапія · Пілатес</div>
-      <p class="trainer-desc" id="t-anis-desc">
-        <strong>📖 Досвід:</strong><br>
-        Понад 5 років викладає йогу, 3 роки — пілатес, 14 років особистої практики.
-
-        <br><br><strong>📌 Методика:</strong><br>
-        Поєднує йогу Айенгара, йогатерапію та пілатес з принципами методів Франкліна і Фельденкрайза.
-
-        <br><br><strong>👤 Для кого:</strong><br>
-        Біль або обмеження рухливості · відновлення після травм · бажання рухатися розумніше, а не інтенсивніше.
-
-        <br><br><strong>🎯 Головна мета:</strong><br>
-        Безпека і відсутність болю. Якість руху важливіша за складність.
-      </p>
-    </div>
-  </div>
-
-  <!-- 6. Євгенія Богомол -->
-  <div class="trainer-card">
-    <div class="trainer-photo">
-      <img src="bogomol.jpg" alt="Євгенія Богомол" loading="lazy">
-    </div>
-    <div class="trainer-info">
-      <div class="trainer-category" id="t-bogomol-cat">ТОП</div>
-      <div class="trainer-name" id="t-bogomol-name">Євгенія Богомол</div>
-      <div class="trainer-directions" id="t-bogomol-dir">Ішвара Йога</div>
-      <p class="trainer-desc" id="t-bogomol-desc">
-        <strong>🌿 Про напрям:</strong><br>
-        Сертифікований викладач за методикою Ішвара йоги. Практикує понад шість років. Ішвара — це йога внутрішньої цілісності.
-
-        <br><br><strong>📌 На заняттях:</strong><br>
-        Відлаштовує злагоджену роботу м'язів, приділяє велику увагу глибоким м'язам спини та рухливості кульшових суглобів.
-
-        <br><br><strong>🎯 Головна мета:</strong><br>
-        Позбавити від напруги зовнішніх м'язів, відчути легкість у спині та знайти внутрішній баланс у всьому тілі.
-      </p>
-    </div>
-  </div>
-
-  <!-- 7. Потоцька Тетяна -->
-  <div class="trainer-card">
-    <div class="trainer-photo">
-      <img src="pototska.jpg" alt="Потоцька Тетяна" loading="lazy">
-    </div>
-    <div class="trainer-info">
-      <div class="trainer-category" id="t-pototska-cat">Майстер</div>
-      <div class="trainer-name" id="t-pototska-name">Потоцька Тетяна</div>
-      <div class="trainer-directions" id="t-pototska-dir">ADHOyoga · Групові · Онлайн · Персональні</div>
-      <p class="trainer-desc" id="t-pototska-desc">
-        <strong>🔥 Про напрям:</strong><br>
-        Тренер з ADHOyoga — напрям, що поєднує гнучкість і силу, статику й динаміку, дихання та медитацію. Веде групові, онлайн та персональні заняття.
-
-        <br><br><strong>📌 На тренуваннях:</strong><br>
-        Будує правильну техніку (положення таза, ребер, плечей, стоп), поєднує рух із диханням. Адаптує практику під рівень: варіанти для початківців і прогресії для досвідченіших.
-
-        <br><br><strong>🎯 Фокус:</strong><br>
-        На відчуттях тіла — без болю і без «терпіти».
-      </p>
-    </div>
-  </div>
-
-</div>     
-    </div>
+        <!-- 7. Потоцька Тетяна -->
+        <div class="trainer-card">
+          <div class="trainer-photo">
+            <img src="pototska.jpg" alt="Потоцька Тетяна" loading="lazy">
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-category" id="t-pototska-cat">Майстер</div>
+            <div class="trainer-name" id="t-pototska-name">Потоцька Тетяна</div>
+            <div class="trainer-directions" id="t-pototska-dir">ADHOyoga · Групові · Онлайн · Персональні</div>
+            <p class="trainer-desc" id="t-pototska-desc">
+              <strong>🔥 Про напрям:</strong><br>
+              Тренер з ADHOyoga — напрям, що поєднує гнучкість і силу, статику й динаміку, дихання та медитацію. Веде групові, онлайн та персональні заняття.
+              <br><br><strong>📌 На тренуваннях:</strong><br>
+              Будує правильну техніку (положення таза, ребер, плечей, стоп), поєднує рух із диханням. Адаптує практику під рівень: варіанти для початківців і прогресії для досвідченіших.
+              <br><br><strong>🎯 Фокус:</strong><br>
+              На відчуттях тіла — без болю і без «терпіти».
+            </p>
+          </div>
+        </div>
 
       </div>
     </section>
@@ -311,124 +288,119 @@
     </p>
   </footer>
 
-  <!-- Переклади для цієї сторінки -->
   <script>
     const trainerTranslations = {
       ua: {
-        'subtitle':           'Простір, де тіло знаходить опору, а розум — тишу.',
-        'nav-home':           'Головна',
-        'nav-classes':        'Напрямки',
-        'nav-trainers':       'Тренери',
-        'nav-locations':      'Локації',
-        'nav-about':          'Про нас',
-        'trainers-title':     '🤍 Наша команда',
-        'trainers-subtitle':  'Тренери, які поділяють один підхід: уважність до тіла, зрозуміла методика і тепла підтримка',
-        'cta-button':         'Записатися на заняття',
-        'btn-schedule':       'Розклад',
-        'footer-text':        '© 2026 Erra Studio. Всі права захищені.',
+        'subtitle':          'Простір, де тіло знаходить опору, а розум — тишу.',
+        'nav-home':          'Головна',
+        'nav-classes':       'Напрямки',
+        'nav-trainers':      'Тренери',
+        'nav-locations':     'Локації',
+        'nav-about':         'Про нас',
+        'trainers-title':    '🤍 Наша команда',
+        'trainers-subtitle': 'Тренери, які поділяють один підхід: уважність до тіла, зрозуміла методика і тепла підтримка',
+        'cta-button':        'Записатися на заняття',
+        'btn-schedule':      'Розклад',
+        'footer-text':       '© 2026 Erra Studio. Всі права захищені.',
 
-        't-erokhina-cat':   'ТОП · Керівниця студії',
-        't-erokhina-name':  'Альона Єрохіна',
-        't-erokhina-dir':   'Йога · Флай-йога',
-        't-erokhina-desc':  'Засновниця та керівниця ERRA SPACE. Для Альони йога — це не лише практика на килимку, а те, що проходить крізь кожен момент життя. Через тіло ми вчимося керувати увагою, думками та станом.<br><br>Веде флай-йогу: відчуття опори та легкості одночасно, декомпресія, мобільність і сила без тиску на тіло. Особлива увага — безпеці у гамаку, правильним підводкам і відбудові.<br><br>Також навчає викладачів: передає методику, логіку побудови занять і принципи безпечної роботи з групою. У практиці: відбудова асан, пранаяма, робота з диханням, м\'яка стабілізація корпусу, фокус і внутрішній спокій.',
+        't-erokhina-cat':  'ТОП · Керівниця студії',
+        't-erokhina-name': 'Альона Єрохіна',
+        't-erokhina-dir':  'Йога · Флай-йога',
+        't-erokhina-desc': '<strong>🌿 Про підхід:</strong><br>Засновниця та керівниця ERRA SPACE. Для Альони йога — це не лише практика на килимку, а те, що проходить крізь кожен момент життя. Через тіло ми вчимося керувати увагою, думками та станом.<br><br><strong>🪁 Флай-йога:</strong><br>Відчуття опори та легкості одночасно — декомпресія, мобільність і сила без тиску на тіло. Особлива увага безпеці у гамаку, правильним підводкам і відбудові.<br><br><strong>👩‍🏫 Також навчає викладачів:</strong><br>Передає методику, логіку побудови занять і принципи безпечної роботи з групою.<br><br><strong>✨ У практиці:</strong><br>Відбудова асан, пранаяма, робота з диханням, м\'яка стабілізація корпусу, фокус і внутрішній спокій.',
 
         't-arnautova-cat':  'Майстер',
         't-arnautova-name': 'Арнаутова Світлана',
         't-arnautova-dir':  'Флай Кідс',
-        't-arnautova-desc': 'Будує дитячі тренування на чотирьох принципах: індивідуальний підхід до кожної дитини, дисципліна як основа продуктивності, командна робота та здоров\'я через рух.<br><br>Знає, як допомогти дитині повірити в себе. Коли дитина боїться нового елементу — підтримує, дає впевненість і радіє разом із нею першим досягненням. Переконана: після першого місяця тренувань — перші результати, помітні і дитині, і батькам.',
+        't-arnautova-desc': '<strong>📌 4 принципи роботи:</strong><br>Індивідуальний підхід до кожної дитини · дисципліна як основа продуктивності · командна робота · здоров\'я через рух.<br><br><strong>🤝 Підхід до дітей:</strong><br>Знає, як допомогти дитині повірити в себе. Коли дитина боїться нового елементу — підтримує, дає впевненість і радіє разом із нею першим досягненням.<br><br><strong>🎯 Результат:</strong><br>Переконана: після першого місяця тренувань — перші результати, помітні і дитині, і батькам.',
 
         't-danilova-cat':  'Майстер',
         't-danilova-name': 'Марина Данілова',
         't-danilova-dir':  'Пілатес · Флай-йога · Флай-пілатес',
-        't-danilova-desc': 'В команді ERRA SPACE майже з відкриття студії. Поєднує пілатес і флай-напрямки: сила без перенапруги, стабілізація центру, мобільність і контроль дихання.<br><br>На заняттях важливо не «терпіти», а чути тіло, працювати поступово й якісно. Підходить тим, хто хоче тренування з увагою до деталей і м\'яким прогресом.<br><br><em>Кваліфікація:</em> флай-йога (авт. курс Альони Єрохіної), пілатес (Анна Ковтун), функціональні тренування (Академія Фітнесу-Україна), флай-пілатес (FGEGM).',
+        't-danilova-desc': '<strong>🌿 Про підхід:</strong><br>В команді ERRA SPACE майже з відкриття студії. Поєднує пілатес і флай-напрямки: сила без перенапруги, стабілізація центру, мобільність і контроль дихання.<br><br><strong>🎯 Головний принцип:</strong><br>Не «терпіти», а чути тіло — працювати поступово й якісно. Підходить тим, хто хоче тренування з увагою до деталей і м\'яким прогресом.<br><br><strong>📜 Кваліфікація:</strong><br>Флай-йога (авт. курс Альони Єрохіної) · пілатес (Анна Ковтун) · функціональні тренування (Академія Фітнесу-Україна) · флай-пілатес (FGEGM).',
 
         't-pidgorna-cat':  'ТОП',
         't-pidgorna-name': 'Підгорна Яна',
         't-pidgorna-dir':  'Функціональні тренування',
-        't-pidgorna-desc': 'Сертифікований тренер з функціонального тренування. Спеціалізується на природних, багатосуглобових рухах, які допомагають тілу гармонійно функціонувати у реальному житті.<br><br>Знає, що робити, коли тягне ногу, болить спина або важко підніматися сходами. Функціональне тренування зі стретчингом — для міцності, рухливості та легкості щодня.',
+        't-pidgorna-desc': '<strong>📌 Спеціалізація:</strong><br>Сертифікований тренер з функціонального тренування. Фокус — на природних, багатосуглобових рухах, які допомагають тілу гармонійно функціонувати у реальному житті.<br><br><strong>👤 Для кого:</strong><br>Тягне ногу, болить спина або важко підніматися сходами — Яна знає, що робити.<br><br><strong>✨ Формат:</strong><br>Функціональне тренування зі стретчингом — для міцності, рухливості та легкості щодня.',
 
         't-anis-cat':  'ТОП',
         't-anis-name': 'Анна Аніс',
         't-anis-dir':  'Йога Айенгара · Йогатерапія · Пілатес',
-        't-anis-desc': 'Понад 5 років викладає йогу, 3 роки — пілатес, 14 років особистої практики. Поєднує йогу Айенгара, йогатерапію та пілатес з принципами методів Франкліна і Фельденкрайза.<br><br>Підходить тим, хто має біль або обмеження рухливості, відновлюється після травм, або хоче рухатися розумніше — не інтенсивніше. Базовий принцип: безпека і відсутність болю, якість руху важливіша за складність.',
+        't-anis-desc': '<strong>📖 Досвід:</strong><br>Понад 5 років викладає йогу, 3 роки — пілатес, 14 років особистої практики.<br><br><strong>📌 Методика:</strong><br>Поєднує йогу Айенгара, йогатерапію та пілатес з принципами методів Франкліна і Фельденкрайза.<br><br><strong>👤 Для кого:</strong><br>Біль або обмеження рухливості · відновлення після травм · бажання рухатися розумніше, а не інтенсивніше.<br><br><strong>🎯 Головна мета:</strong><br>Безпека і відсутність болю. Якість руху важливіша за складність.',
 
         't-bogomol-cat':  'ТОП',
         't-bogomol-name': 'Євгенія Богомол',
         't-bogomol-dir':  'Ішвара Йога',
-        't-bogomol-desc': 'Сертифікований викладач за методикою Ішвара йоги. Практикує понад шість років. Ішвара — це йога внутрішньої цілісності.<br><br>На кожному занятті відлаштовує злагоджену роботу м\'язів, приділяє велику увагу глибоким м\'язам спини та рухливості кульшових суглобів. Головна мета: позбавити від напруги зовнішніх м\'язів, відчути легкість у спині та знайти внутрішній баланс у всьому тілі.',
+        't-bogomol-desc': '<strong>🌿 Про напрям:</strong><br>Сертифікований викладач за методикою Ішвара йоги. Практикує понад шість років. Ішвара — це йога внутрішньої цілісності.<br><br><strong>📌 На заняттях:</strong><br>Відлаштовує злагоджену роботу м\'язів, приділяє велику увагу глибоким м\'язам спини та рухливості кульшових суглобів.<br><br><strong>🎯 Головна мета:</strong><br>Позбавити від напруги зовнішніх м\'язів, відчути легкість у спині та знайти внутрішній баланс у всьому тілі.',
 
         't-pototska-cat':  'Майстер',
         't-pototska-name': 'Потоцька Тетяна',
         't-pototska-dir':  'ADHOyoga · Групові · Онлайн · Персональні',
-        't-pototska-desc': 'Тренер з ADHOyoga — напряму, що поєднує гнучкість і силу, статику й динаміку, дихання та медитацію. Веде групові, онлайн та персональні заняття.<br><br>На тренуваннях будує правильну техніку (положення таза, ребер, плечей, стоп), поєднує рух із диханням. Адаптує практику під рівень: варіанти для початківців і прогресії для досвідченіших. Фокус — на відчуттях: без болю і без «терпіти».',
+        't-pototska-desc': '<strong>🔥 Про напрям:</strong><br>Тренер з ADHOyoga — напрям, що поєднує гнучкість і силу, статику й динаміку, дихання та медитацію. Веде групові, онлайн та персональні заняття.<br><br><strong>📌 На тренуваннях:</strong><br>Будує правильну техніку (положення таза, ребер, плечей, стоп), поєднує рух із диханням. Адаптує практику під рівень: варіанти для початківців і прогресії для досвідченіших.<br><br><strong>🎯 Фокус:</strong><br>На відчуттях тіла — без болю і без «терпіти».',
       },
       en: {
-        'subtitle':           'A space where the body finds ground, and the mind finds stillness.',
-        'nav-home':           'Home',
-        'nav-classes':        'Classes',
-        'nav-trainers':       'Trainers',
-        'nav-locations':      'Locations',
-        'nav-about':          'About',
-        'trainers-title':     '🤍 Our Team',
-        'trainers-subtitle':  'Trainers who share one approach: attentiveness to the body, clear methodology and warm support',
-        'cta-button':         'Book a Class',
-        'btn-schedule':       'Schedule',
-        'footer-text':        '© 2026 Erra Studio. All rights reserved.',
+        'subtitle':          'A space where the body finds ground, and the mind finds stillness.',
+        'nav-home':          'Home',
+        'nav-classes':       'Classes',
+        'nav-trainers':      'Trainers',
+        'nav-locations':     'Locations',
+        'nav-about':         'About',
+        'trainers-title':    '🤍 Our Team',
+        'trainers-subtitle': 'Trainers who share one approach: attentiveness to the body, clear methodology and warm support',
+        'cta-button':        'Book a Class',
+        'btn-schedule':      'Schedule',
+        'footer-text':       '© 2026 Erra Studio. All rights reserved.',
 
-        't-erokhina-cat':   'TOP · Studio Director',
-        't-erokhina-name':  'Alona Yerokhina',
-        't-erokhina-dir':   'Yoga · Fly Yoga',
-        't-erokhina-desc':  'Founder and director of ERRA SPACE. For Alona, yoga is not just an hour on the mat — it is something that flows through every moment of life. Through the body, we learn to direct attention, thoughts and inner state.<br><br>She leads fly yoga classes: the simultaneous feeling of groundedness and lightness, spinal decompression, mobility and strength without pressure on the body. Special focus on hammock safety, proper alignment and sequencing.<br><br>Alona also trains instructors — sharing methodology, class structure logic and principles of safe group work. Practice focus: asana alignment, pranayama, breath work, gentle core stabilisation and inner calm.',
+        't-erokhina-cat':  'TOP · Studio Director',
+        't-erokhina-name': 'Alona Yerokhina',
+        't-erokhina-dir':  'Yoga · Fly Yoga',
+        't-erokhina-desc': '<strong>🌿 About:</strong><br>Founder and director of ERRA SPACE. For Alona, yoga is not just practice on the mat — it flows through every moment of life. Through the body, we learn to direct attention, thoughts and inner state.<br><br><strong>🪁 Fly Yoga:</strong><br>The feeling of groundedness and lightness at once — spinal decompression, mobility and strength without pressure on the body. Special focus on hammock safety, proper alignment and sequencing.<br><br><strong>👩‍🏫 Also trains instructors:</strong><br>Shares methodology, class structure logic and principles of safe group work.<br><br><strong>✨ In practice:</strong><br>Asana alignment, pranayama, breath work, gentle core stabilisation, focus and inner calm.',
 
         't-arnautova-cat':  'Master',
         't-arnautova-name': 'Svitlana Arnautova',
         't-arnautova-dir':  'Fly Kids',
-        't-arnautova-desc': 'Builds children\'s hammock training on four principles: individual approach to each child, discipline as the foundation of productive sessions, teamwork and health through movement.<br><br>Knows how to help a child believe in themselves. When a child is scared of a new element — she supports, encourages and celebrates their first achievements together. Convinced: after the first month of training, results are visible to both child and parent.',
+        't-arnautova-desc': '<strong>📌 4 core principles:</strong><br>Individual approach to each child · discipline as the foundation of productivity · teamwork · health through movement.<br><br><strong>🤝 Approach to children:</strong><br>Knows how to help a child believe in themselves. When a child is afraid of a new element — she supports, encourages and celebrates their first achievements together.<br><br><strong>🎯 Result:</strong><br>Convinced: after the first month of training, results are visible to both child and parent.',
 
         't-danilova-cat':  'Master',
         't-danilova-name': 'Marina Danilova',
         't-danilova-dir':  'Pilates · Fly Yoga · Fly Pilates',
-        't-danilova-desc': 'With the ERRA SPACE team almost since the studio opened. Combines pilates and fly disciplines: strength without overexertion, core stabilisation, mobility and breathing control.<br><br>The key principle in her classes: not "pushing through", but listening to the body, progressing gradually and with quality. Perfect for those who want training focused on detail and gentle progress.<br><br><em>Qualifications:</em> fly yoga (Alona Yerokhina\'s course), pilates (Anna Kovtun), functional training (Fitness Academy Ukraine), fly pilates (FGEGM).',
+        't-danilova-desc': '<strong>🌿 About:</strong><br>With the ERRA SPACE team almost since opening. Combines pilates and fly disciplines: strength without overexertion, core stabilisation, mobility and breathing control.<br><br><strong>🎯 Core principle:</strong><br>Not "pushing through" — but listening to the body, progressing gradually and with quality. Perfect for those who want detail-focused training with gentle progress.<br><br><strong>📜 Qualifications:</strong><br>Fly yoga (Alona Yerokhina\'s course) · pilates (Anna Kovtun) · functional training (Fitness Academy Ukraine) · fly pilates (FGEGM).',
 
         't-pidgorna-cat':  'TOP',
         't-pidgorna-name': 'Yana Pidgorna',
         't-pidgorna-dir':  'Functional Training',
-        't-pidgorna-desc': 'Certified functional training coach. Specialises in natural, multi-joint movements that help the body function harmoniously in everyday life — accounting for your specific needs, pain and limitations.<br><br>Knows what to do when your leg aches, your back hurts or stairs feel like a challenge. Functional training with stretching — for strength, mobility and ease every day.',
+        't-pidgorna-desc': '<strong>📌 Specialisation:</strong><br>Certified functional training coach. Focus on natural, multi-joint movements that help the body function harmoniously in everyday life.<br><br><strong>👤 For whom:</strong><br>Aching leg, back pain or trouble with stairs — Yana knows what to do.<br><br><strong>✨ Format:</strong><br>Functional training with stretching — for strength, mobility and ease every day.',
 
         't-anis-cat':  'TOP',
         't-anis-name': 'Anna Anis',
         't-anis-dir':  'Iyengar Yoga · Yoga Therapy · Pilates',
-        't-anis-desc': '5+ years teaching yoga, 3 years teaching pilates, 14 years of personal practice. Combines Iyengar yoga, yoga therapy and classical pilates with Franklin Method and Feldenkrais principles.<br><br>Perfect for those with pain or restricted mobility, recovering from injury, or wanting to move smarter — not harder. Core principle: safety first, quality of movement over complexity. No flexibility or fitness level required.',
+        't-anis-desc': '<strong>📖 Experience:</strong><br>5+ years teaching yoga, 3 years teaching pilates, 14 years of personal practice.<br><br><strong>📌 Method:</strong><br>Combines Iyengar yoga, yoga therapy and pilates with Franklin Method and Feldenkrais principles.<br><br><strong>👤 For whom:</strong><br>Pain or restricted mobility · recovering from injury · wanting to move smarter, not harder.<br><br><strong>🎯 Main goal:</strong><br>Safety and freedom from pain. Quality of movement matters more than complexity.',
 
         't-bogomol-cat':  'TOP',
         't-bogomol-name': 'Yevhenia Bogomol',
         't-bogomol-dir':  'Ishvara Yoga',
-        't-bogomol-desc': 'Certified Ishvara yoga instructor with 6+ years of practice. Ishvara is the yoga of inner wholeness.<br><br>Each class focuses on harmonious muscle coordination, with special attention to deep back muscles and hip joint mobility. Main goal: release tension in superficial muscles, find ease in the back and discover inner balance throughout the whole body.',
+        't-bogomol-desc': '<strong>🌿 About the practice:</strong><br>Certified Ishvara yoga instructor with 6+ years of practice. Ishvara is the yoga of inner wholeness.<br><br><strong>📌 In class:</strong><br>Focuses on harmonious muscle coordination, with special attention to deep back muscles and hip joint mobility.<br><br><strong>🎯 Main goal:</strong><br>Release tension in superficial muscles, find ease in the back and discover inner balance throughout the whole body.',
 
         't-pototska-cat':  'Master',
         't-pototska-name': 'Tetiana Pototska',
         't-pototska-dir':  'ADHOyoga · Group · Online · Personal',
-        't-pototska-desc': 'ADHOyoga trainer — a discipline combining flexibility and strength, static and dynamic movement, breathwork and meditation. Leads group, online and personal sessions.<br><br>Classes focus on correct alignment (pelvis, ribs, shoulders, feet) with movement integrated into breath. Practice is adapted to your level: modifications for beginners and progressions for the experienced. Focus on body awareness — no pain, no pushing through.',
+        't-pototska-desc': '<strong>🔥 About the practice:</strong><br>ADHOyoga trainer — combining flexibility and strength, static and dynamic movement, breathwork and meditation. Leads group, online and personal sessions.<br><br><strong>📌 In training:</strong><br>Builds correct alignment (pelvis, ribs, shoulders, feet), integrates movement with breath. Adapts practice to any level: modifications for beginners and progressions for the experienced.<br><br><strong>🎯 Focus:</strong><br>Body awareness — no pain, no pushing through.',
       }
     };
 
-    // Extend the site-wide setLanguage from script.js
     document.addEventListener('DOMContentLoaded', () => {
       const originalSetLanguage = window.setLanguage;
       window.setLanguage = function(lang) {
-        // Run original translations (from script.js)
         if (typeof originalSetLanguage === 'function') originalSetLanguage(lang);
-        // Apply trainer page translations
         const t = trainerTranslations[lang];
         if (!t) return;
         Object.keys(t).forEach(id => {
           const el = document.getElementById(id);
           if (el) el.innerHTML = t[id];
         });
-        localStorage.setItem('lang', lang);
+        localStorage.setItem('erraLang', lang);
       };
-      // Restore saved language on load
-      const saved = localStorage.getItem('lang');
+      const saved = localStorage.getItem('erraLang');
       if (saved && saved !== 'ua') window.setLanguage(saved);
     });
   </script>
