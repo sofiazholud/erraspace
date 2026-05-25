@@ -5,7 +5,7 @@
 /* Базові стилі */
 body {
   font-family: 'Cormorant Garamond', serif;
-  background-color: #181c17;          /* ← менш насичений зелений */
+  background-color: #5a5244;          /* ← менш насичений зелений */
   color: #ffffff;
   margin: 0;
   padding: 20px;
@@ -200,7 +200,7 @@ h1 {
   text-align: center;
   padding: 14px 0;
   background: #fff;
-  color: #181c17;
+  color: #5a5244;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
   font-weight: 700;
