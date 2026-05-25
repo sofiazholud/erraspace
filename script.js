@@ -27,11 +27,33 @@ const translations = {
     "nav-trainers": "Тренери",
 
     // Відгуки
-    "reviews-title": "Відгуки",
-    "review-1-text": "«Було страшно йти, але тут спокійно і без тиску. Вже третій місяць поспіль.»",
-    "review-1-author": "— Оксана",
-    "review-2-text": "«Болів поперек після роботи за комп'ютером. Після флай-йоги стало значно легше.»",
-    "review-2-author": "— Марина",
+        // Відгуки (оновлені)
+    "reviews-subtitle": "Що кажуть наші клієнти",
+    "reviews-count": "3 відгуки",
+    "reviews-google-btn": "Читати в Google",
+    "review-1-meta": "Local Guide · рік тому",
+    "review-1-text": "«Я і моя дитина вже рік як займаємось в цьому прекрасному місці. Близькість до дому і кваліфікація тренерів на вищому рівні! Дякую що ви є!»",
+    "review-2-meta": "2 тижні тому",
+    "review-2-text": "«Чудова студія, багато цікавих напрямків, і є неймовірно круті тренери! Це супер профі у напрямку пілатесу всіх рівнів.»",
+    "review-3-meta": "рік тому",
+    "review-3-text": "«★★★★★»",
+    "reviews-btn-more": "Залишити відгук в Google",
+ 
+    // FAQ
+    "faq-title": "Часті питання",
+    "faq-subtitle": "Відповіді на найпоширеніші запитання",
+    "faq-q-1": "Чи потрібна підготовка?",
+    "faq-a-1": "Ні — жодної підготовки не потрібно. Ми приймаємо всіх незалежно від рівня фізичної форми. Тренер адаптує навантаження під вас прямо на занятті. Головне — бажання рухатися.",
+    "faq-q-2": "Що взяти з собою?",
+    "faq-a-2": "Зручний одяг для руху, змінні шкарпетки, воду та хороший настрій. Килимок і всі необхідні матеріали є в студії. Для флай-йоги рекомендуємо одяг із довгими рукавами та штанинами — щоб гамак не натирав шкіру.",
+    "faq-q-3": "Скільки людей у групі?",
+    "faq-a-3": "Групи невеликі — до 10 осіб. Це дозволяє тренеру приділяти увагу кожному і коригувати техніку. Ніякого відчуття натовпу — лише комфортна атмосфера.",
+    "faq-q-4": "Чи можна вагітним?",
+    "faq-a-4": "Так — у нас є спеціальний напрямок «Йога для вагітних». Практика адаптована для кожного триместру і допомагає підтримувати тіло та емоційний стан. Перед початком рекомендуємо проконсультуватися з лікарем.",
+    "faq-q-5": "Як записатися?",
+    "faq-a-5": "Найшвидше — написати нам у Telegram або через instasport.ua. Ми підберемо зручний час і напрямок. Пробне заняття коштує 250 грн — це найкращий спосіб познайомитися зі студією.",
+    "faq-cta": "Є ще питання? Напишіть нам",
+    
 
     // Блок "для кого"
     "for-whom-title": "Обери заняття під свій стан",
@@ -181,11 +203,32 @@ const translations = {
     "nav-trainers": "Trainers",
 
     // Reviews
-    "reviews-title": "Reviews",
-    "review-1-text": "\"I was nervous to go, but it's calm here with no pressure. Already my third month.\"",
-    "review-1-author": "— Oksana",
-    "review-2-text": "\"My lower back hurt from desk work. After fly yoga it got much better.\"",
-    "review-2-author": "— Maryna",
+    // Reviews (updated)
+    "reviews-subtitle": "What our clients say",
+    "reviews-count": "3 reviews",
+    "reviews-google-btn": "Read on Google",
+    "review-1-meta": "Local Guide · a year ago",
+    "review-1-text": "\"My daughter and I have been coming here for a year. Close to home and the trainers are top level! So glad you exist!\"",
+    "review-2-meta": "2 weeks ago",
+    "review-2-text": "\"Wonderful studio, lots of interesting classes and incredibly great trainers! A true pro in pilates at all levels.\"",
+    "review-3-meta": "a year ago",
+    "review-3-text": "\"★★★★★\"",
+    "reviews-btn-more": "Leave a review on Google",
+ 
+    // FAQ
+    "faq-title": "FAQ",
+    "faq-subtitle": "Answers to the most common questions",
+    "faq-q-1": "Do I need any experience?",
+    "faq-a-1": "No experience needed. We welcome everyone regardless of fitness level. The trainer will adapt the intensity for you during class. All you need is the desire to move.",
+    "faq-q-2": "What should I bring?",
+    "faq-a-2": "Comfortable workout clothes, spare socks, water and a good mood. Mats and all equipment are provided. For fly yoga, we recommend long sleeves and leggings to prevent the hammock from rubbing your skin.",
+    "faq-q-3": "How many people are in a group?",
+    "faq-a-3": "Groups are small — up to 10 people. This lets the trainer pay attention to each person and correct technique. No crowds — just a comfortable atmosphere.",
+    "faq-q-4": "Can pregnant women join?",
+    "faq-a-4": "Yes — we have a dedicated Pregnancy Yoga class. The practice is adapted for each trimester and helps support both body and emotional wellbeing. We recommend consulting your doctor before starting.",
+    "faq-q-5": "How do I sign up?",
+    "faq-a-5": "The fastest way is to message us on Telegram or book via instasport.ua. We'll find a convenient time and class for you. A trial class costs 250 UAH — the best way to get to know the studio.",
+    "faq-cta": "More questions? Message us",
 
     // For whom block
     "for-whom-title": "Choose a class for your state",
