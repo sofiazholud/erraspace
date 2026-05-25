@@ -10,6 +10,7 @@ Static website for **Erra Space Studio** (Вишгород, Україна), hos
 - `style.css` — стилі
 - `script.js` — логіка перемикання мов та модальні вікна
 - `images/` — зображення для напрямків
+- trainers.html — сторінка тренерів
 
 ##  Features
 - Двомовність (UA/EN)
