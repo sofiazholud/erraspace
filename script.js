@@ -408,3 +408,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+// ═══ ДОДАТИ В КІНЕЦЬ script.js ═══
+
+// ── FAQ toggle ──
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const isOpen = btn.classList.contains('open');
+  document.querySelectorAll('.faq-question.open').forEach(b => {
+    b.classList.remove('open');
+    b.nextElementSibling.style.maxHeight = null;
+  });
+  if (!isOpen) {
+    btn.classList.add('open');
+    answer.style.maxHeight = answer.scrollHeight + 'px';
+  }
+}
