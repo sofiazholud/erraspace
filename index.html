@@ -176,6 +176,150 @@
       </div>
     </section>
 
+    <!-- ═══ FAQ БЛОК ═══ -->
+
+<section class="faq-section">
+  <h2 id="faq-title">Часті питання</h2>
+  <p class="section-subtitle" id="faq-subtitle">Відповіді на найпоширеніші запитання</p>
+
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)" id="faq-q-1">
+        <span>Чи потрібна підготовка?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p id="faq-a-1">Ні — жодної підготовки не потрібно. Ми приймаємо всіх незалежно від рівня фізичної форми. Тренер адаптує навантаження під вас прямо на занятті. Головне — бажання рухатися.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)" id="faq-q-2">
+        <span>Що взяти з собою?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p id="faq-a-2">Зручний одяг для руху, воду та хороший настрій. Килимок і всі необхідні матеріали є в студії. Для флай-йоги рекомендуємо одяг із довгими рукавами та штанинами — щоб гамак не натирав шкіру.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)" id="faq-q-3">
+        <span>Скільки людей у групі?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p id="faq-a-3">Групи невеликі — до 10 осіб. Це дозволяє тренеру приділяти увагу кожному і коригувати техніку. Ніякого відчуття натовпу — лише комфортна атмосфера.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)" id="faq-q-4">
+        <span>Чи можна вагітним?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p id="faq-a-4">Так — у нас є спеціальний напрямок «Йога для вагітних». Практика адаптована для кожного триместру і допомагає підтримувати тіло та емоційний стан. Перед початком рекомендуємо проконсультуватися з лікарем.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)" id="faq-q-5">
+        <span>Як записатися?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p id="faq-a-5">Найшвидше — написати нам у Telegram або через instasport.ua. Ми підберемо зручний час і напрямок. Пробне заняття коштує 250 грн — це найкращий спосіб познайомитися зі студією.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center; margin-top:28px;">
+    <a href="https://t.me/ERRA_SPASE" target="_blank" rel="noopener noreferrer"
+       class="cta-button primary" id="faq-cta">Є ще питання? Напишіть нам</a>
+  </div>
+</section>
+
+
+<!-- ═══ CSS — додати в style.css ═══ -->
+<!--
+.faq-section { text-align: left; }
+.faq-list {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq-item {
+  background: rgba(232,228,210,0.06);
+  border: 1px solid rgba(232,228,210,0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+.faq-item:hover { background: rgba(232,228,210,0.1); }
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  text-align: left;
+  gap: 12px;
+}
+.faq-icon {
+  font-size: 1.4rem;
+  color: rgba(255,255,255,0.5);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.faq-question.open .faq-icon {
+  transform: rotate(45deg);
+  color: #fff;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.faq-answer p {
+  padding: 0 22px 20px;
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.75;
+}
+-->
+
+
+<!-- ═══ JS — додати в script.js ═══ -->
+<!--
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const isOpen = btn.classList.contains('open');
+  document.querySelectorAll('.faq-question.open').forEach(b => {
+    b.classList.remove('open');
+    b.nextElementSibling.style.maxHeight = null;
+  });
+  if (!isOpen) {
+    btn.classList.add('open');
+    answer.style.maxHeight = answer.scrollHeight + 'px';
+  }
+}
+-->
+
     <!-- Відгуки -->
     <section class="reviews-section">
       <h2 id="reviews-title">Відгуки</h2>
