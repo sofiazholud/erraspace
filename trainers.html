@@ -94,16 +94,19 @@
     }
 
     @media (max-width: 768px) {
-      .trainer-card.director {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
-      }
-      .trainer-card.director .trainer-photo {
-        aspect-ratio: 4 / 3;
-        height: auto;
-        min-height: unset;
-      }
-    }
+  .trainer-card.director {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .trainer-card.director .trainer-photo {
+    aspect-ratio: 3 / 4;
+    height: auto;
+    min-height: unset;
+  }
+  .trainer-card.director .trainer-photo img {
+    object-position: center center;
+  }
+}
     @media (max-width: 480px) {
       .trainers-grid {
         grid-template-columns: 1fr;
