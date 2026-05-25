@@ -23,6 +23,7 @@ const translations = {
     "nav-classes": "Напрямки",
     "nav-locations": "Локації",
     "nav-about": "Про нас",
+    "nav-trainers": "Тренери",
 
     // Відгуки
     "reviews-title": "Відгуки",
@@ -175,6 +176,7 @@ const translations = {
     "nav-classes": "Classes",
     "nav-locations": "Locations",
     "nav-about": "About",
+    "nav-trainers": "Trainers",
 
     // Reviews
     "reviews-title": "Reviews",
