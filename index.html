@@ -184,6 +184,179 @@
       </div>
     </section>
 
+<!-- ═══ БЛОК ВІДГУКІВ ═══ -->
+<!-- Вставити в index.html перед завершальним блоком (.closing-block) -->
+
+<section class="reviews-section">
+  <h2 id="reviews-title">Відгуки</h2>
+  <p class="section-subtitle" id="reviews-subtitle">Що кажуть наші клієнти</p>
+
+  <!-- Рейтинг Google -->
+  <div class="reviews-rating-row">
+    <div class="reviews-google-badge">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+      </svg>
+      <span class="reviews-score">5.0</span>
+      <div class="reviews-stars">★★★★★</div>
+      <span class="reviews-count" id="reviews-count">3 відгуки</span>
+    </div>
+    <a href="https://share.google/4hTzPG47UY7pCV8C4"
+       target="_blank" rel="noopener noreferrer"
+       class="reviews-google-btn" id="reviews-google-btn">
+      Читати в Google
+    </a>
+  </div>
+
+  <!-- Картки відгуків -->
+  <div class="reviews-grid">
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-avatar" style="background:rgba(234,67,53,0.2); color:#EA4335;">Я</div>
+        <div>
+          <div class="review-name">Яна Пономаренко</div>
+          <div class="review-meta" id="review-1-meta">Local Guide · рік тому</div>
+        </div>
+        <div class="review-stars-small">★★★★★</div>
+      </div>
+      <p class="review-text" id="review-1-text">«Я і моя дитина вже рік як займаємось в цьому прекрасному місці. Близькість до дому і кваліфікація тренерів на вищому рівні! Дякую що ви є!»</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-avatar" style="background:rgba(66,133,244,0.2); color:#4285F4;">А</div>
+        <div>
+          <div class="review-name">Анна Колпачова</div>
+          <div class="review-meta" id="review-2-meta">2 тижні тому</div>
+        </div>
+        <div class="review-stars-small">★★★★★</div>
+      </div>
+      <p class="review-text" id="review-2-text">«Чудова студія, багато цікавих напрямків, і є неймовірно круті тренери! Це супер профі у напрямку пілатесу всіх рівнів.»</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-avatar" style="background:rgba(52,168,83,0.2); color:#34A853;">Н</div>
+        <div>
+          <div class="review-name">Наталя Трофімова</div>
+          <div class="review-meta" id="review-3-meta">рік тому</div>
+        </div>
+        <div class="review-stars-small">★★★★★</div>
+      </div>
+      <p class="review-text" id="review-3-text">«★★★★★»</p>
+    </div>
+
+  </div>
+
+  <div style="text-align:center; margin-top:24px;">
+    <a href="https://share.google/4hTzPG47UY7pCV8C4"
+       target="_blank" rel="noopener noreferrer"
+       class="cta-button" id="reviews-btn-more">Залишити відгук в Google</a>
+  </div>
+</section>
+
+
+<!-- ═══ CSS — додати в style.css ═══ -->
+<!--
+.reviews-rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.reviews-google-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reviews-score {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+.reviews-stars {
+  color: #FBBC05;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+.reviews-count {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.5);
+  font-style: italic;
+}
+.reviews-google-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.25s;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.04em;
+}
+.reviews-google-btn:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border-color: rgba(255,255,255,0.5);
+}
+.review-card {
+  background: rgba(232,228,210,0.06);
+  border-radius: 12px;
+  padding: 22px 24px;
+  border: 1px solid rgba(232,228,210,0.10);
+  text-align: left;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.review-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.review-meta {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  margin-top: 2px;
+}
+.review-stars-small {
+  color: #FBBC05;
+  font-size: 0.95rem;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.review-text {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.7;
+  font-style: italic;
+  margin: 0;
+}
+-->
+
     <!-- Завершальний емоційний блок -->
     <section class="closing-block">
       <p class="closing-text" id="closing-text">Не треба бути готовим.</p>
