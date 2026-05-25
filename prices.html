@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ціни — ERRA SPACE</title>
+  <meta name="description" content="Абонементи та ціни ERRA SPACE: йога, пілатес, флай-йога, дитячі заняття, індивідуальні тренування. Вишгород та Міжріччя.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ── Tabs ── */
+    .price-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .price-tab {
+      padding: 9px 20px;
+      border-radius: 20px;
+      border: 1px solid rgba(232,228,210,0.25);
+      background: transparent;
+      color: rgba(255,255,255,0.65);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.25s;
+      letter-spacing: 0.04em;
+    }
+    .price-tab:hover {
+      background: rgba(232,228,210,0.1);
+      color: #fff;
+    }
+    .price-tab.active {
+      background: rgba(232,228,210,0.18);
+      border-color: rgba(232,228,210,0.5);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* ── Price grid ── */
+    .price-panel { display: none; }
+    .price-panel.active { display: block; }
+
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 8px;
+    }
+
+    /* ── Price card ── */
+    .price-card {
+      background: rgba(232,228,210,0.07);
+      border: 1px solid rgba(232,228,210,0.13);
+      border-radius: 16px;
+      padding: 24px 20px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      transition: background 0.3s;
+      position: relative;
+    }
+    .price-card:hover {
+      background: rgba(232,228,210,0.12);
+    }
+    .price-card.popular {
+      border-color: rgba(232,228,210,0.45);
+    }
+    .price-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(232,228,210,0.9);
+      color: #35342a;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .price-card-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 4px;
+      letter-spacing: 0.03em;
+    }
+    .price-card-sub {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: rgba(255,255,255,0.45);
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .price-details {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .price-detail-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 10px;
+      background: rgba(232,228,210,0.05);
+      border-radius: 8px;
+    }
+    .price-detail-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.38);
+    }
+    .price-detail-value {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.85);
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .price-amount {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      margin: 4px 0 16px;
+      letter-spacing: 0.02em;
+    }
+    .price-amount span {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.5);
+      margin-left: 4px;
+    }
+
+    .price-btn {
+      display: block;
+      text-align: center;
+      padding: 12px 16px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: all 0.25s;
+      margin-top: auto;
+    }
+    .price-btn:hover {
+      background: rgba(255,255,255,0.2);
+      border-color: rgba(255,255,255,0.5);
+    }
+    .price-btn.primary {
+      background: rgba(255,255,255,0.92);
+      color: #35342a;
+      border-color: #fff;
+    }
+    .price-btn.primary:hover {
+      background: #fff;
+    }
+
+    /* ── Note ── */
+    .price-note {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: rgba(255,255,255,0.45);
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 480px) {
+      .price-tab { font-size: 0.88rem; padding: 8px 14px; }
+      .price-grid { grid-template-columns: 1fr; gap: 16px; }
+      .price-card-name { font-size: 1.15rem; }
+      .price-amount { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lang-switch">
+    <button onclick="setLanguage('ua')">UA</button>
+    <button onclick="setLanguage('en')">EN</button>
+  </div>
+
+  <header>
+    <h1><a href="index.html" style="color:inherit;text-decoration:none;">ERRA SPACE</a></h1>
+    <p class="hero-text" id="subtitle">Простір, де тіло знаходить опору, а розум — тишу.</p>
+  </header>
+
+  <nav class="page-nav">
+    <a href="index.html"     class="page-nav-link" id="nav-home">Головна</a>
+    <a href="classes.html"   class="page-nav-link" id="nav-classes">Напрямки</a>
+    <a href="trainers.html"  class="page-nav-link" id="nav-trainers">Тренери</a>
+    <a href="prices.html"    class="page-nav-link active" id="nav-prices">Ціни</a>
+    <a href="locations.html" class="page-nav-link" id="nav-locations">Локації</a>
+    <a href="about.html"     class="page-nav-link" id="nav-about">Про нас</a>
+  </nav>
+
+  <main>
+
+    <section>
+      <h2>💳 Абонементи та ціни</h2>
+      <p class="section-subtitle">Оберіть формат, який підходить саме вам</p>
+
+      <!-- Вкладки -->
+      <div class="price-tabs">
+        <button class="price-tab active" onclick="showTab('adults')">🧘 Дорослі</button>
+        <button class="price-tab" onclick="showTab('kids')">🧒 Дітям</button>
+        <button class="price-tab" onclick="showTab('private')">🤝 Індивідуальні</button>
+        <button class="price-tab" onclick="showTab('online')">💻 Онлайн</button>
+        <button class="price-tab" onclick="showTab('fitness')">💪 Фітнес</button>
+      </div>
+
+      <!-- Дорослі -->
+      <div class="price-panel active" id="tab-adults">
+        <div class="price-grid">
+
+          <div class="price-card">
+            <div class="price-card-name">Пробне</div>
+            <div class="price-card-sub">тренування</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Кількість</span>
+                <span class="price-detail-value">1 відвідування</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Термін дії</span>
+                <span class="price-detail-value">1 день</span>
+              </div>
+            </div>
+            <div class="price-amount">250 <span>грн</span></div>
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=trial"
+               target="_blank" class="price-btn primary">Записатися</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-name">Разове</div>
+            <div class="price-card-sub">тренування</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Кількість</span>
+                <span class="price-detail-value">1 відвідування</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Термін дії</span>
+                <span class="price-detail-value">1 день</span>
+              </div>
+            </div>
+            <div class="price-amount">400 <span>грн</span></div>
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=single"
+               target="_blank" class="price-btn">Придбати</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-name">Абонемент</div>
+            <div class="price-card-sub">на 4 тренування</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Кількість</span>
+                <span class="price-detail-value">4 відвідування</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Термін дії</span>
+                <span class="price-detail-value">30 днів</span>
+              </div>
+            </div>
+            <div class="price-amount">1 400 <span>грн</span></div>
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=sub4"
+               target="_blank" class="price-btn">Придбати</a>
+          </div>
+
+          <div class="price-card popular">
+            <div class="price-badge">Популярний</div>
+            <div class="price-card-name">Абонемент</div>
+            <div class="price-card-sub">на 8 тренувань</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Кількість</span>
+                <span class="price-detail-value">8 відвідувань</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Термін дії</span>
+                <span class="price-detail-value">30 днів</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Заморозка</span>
+                <span class="price-detail-value">1 × 5 днів</span>
+              </div>
+            </div>
+            <div class="price-amount">2 400 <span>грн</span></div>
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=sub8"
+               target="_blank" class="price-btn primary">Придбати</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-name">Абонемент</div>
+            <div class="price-card-sub">на 12 тренувань</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Кількість</span>
+                <span class="price-detail-value">12 відвідувань</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Термін дії</span>
+                <span class="price-detail-value">30 днів</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Заморозка</span>
+                <span class="price-detail-value">1 × 7 днів</span>
+              </div>
+            </div>
+            <div class="price-amount">3 000 <span>грн</span></div>
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=sub12"
+               target="_blank" class="price-btn">Придбати</a>
+          </div>
+
+        </div>
+        <p class="price-note">Заняття діють на всі групові напрямки для дорослих</p>
+      </div>
+
+      <!-- Дітям -->
+      <div class="price-panel" id="tab-kids">
+        <div class="price-grid">
+
+          <div class="price-card">
+            <div class="price-card-name">Fly Kids</div>
+            <div class="price-card-sub">Пробне</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Кількість</span>
+                <span class="price-detail-value">1 відвідування</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Термін дії</span>
+                <span class="price-detail-value">1 день</span>
+              </div>
+            </div>
+            <div class="price-amount">250 <span>грн</span></div>
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=kids-trial"
+               target="_blank" class="price-btn primary">Записатися</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-name">Fly Kids</div>
+            <div class="price-card-sub">Разове</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Кількість</span>
+                <span class="price-detail-value">1 відвідування</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Термін дії</span>
+                <span class="price-detail-value">1 день</span>
+              </div>
+            </div>
+            <div class="price-amount">300 <span>грн</span></div>
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=kids-single"
+               target="_blank" class="price-btn">Придбати</a>
+          </div>
+
+          <div class="price-card popular">
+            <div class="price-badge">Вигідно</div>
+            <div class="price-card-name">Fly Kids</div>
+            <div class="price-card-sub">Безліміт на місяць</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Кількість</span>
+                <span class="price-detail-value">Безліміт</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Термін дії</span>
+                <span class="price-detail-value">31 день</span>
+              </div>
+            </div>
+            <div class="price-amount">2 400 <span>грн</span></div>
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=kids-unlim"
+               target="_blank" class="price-btn primary">Придбати</a>
+          </div>
+
+        </div>
+        <p class="price-note">Fly Kids — заняття у гамаках для дітей з тренером Світланою Арнаутовою</p>
+      </div>
+
+      <!-- Індивідуальні -->
+      <div class="price-panel" id="tab-private">
+        <div class="price-grid">
+
+          <div class="price-card">
+            <div class="price-card-name">60 хв</div>
+            <div class="price-card-sub">Майстер</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Тривалість</span>
+                <span class="price-detail-value">60 хвилин</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Тренер</span>
+                <span class="price-detail-value">Майстер</span>
+              </div>
+            </div>
+            <div class="price-amount">700 <span>грн</span></div>
+            <a href="https://t.me/ERRA_SPASE?text=Хочу індивідуальне тренування 60хв (Майстер)"
+               target="_blank" class="price-btn">Записатися</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-name">90 хв</div>
+            <div class="price-card-sub">Майстер</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Тривалість</span>
+                <span class="price-detail-value">90 хвилин</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Тренер</span>
+                <span class="price-detail-value">Майстер</span>
+              </div>
+            </div>
+            <div class="price-amount">1 000 <span>грн</span></div>
+            <a href="https://t.me/ERRA_SPASE?text=Хочу індивідуальне тренування 90хв (Майстер)"
+               target="_blank" class="price-btn">Записатися</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-name">60 хв</div>
+            <div class="price-card-sub">ТОП тренер</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Тривалість</span>
+                <span class="price-detail-value">60 хвилин</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Тренер</span>
+                <span class="price-detail-value">ТОП тренер</span>
+              </div>
+            </div>
+            <div class="price-amount">1 000 <span>грн</span></div>
+            <a href="https://t.me/ERRA_SPASE?text=Хочу індивідуальне тренування 60хв (ТОП тренер)"
+               target="_blank" class="price-btn">Записатися</a>
+          </div>
+
+          <div class="price-card popular">
+            <div class="price-badge">ТОП тренер</div>
+            <div class="price-card-name">90 хв</div>
+            <div class="price-card-sub">ТОП тренер</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Тривалість</span>
+                <span class="price-detail-value">90 хвилин</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Тренер</span>
+                <span class="price-detail-value">ТОП тренер</span>
+              </div>
+            </div>
+            <div class="price-amount">1 500 <span>грн</span></div>
+            <a href="https://t.me/ERRA_SPASE?text=Хочу індивідуальне тренування 90хв (ТОП тренер)"
+               target="_blank" class="price-btn primary">Записатися</a>
+          </div>
+
+        </div>
+        <p class="price-note">Для запису на індивідуальне — напишіть нам у Telegram, узгодимо зручний час</p>
+      </div>
+
+      <!-- Онлайн -->
+      <div class="price-panel" id="tab-online">
+        <div class="price-grid">
+
+          <div class="price-card">
+            <div class="price-card-name">Online</div>
+            <div class="price-card-sub">групове тренування</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Кількість</span>
+                <span class="price-detail-value">1 відвідування</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Формат</span>
+                <span class="price-detail-value">Групове</span>
+              </div>
+            </div>
+            <div class="price-amount">250 <span>грн</span></div>
+            <a href="https://t.me/ERRA_SPASE?text=Хочу онлайн тренування"
+               target="_blank" class="price-btn primary">Записатися</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-name">Online</div>
+            <div class="price-card-sub">індивідуальне</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Кількість</span>
+                <span class="price-detail-value">1 відвідування</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Формат</span>
+                <span class="price-detail-value">Персональне</span>
+              </div>
+            </div>
+            <div class="price-amount">600 <span>грн</span></div>
+            <a href="https://t.me/ERRA_SPASE?text=Хочу онлайн індивідуальне тренування"
+               target="_blank" class="price-btn">Записатися</a>
+          </div>
+
+        </div>
+        <p class="price-note">Онлайн-заняття проводяться через Zoom або Google Meet — посилання надсилаємо після запису</p>
+      </div>
+
+      <!-- Фітнес -->
+      <div class="price-panel" id="tab-fitness">
+        <div class="price-grid">
+
+          <div class="price-card">
+            <div class="price-card-name">Fitness Kids</div>
+            <div class="price-card-sub">разове</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Кількість</span>
+                <span class="price-detail-value">1 відвідування</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Термін дії</span>
+                <span class="price-detail-value">1 день</span>
+              </div>
+            </div>
+            <div class="price-amount">250 <span>грн</span></div>
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=fitness-kids"
+               target="_blank" class="price-btn primary">Придбати</a>
+          </div>
+
+          <div class="price-card popular">
+            <div class="price-badge">Вигідно</div>
+            <div class="price-card-name">Fitness Kids</div>
+            <div class="price-card-sub">абонемент безліміт</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label">Кількість</span>
+                <span class="price-detail-value">Безліміт</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label">Термін дії</span>
+                <span class="price-detail-value">30 днів</span>
+              </div>
+            </div>
+            <div class="price-amount">2 000 <span>грн</span></div>
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=fitness-kids-unlim"
+               target="_blank" class="price-btn primary">Придбати</a>
+          </div>
+
+        </div>
+        <p class="price-note">Fitness Kids — дитячі фітнес-тренування у студії</p>
+      </div>
+
+    </section>
+
+    <!-- CTA -->
+    <div class="cta">
+      <a href="https://t.me/ERRA_SPASE" target="_blank" rel="noopener noreferrer"
+         class="cta-button primary">Записатися на пробне — 250 грн</a>
+      <a href="https://instasport.ua/uk/club/erraspacevy/schedule/day?utm_source=site&utm_medium=prices&utm_content=schedule"
+         class="cta-button" id="btn-schedule">Розклад</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p id="footer-text">© 2026 Erra Studio. Всі права захищені.</p>
+    <p style="margin-top:8px; font-size:.85em;">
+      <a href="oferta.html">Публічна оферта</a>
+    </p>
+  </footer>
+
+  <script>
+    function showTab(name) {
+      document.querySelectorAll('.price-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.price-tab').forEach(t => t.classList.remove('active'));
+      document.getElementById('tab-' + name).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    const pricesTranslations = {
+      ua: {
+        'subtitle':        'Простір, де тіло знаходить опору, а розум — тишу.',
+        'nav-home':        'Головна',
+        'nav-classes':     'Напрямки',
+        'nav-trainers':    'Тренери',
+        'nav-prices':      'Ціни',
+        'nav-locations':   'Локації',
+        'nav-about':       'Про нас',
+        'footer-text':     '© 2026 Erra Studio. Всі права захищені.',
+        'btn-schedule':    'Розклад',
+
+        'prices-title':    '💳 Абонементи та ціни',
+        'prices-subtitle': 'Оберіть формат, який підходить саме вам',
+
+        'tab-adults-btn':  '🧘 Дорослі',
+        'tab-kids-btn':    '🧒 Дітям',
+        'tab-private-btn': '🤝 Індивідуальні',
+        'tab-online-btn':  '💻 Онлайн',
+        'tab-fitness-btn': '💪 Фітнес',
+
+        // Дорослі
+        'adults-note': 'Заняття діють на всі групові напрямки для дорослих',
+        'trial-name': 'Пробне', 'trial-sub': 'тренування',
+        'single-name': 'Разове', 'single-sub': 'тренування',
+        'sub4-name': 'Абонемент', 'sub4-sub': 'на 4 тренування',
+        'sub8-name': 'Абонемент', 'sub8-sub': 'на 8 тренувань',
+        'sub12-name': 'Абонемент', 'sub12-sub': 'на 12 тренувань',
+        'badge-popular': 'Популярний',
+
+        // Дітям
+        'kids-note': 'Fly Kids — заняття у гамаках для дітей з тренером Світланою Арнаутовою',
+        'kids-trial-name': 'Fly Kids', 'kids-trial-sub': 'Пробне',
+        'kids-single-name': 'Fly Kids', 'kids-single-sub': 'Разове',
+        'kids-unlim-name': 'Fly Kids', 'kids-unlim-sub': 'Безліміт на місяць',
+        'badge-value': 'Вигідно',
+
+        // Індивідуальні
+        'private-note': 'Для запису на індивідуальне — напишіть нам у Telegram, узгодимо зручний час',
+        'priv60m-name': '60 хв', 'priv60m-sub': 'Майстер',
+        'priv90m-name': '90 хв', 'priv90m-sub': 'Майстер',
+        'priv60t-name': '60 хв', 'priv60t-sub': 'ТОП тренер',
+        'priv90t-name': '90 хв', 'priv90t-sub': 'ТОП тренер',
+        'badge-top': 'ТОП тренер',
+
+        // Онлайн
+        'online-note': 'Онлайн-заняття проводяться через Zoom або Google Meet — посилання надсилаємо після запису',
+        'online-group-name': 'Online', 'online-group-sub': 'групове тренування',
+        'online-priv-name': 'Online', 'online-priv-sub': 'індивідуальне',
+
+        // Фітнес
+        'fitness-note': 'Fitness Kids — дитячі фітнес-тренування у студії',
+        'fitness-single-name': 'Fitness Kids', 'fitness-single-sub': 'разове',
+        'fitness-unlim-name': 'Fitness Kids', 'fitness-unlim-sub': 'абонемент безліміт',
+
+        // Спільне
+        'label-count': 'Кількість', 'label-term': 'Термін дії',
+        'label-freeze': 'Заморозка', 'label-duration': 'Тривалість',
+        'label-trainer': 'Тренер', 'label-format': 'Формат',
+        'val-1visit': '1 відвідування', 'val-unlim': 'Безліміт',
+        'val-1day': '1 день', 'val-30days': '30 днів', 'val-31days': '31 день',
+        'val-4visits': '4 відвідування', 'val-8visits': '8 відвідувань',
+        'val-12visits': '12 відвідувань',
+        'val-60min': '60 хвилин', 'val-90min': '90 хвилин',
+        'val-master': 'Майстер', 'val-top': 'ТОП тренер',
+        'val-group': 'Групове', 'val-personal': 'Персональне',
+        'val-freeze8': '1 × 5 днів', 'val-freeze12': '1 × 7 днів',
+
+        'btn-signup': 'Записатися', 'btn-buy': 'Придбати',
+        'cta-trial': 'Записатися на пробне — 250 грн',
+      },
+      en: {
+        'subtitle':        'A space where the body finds ground, and the mind finds stillness.',
+        'nav-home':        'Home',
+        'nav-classes':     'Classes',
+        'nav-trainers':    'Trainers',
+        'nav-prices':      'Prices',
+        'nav-locations':   'Locations',
+        'nav-about':       'About',
+        'footer-text':     '© 2026 Erra Studio. All rights reserved.',
+        'btn-schedule':    'Schedule',
+
+        'prices-title':    '💳 Memberships & Prices',
+        'prices-subtitle': 'Choose the format that suits you best',
+
+        'tab-adults-btn':  '🧘 Adults',
+        'tab-kids-btn':    '🧒 Kids',
+        'tab-private-btn': '🤝 Private',
+        'tab-online-btn':  '💻 Online',
+        'tab-fitness-btn': '💪 Fitness',
+
+        'adults-note': 'Valid for all group adult classes',
+        'trial-name': 'Trial', 'trial-sub': 'class',
+        'single-name': 'Single', 'single-sub': 'class',
+        'sub4-name': 'Pass', 'sub4-sub': '4 classes',
+        'sub8-name': 'Pass', 'sub8-sub': '8 classes',
+        'sub12-name': 'Pass', 'sub12-sub': '12 classes',
+        'badge-popular': 'Popular',
+
+        'kids-note': 'Fly Kids — hammock classes for children with instructor Svitlana Arnautova',
+        'kids-trial-name': 'Fly Kids', 'kids-trial-sub': 'Trial',
+        'kids-single-name': 'Fly Kids', 'kids-single-sub': 'Single',
+        'kids-unlim-name': 'Fly Kids', 'kids-unlim-sub': 'Unlimited monthly',
+        'badge-value': 'Best value',
+
+        'private-note': 'To book a private session — message us on Telegram and we\'ll find a convenient time',
+        'priv60m-name': '60 min', 'priv60m-sub': 'Master trainer',
+        'priv90m-name': '90 min', 'priv90m-sub': 'Master trainer',
+        'priv60t-name': '60 min', 'priv60t-sub': 'TOP trainer',
+        'priv90t-name': '90 min', 'priv90t-sub': 'TOP trainer',
+        'badge-top': 'TOP trainer',
+
+        'online-note': 'Online classes are held via Zoom or Google Meet — link sent after booking',
+        'online-group-name': 'Online', 'online-group-sub': 'group class',
+        'online-priv-name': 'Online', 'online-priv-sub': 'private session',
+
+        'fitness-note': 'Fitness Kids — children\'s fitness training at the studio',
+        'fitness-single-name': 'Fitness Kids', 'fitness-single-sub': 'single',
+        'fitness-unlim-name': 'Fitness Kids', 'fitness-unlim-sub': 'unlimited pass',
+
+        'label-count': 'Classes', 'label-term': 'Valid for',
+        'label-freeze': 'Freeze', 'label-duration': 'Duration',
+        'label-trainer': 'Trainer', 'label-format': 'Format',
+        'val-1visit': '1 visit', 'val-unlim': 'Unlimited',
+        'val-1day': '1 day', 'val-30days': '30 days', 'val-31days': '31 days',
+        'val-4visits': '4 visits', 'val-8visits': '8 visits',
+        'val-12visits': '12 visits',
+        'val-60min': '60 minutes', 'val-90min': '90 minutes',
+        'val-master': 'Master', 'val-top': 'TOP trainer',
+        'val-group': 'Group', 'val-personal': 'Personal',
+        'val-freeze8': '1 × 5 days', 'val-freeze12': '1 × 7 days',
+
+        'btn-signup': 'Book now', 'btn-buy': 'Buy',
+        'cta-trial': 'Book a trial class — 250 UAH',
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const originalSetLanguage = window.setLanguage;
+      window.setLanguage = function(lang) {
+        if (typeof originalSetLanguage === 'function') originalSetLanguage(lang);
+        const t = pricesTranslations[lang];
+        if (!t) return;
+        Object.keys(t).forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.innerHTML = t[id];
+        });
+        localStorage.setItem('erraLang', lang);
+      };
+      const saved = localStorage.getItem('erraLang');
+      if (saved && saved !== 'ua') window.setLanguage(saved);
+    });
+  </script>
+
+</body>
+</html>
