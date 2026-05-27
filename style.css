@@ -38,7 +38,7 @@ header {
 .hero-header {
   background:
     linear-gradient(rgba(240,232,213,0.55), rgba(240,232,213,0.55)),
-    url('studio-leaves.jpg') center center / cover no-repeat;
+    url('studio-leaves.jpg') center bottom / cover no-repeat;
   border: 1px solid rgba(61,50,40,0.18);
   border-radius: 16px;
   padding: 48px 24px 36px;
