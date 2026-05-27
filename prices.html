@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+ Замініть блок <style> в prices.html на цей:
+
   <style>
     .price-tabs {
       display: flex;
@@ -21,20 +23,20 @@
     .price-tab {
       padding: 9px 20px;
       border-radius: 20px;
-      border: 1px solid rgba(232,228,210,0.25);
+      border: 1px solid rgba(61,50,40,0.3);
       background: transparent;
-      color: rgba(255,255,255,0.65);
+      color: #3d3228;
       font-family: 'Cormorant Garamond', serif;
       font-size: 1rem;
       cursor: pointer;
       transition: all 0.25s;
       letter-spacing: 0.04em;
     }
-    .price-tab:hover { background: rgba(232,228,210,0.1); color: #fff; }
+    .price-tab:hover { background: rgba(61,50,40,0.1); color: #2a1f14; }
     .price-tab.active {
-      background: rgba(232,228,210,0.18);
-      border-color: rgba(232,228,210,0.5);
-      color: #fff;
+      background: rgba(61,50,40,0.16);
+      border-color: rgba(61,50,40,0.5);
+      color: #2a1f14;
       font-weight: 600;
     }
     .price-panel { display: none; }
@@ -46,8 +48,8 @@
       margin-top: 8px;
     }
     .price-card {
-      background: rgba(232,228,210,0.07);
-      border: 1px solid rgba(232,228,210,0.13);
+      background: rgba(61,50,40,0.06);
+      border: 1px solid rgba(61,50,40,0.15);
       border-radius: 16px;
       padding: 24px 20px 22px;
       display: flex;
@@ -55,15 +57,15 @@
       transition: background 0.3s;
       position: relative;
     }
-    .price-card:hover { background: rgba(232,228,210,0.12); }
-    .price-card.popular { border-color: rgba(232,228,210,0.45); }
+    .price-card:hover { background: rgba(61,50,40,0.1); }
+    .price-card.popular { border-color: rgba(61,50,40,0.45); }
     .price-badge {
       position: absolute;
       top: -12px;
       left: 50%;
       transform: translateX(-50%);
-      background: rgba(232,228,210,0.9);
-      color: #35342a;
+      background: #2a1f14;
+      color: #F0E8D5;
       font-size: 0.72rem;
       font-weight: 700;
       letter-spacing: 0.12em;
@@ -75,65 +77,58 @@
     .price-card-name {
       font-size: 1.3rem;
       font-weight: 600;
-      color: #fff;
+      color: #2a1f14;
       text-align: center;
       margin-bottom: 4px;
-      letter-spacing: 0.03em;
     }
     .price-card-sub {
       font-size: 0.85rem;
       font-style: italic;
-      color: rgba(255,255,255,0.45);
+      color: #5a4a38;
       text-align: center;
       margin-bottom: 18px;
     }
-    .price-details {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-bottom: 20px;
-    }
+    .price-details { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
     .price-detail-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 8px 10px;
-      background: rgba(232,228,210,0.05);
+      background: rgba(61,50,40,0.06);
       border-radius: 8px;
     }
     .price-detail-label {
       font-size: 0.72rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.38);
+      color: #5a4a38;
     }
     .price-detail-value {
       font-size: 0.95rem;
-      color: rgba(255,255,255,0.85);
+      color: #2a1f14;
       font-weight: 600;
-      text-align: right;
     }
     .price-amount {
       font-size: 2rem;
       font-weight: 700;
-      color: #fff;
+      color: #2a1f14;
       text-align: center;
       margin: 4px 0 16px;
     }
     .price-amount span {
       font-size: 1.1rem;
       font-weight: 400;
-      color: rgba(255,255,255,0.5);
+      color: #5a4a38;
       margin-left: 4px;
     }
     .price-btn {
       display: block;
       text-align: center;
       padding: 12px 16px;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.25);
+      background: rgba(61,50,40,0.1);
+      border: 1px solid rgba(61,50,40,0.3);
       border-radius: 8px;
-      color: #fff;
+      color: #2a1f14;
       text-decoration: none;
       font-family: 'Cormorant Garamond', serif;
       font-size: 1rem;
@@ -142,13 +137,13 @@
       transition: all 0.25s;
       margin-top: auto;
     }
-    .price-btn:hover { background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.5); }
-    .price-btn.primary { background: rgba(255,255,255,0.92); color: #35342a; border-color: #fff; }
-    .price-btn.primary:hover { background: #fff; }
+    .price-btn:hover { background: rgba(61,50,40,0.18); border-color: rgba(61,50,40,0.5); }
+    .price-btn.primary { background: #2a1f14; color: #F0E8D5; border-color: #2a1f14; }
+    .price-btn.primary:hover { background: #4a3828; }
     .price-note {
       font-size: 0.9rem;
       font-style: italic;
-      color: rgba(255,255,255,0.45);
+      color: #5a4a38;
       text-align: center;
       margin-top: 20px;
     }
