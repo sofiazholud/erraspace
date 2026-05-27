@@ -6,7 +6,7 @@
 body {
   font-family: 'Cormorant Garamond', serif;
   background-color: #5a5244;          /* ← менш насичений зелений */
-  color: #ffffff;
+  color: #3d3228;
   margin: 0;
   padding: 20px;
   line-height: 1.6;
@@ -723,7 +723,7 @@ section, footer { animation: fadeInUp 0.8s ease both; }
   .class-item-desc {
     font-size: 1rem;                     /* ← мінімум 1rem на мобільному */
     line-height: 1.65;
-    color: rgba(255,255,255,0.9);        /* ← максимальний контраст на мобільному */
+    color: rgba(61,50,40,0.9);        /* ← максимальний контраст на мобільному */
   }
 
   /* Кнопки CTA */
