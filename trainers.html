@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  Замініть блок <style> в trainers.html на цей:
+
   <style>
     .trainers-grid {
       display: grid;
@@ -21,38 +23,33 @@
       margin-right: auto;
     }
     .trainer-card {
-      background: rgba(232,228,210,0.07);
-      border: 1px solid rgba(232,228,210,0.11);
+      background: rgba(61,50,40,0.06);
+      border: 1px solid rgba(61,50,40,0.15);
       border-radius: 14px;
       overflow: hidden;
       transition: background 0.3s;
       display: grid;
       grid-template-rows: auto 1fr;
     }
-    .trainer-card:hover {
-      background: rgba(232,228,210,0.12);
-    }
+    .trainer-card:hover { background: rgba(61,50,40,0.1); }
     .trainer-photo {
       width: 100%;
       aspect-ratio: 3 / 4;
       overflow: hidden;
-      background: rgba(232,228,210,0.06);
+      background: rgba(61,50,40,0.06);
     }
     .trainer-photo img {
-      width: 100%;
-      height: 100%;
+      width: 100%; height: 100%;
       object-fit: cover;
       object-position: top center;
       display: block;
     }
-    .trainer-info {
-      padding: 20px 22px 24px;
-    }
+    .trainer-info { padding: 20px 22px 24px; }
     .trainer-category {
       font-size: 0.72rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.42);
+      color: #5a4a38;
       margin-bottom: 6px;
     }
     .trainer-name {
@@ -60,23 +57,21 @@
       font-weight: 600;
       letter-spacing: 0.04em;
       margin: 0 0 6px;
-      color: #fff;
+      color: #2a1f14;
     }
     .trainer-directions {
       font-size: 0.88rem;
       font-style: italic;
-      color: rgba(255,255,255,0.50);
+      color: #5a4a38;
       margin-bottom: 14px;
       line-height: 1.4;
     }
     .trainer-desc {
       font-size: 1rem;
-      color: rgba(255,255,255,0.84);
+      color: #3d3228;
       line-height: 1.72;
       margin: 0;
     }
-
-    /* Директор — горизонтальна картка, фото тягнеться за текстом */
     .trainer-card.director {
       grid-column: 1 / -1;
       display: grid;
@@ -88,30 +83,14 @@
       height: 100%;
       min-height: 320px;
     }
-    .trainer-card.director .trainer-photo img {
-      height: 100%;
-      width: 100%;
-    }
-
+    .trainer-card.director .trainer-photo img { height: 100%; width: 100%; }
     @media (max-width: 768px) {
-  .trainer-card.director {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-  }
-  .trainer-card.director .trainer-photo {
-    aspect-ratio: 3 / 4;
-    height: auto;
-    min-height: unset;
-  }
-  .trainer-card.director .trainer-photo img {
-    object-position: center center;
-  }
-}
+      .trainer-card.director { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+      .trainer-card.director .trainer-photo { aspect-ratio: 3 / 4; height: auto; min-height: unset; }
+      .trainer-card.director .trainer-photo img { object-position: center center; }
+    }
     @media (max-width: 480px) {
-      .trainers-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
+      .trainers-grid { grid-template-columns: 1fr; gap: 16px; }
       .trainer-name { font-size: 1.25rem; }
       .trainer-desc { font-size: 0.98rem; }
       .trainer-info { padding: 16px 14px 20px; }
