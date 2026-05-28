@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каппадокія 2026 — ERRA SPACE | Програма подорожі</title>
+  <meta name="description" content="Йога-ретрит в Каппадокії 22–28 серпня 2026. Повна програма, вартість, умови участі. ERRA SPACE.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .cap-hero {
+      background:
+        linear-gradient(rgba(240,232,213,0.82), rgba(240,232,213,0.82)),
+        url('cappadocia.jpg') center center / cover no-repeat;
+      border-radius: 16px;
+      padding: 60px 24px 48px;
+      text-align: center;
+      margin-bottom: 24px;
+      border: 1px solid rgba(61,50,40,0.15);
+    }
+    .cap-hero-label {
+      font-size: 0.82rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #5a4a38;
+      margin-bottom: 10px;
+    }
+    .cap-hero-title {
+      font-size: 2.8rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #2a1f14;
+      margin: 0 0 12px;
+    }
+    .cap-hero-sub {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #3d3228;
+      margin: 0 0 28px;
+    }
+
+    /* Програма по днях */
+    .days-list { display: flex; flex-direction: column; gap: 16px; margin-top: 20px; text-align: left; }
+    .day-card {
+      background: rgba(61,50,40,0.05);
+      border: 1px solid rgba(61,50,40,0.12);
+      border-radius: 14px;
+      padding: 24px 28px;
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    .day-number {
+      text-align: center;
+      padding-right: 20px;
+      border-right: 1px solid rgba(61,50,40,0.15);
+    }
+    .day-num-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #5a4a38;
+      margin-bottom: 4px;
+    }
+    .day-num-big {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #2a1f14;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .day-date {
+      font-size: 0.82rem;
+      color: #5a4a38;
+      font-style: italic;
+    }
+    .day-content-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #2a1f14;
+      margin-bottom: 8px;
+    }
+    .day-content-text {
+      font-size: 0.98rem;
+      color: #3d3228;
+      line-height: 1.75;
+    }
+
+    /* Включено / Не включено */
+    .includes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
+      text-align: left;
+    }
+    .includes-card {
+      background: rgba(61,50,40,0.05);
+      border: 1px solid rgba(61,50,40,0.12);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .includes-card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #2a1f14;
+      margin-bottom: 16px;
+      letter-spacing: 0.05em;
+    }
+    .includes-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      color: #3d3228;
+      line-height: 1.5;
+    }
+    .includes-item::before { content: '✓'; color: #5a4a38; font-weight: 700; flex-shrink: 0; }
+    .not-includes-item::before { content: '✗'; color: #9a7a6a; }
+
+    /* Вартість */
+    .price-big {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #2a1f14;
+      text-align: center;
+      margin: 16px 0 4px;
+    }
+    .price-note-small {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #5a4a38;
+      text-align: center;
+    }
+
+    /* Умови */
+    .conditions-list { margin-top: 16px; text-align: left; }
+    .condition-item {
+      background: rgba(61,50,40,0.05);
+      border: 1px solid rgba(61,50,40,0.1);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #3d3228;
+      line-height: 1.6;
+    }
+    .condition-item strong { color: #2a1f14; }
+
+    /* Контакти */
+    .contacts-row {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .contact-phone {
+      background: rgba(61,50,40,0.06);
+      border: 1px solid rgba(61,50,40,0.15);
+      border-radius: 10px;
+      padding: 14px 24px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #2a1f14;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .cap-hero-title { font-size: 1.8rem; }
+      .day-card { grid-template-columns: 1fr; }
+      .day-number { border-right: none; border-bottom: 1px solid rgba(61,50,40,0.15); padding-right: 0; padding-bottom: 12px; display: flex; gap: 12px; align-items: center; }
+      .includes-grid { grid-template-columns: 1fr; }
+      .price-big { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html" style="color:inherit;text-decoration:none;">ERRA SPACE</a></h1>
+  </header>
+
+  <nav class="page-nav">
+    <a href="index.html" class="page-nav-link">Головна</a>
+    <a href="trainers.html" class="page-nav-link">Тренери</a>
+    <a href="prices.html" class="page-nav-link">Ціни</a>
+    <a href="travel.html" class="page-nav-link">Подорожі</a>
+    <a href="about.html" class="page-nav-link">Про нас</a>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <div class="cap-hero">
+      <p class="cap-hero-label">22 — 28 серпня 2026</p>
+      <h1 class="cap-hero-title">Каппадокія</h1>
+      <p class="cap-hero-sub">Подорож, після якої ти повернешся іншою</p>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+        <a href="https://t.me/ERRA_SPASE?text=Привіт%2C%20мене%20цікавить%20подорож%20в%20Каппадокію"
+           target="_blank" rel="noopener noreferrer"
+           class="cta-button primary">✈️ Ціна в Telegram</a>
+        <a href="https://www.instagram.com/erraspace.ua"
+           target="_blank" rel="noopener noreferrer"
+           class="cta-button">📸 Написати в Instagram</a>
+      </div>
+    </div>
+
+    <!-- Що очікує -->
+    <section>
+      <h2>Що вас очікує в подорожі</h2>
+      <div style="max-width:680px; margin:0 auto; text-align:left;">
+        <div class="includes-item">4 дні перезавантаження для душі і тіла</div>
+        <div class="includes-item">Проживання в комфортному готелі з місцевим колоритом</div>
+        <div class="includes-item">Фантастичні краєвиди печерних міст і місячних ландшафтів</div>
+        <div class="includes-item">Політ на повітряній кулі</div>
+        <div class="includes-item">Фотосесія на сході сонця з кулями</div>
+        <div class="includes-item">Йога на світанку або заході — з Альоною Єрохіною</div>
+        <div class="includes-item">Фотосупровід від Юлії Носенко</div>
+        <div class="includes-item">Басейн і СПА</div>
+        <div class="includes-item">Місцева колоритна кухня і смаколики</div>
+        <div class="includes-item">Екскурсії і знайомство з історією Каппадокії</div>
+        <div class="includes-item">Приємні враження у жіночому колі</div>
+      </div>
+      <p style="margin-top:20px; font-style:italic; color:#5a4a38; font-size:0.95rem;">
+        Тренування з досвідченим тренером — Альоною Єрохіною<br>
+        Фотосупровід з фотографом — Юлією Носенко<br>
+        Група до 12-ти осіб
+      </p>
+    </section>
+
+    <!-- Програма -->
+    <section>
+      <h2>Програма по днях</h2>
+      <div class="days-list">
+
+        <div class="day-card">
+          <div class="day-number">
+            <div class="day-num-label">День</div>
+            <div class="day-num-big">1</div>
+            <div class="day-date">22.08</div>
+          </div>
+          <div>
+            <div class="day-content-title">Виїзд</div>
+            <div class="day-content-text">Виїзд з Києва до Кишинева</div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-number">
+            <div class="day-num-label">День</div>
+            <div class="day-num-big">2</div>
+            <div class="day-date">23.08</div>
+          </div>
+          <div>
+            <div class="day-content-title">Прибуття до Каппадокії</div>
+            <div class="day-content-text">
+              Переліт Кишинів — Невшехір<br>
+              Поселення в готелі, відпочинок, вільний час<br>
+              Знайомство з дівчатами і дівоче коло
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-number">
+            <div class="day-num-label">День</div>
+            <div class="day-num-big">3</div>
+            <div class="day-date">24.08</div>
+          </div>
+          <div>
+            <div class="day-content-title">Знайомство з Каппадокією</div>
+            <div class="day-content-text">
+              Ранкова йога на терасі, сніданок<br>
+              Знайомство з місцевістю і її неймовірними марсіанськими ландшафтами<br>
+              Відвідуємо найвищу скельну фортецю Uchisar<br>
+              Спробуємо місцеві смаколики і каву по-турецьки<br>
+              Погуляємо красивими долинами і дізнаємося як виникли вітієваті скелі<br>
+              Пообідаємо і відвідаємо традиційну місцеву гончарну майстерню<br>
+              Повернення в готель, вечеря і вільний час
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-number">
+            <div class="day-num-label">День</div>
+            <div class="day-num-big">4</div>
+            <div class="day-date">25.08</div>
+          </div>
+          <div>
+            <div class="day-content-title">🎈 Політ на повітряній кулі</div>
+            <div class="day-content-text">
+              Дуже ранній підйом і переїзд до місця запуску куль<br>
+              Незабутні враження і вся Каппадокія з висоти<br>
+              Після приземлення — келих просеко і сертифікат<br>
+              Повертаємось в готель, снідаємо, відпочиваємо від вражень<br>
+              За бажанням відвідуємо СПА<br>
+              В обід — місцева винарня, дегустація вина<br>
+              Замок Ortahisar і ще одна красива долина<br>
+              Повертаємось в готель, заняття з йоги, вечеря
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-number">
+            <div class="day-num-label">День</div>
+            <div class="day-num-big">5</div>
+            <div class="day-date">26.08</div>
+          </div>
+          <div>
+            <div class="day-content-title">📸 Фотосесія і підземні міста</div>
+            <div class="day-content-text">
+              Ранній підйом, виїжджаємо на оглядовий майданчик<br>
+              Фотосесія на фоні літаючих навкруги повітряних куль<br>
+              Повертаємось в готель, снідаємо<br>
+              Відпочиваємо біля басейну і в СПА<br>
+              Знайомство з підземними містами Каппадокії<br>
+              Обід в місцевому колоритному ресторані<br>
+              Майстерня онікса, каньон Ihlara і кратерне вулканічне озеро<br>
+              Тренування з йоги. Вечеряємо і збираємось на завершальне коло
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-number">
+            <div class="day-num-label">День</div>
+            <div class="day-num-big">6</div>
+            <div class="day-date">27.08</div>
+          </div>
+          <div>
+            <div class="day-content-title">Від'їзд</div>
+            <div class="day-content-text">
+              Ранкова йога, сніданок<br>
+              Вільний час біля басейну і в СПА<br>
+              Виїзд в аеропорт<br>
+              Переліт Невшехір — Кишинів<br>
+              Виїзд додому вечірнім автобусом
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-number">
+            <div class="day-num-label">День</div>
+            <div class="day-num-big">7</div>
+            <div class="day-date">28.08</div>
+          </div>
+          <div>
+            <div class="day-content-title">Повернення додому 🏠</div>
+            <div class="day-content-text">Приїзд додому до Києва</div>
+          </div>
+        </div>
+
+      </div>
+      <div style="background:rgba(61,50,40,0.06); border:1px solid rgba(61,50,40,0.15); border-radius:10px; padding:16px 20px; margin-top:20px; text-align:left; font-size:0.92rem; color:#5a4a38; font-style:italic; line-height:1.7;">
+        ⚠️ Черговість екскурсій і подій може відрізнятися від опису програми через погодні умови! Але ми обов'язково відвідаємо все, що перелічено вище!<br>
+        У разі несприятливих погодних умов політ на повітряній кулі може не статися з міркувань безпеки. Але ми обрали кінець серпня — сезон, коли ймовірність польотів майже 100%.
+      </div>
+    </section>
+
+    <!-- Вартість -->
+    <section>
+      <h2>Вартість туру</h2>
+      <div class="price-big">1 500 €</div>
+      <p class="price-note-small">двомісне розміщення</p>
+
+      <div class="includes-grid" style="margin-top:28px;">
+        <div class="includes-card">
+          <div class="includes-card-title">✅ Що входить у вартість</div>
+          <div class="includes-item">Двомісне проживання в комфортному готелі 4*</div>
+          <div class="includes-item">Сніданки і вечері</div>
+          <div class="includes-item">Відкритий басейн</div>
+          <div class="includes-item">4 тренування з йоги</div>
+          <div class="includes-item">Фотосесія на світанку + фото/відео супровід під час тренувань і екскурсій</div>
+          <div class="includes-item">Трансфер від аеропорту до готелю</div>
+          <div class="includes-item">Трансфер під час екскурсій за програмою</div>
+          <div class="includes-item">Вхідні квитки на всі локації за програмою</div>
+          <div class="includes-item">Квиток на політ на повітряній кулі</div>
+          <div class="includes-item">Дегустація вина на виноробні</div>
+          <div class="includes-item">Два обіди під час екскурсій</div>
+          <div class="includes-item">Супровід гіда під час екскурсій</div>
+        </div>
+        <div class="includes-card">
+          <div class="includes-card-title">❌ У вартість НЕ входить</div>
+          <div class="includes-item not-includes-item">Квитки на автобус Київ–Кишинів і назад (від 2 500 грн в обидві сторони)</div>
+          <div class="includes-item not-includes-item">Переліт Кишинів–Невшехір і назад (від 18 000 грн)</div>
+          <div class="includes-item not-includes-item">СПА в готелі</div>
+          <div class="includes-item not-includes-item">Страхування</div>
+          <div class="includes-item not-includes-item">Особисті витрати</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Умови участі -->
+    <section>
+      <h2>Умови участі</h2>
+      <div class="conditions-list">
+        <div class="condition-item">
+          <strong>Передплата:</strong> 30% = 450 €
+        </div>
+        <div class="condition-item">
+          <strong>Решта суми</strong> сплачується до 22 липня
+        </div>
+        <div class="condition-item">
+          <strong>Квитки</strong> на автобус та літак купуєте або самостійно, або за зверненням з нашою допомогою
+        </div>
+        <div class="condition-item">
+          У разі настання форс-мажорної ситуації і неможливості поїхати — <strong>передплата не повертається</strong>.<br>
+          Якщо ви відмовляєтесь від подорожі до 22 липня — <strong>передплата повертається</strong>.
+        </div>
+      </div>
+    </section>
+
+    <!-- Організатори -->
+    <section>
+      <h2>Організація і супровід</h2>
+      <p class="section-subtitle">Альона Єрохіна і Юлія Носенко</p>
+      <p style="color:#3d3228; font-size:1rem; max-width:560px; margin:0 auto 24px;">
+        Надамо відповіді на всі ваші додаткові запитання
+      </p>
+      <div class="contacts-row">
+        <a href="tel:+380675022574" class="contact-phone">📞 067 502 25 74</a>
+        <a href="tel:+380506224501" class="contact-phone">📞 050 622 45 01</a>
+      </div>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:20px;">
+        <a href="https://t.me/ERRA_SPASE?text=Привіт%2C%20мене%20цікавить%20подорож%20в%20Каппадокію"
+           target="_blank" rel="noopener noreferrer"
+           class="cta-button primary">✈️ Написати в Telegram</a>
+        <a href="https://www.instagram.com/erohina__yoga/"
+           target="_blank" rel="noopener noreferrer"
+           class="cta-button">Instagram Альони</a>
+        <a href="https://www.instagram.com/juli_nosenko_photo?igsh=a244OXh1bHAyMGpm"
+           target="_blank" rel="noopener noreferrer"
+           class="cta-button">Instagram Юлії</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Erra Studio. Всі права захищені.</p>
+    <p style="margin-top:8px; font-size:.85em;">
+      <a href="oferta.html">Публічна оферта</a>
+    </p>
+  </footer>
+
+</body>
+</html>
