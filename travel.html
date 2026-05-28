@@ -66,11 +66,23 @@
   align-items: stretch;
 }
 @media (max-width: 900px) {
-  .travel-includes { grid-template-columns: repeat(2, 1fr); }
+  .travel-includes {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
 @media (max-width: 600px) {
-  .travel-includes { grid-template-columns: 1fr; }
+  .travel-includes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a b"
+      "c c";
+  }
+  .travel-includes > div:nth-child(1) { grid-area: a; }
+  .travel-includes > div:nth-child(2) { grid-area: b; }
+  .travel-includes > div:nth-child(3) { grid-area: c; }
 }
+
     .travel-include-item {
       display: flex;
       align-items: flex-start;
