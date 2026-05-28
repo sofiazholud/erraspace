@@ -36,7 +36,9 @@ header {
 }
 
 .hero-header {
-  background: rgba(61,50,40,0.08);
+  background:
+    linear-gradient(rgba(240,232,213,0.55), rgba(240,232,213,0.55)),
+    url('studio-leaves.jpg') center center / cover no-repeat;
   border: 1px solid rgba(61,50,40,0.18);
   border-radius: 16px;
   padding: 48px 24px 36px;
@@ -659,4 +661,10 @@ section, footer { animation: fadeInUp 0.8s ease both; }
 .page-nav-link.travel.active {
   background: rgba(61,50,40,0.2);
   border-color: rgba(61,50,40,0.6);
+}
+/* ── Фон з листям ── */
+.leaf-bg {
+  background:
+    linear-gradient(rgba(240,232,213,0.88), rgba(240,232,213,0.88)),
+    url('studio-leaves2.jpg') center center / cover no-repeat !important;
 }
