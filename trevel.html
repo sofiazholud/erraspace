@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Подорожі — ERRA SPACE | Ретрит Каппадокія 2026</title>
+  <meta name="description" content="Йога-ретрит в Каппадокії 22–28 серпня 2026. Повітряні кулі, йога на світанку, SPA, фотосесія. До 12 осіб. ERRA SPACE.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .travel-hero {
+      background:
+        linear-gradient(rgba(240,232,213,0.45), rgba(240,232,213,0.45)),
+        url('cappadocia.jpg') center center / cover no-repeat;
+      border-radius: 16px;
+      padding: 80px 24px 60px;
+      text-align: center;
+      margin-bottom: 30px;
+      border: 1px solid rgba(61,50,40,0.15);
+    }
+    .travel-hero-date {
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #5a4a38;
+      margin-bottom: 12px;
+    }
+    .travel-hero-title {
+      font-size: 3rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #2a1f14;
+      margin: 0 0 16px;
+    }
+    .travel-hero-sub {
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #3d3228;
+      margin: 0 0 32px;
+    }
+    .travel-hero-tags {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .travel-tag {
+      background: rgba(61,50,40,0.1);
+      border: 1px solid rgba(61,50,40,0.25);
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 0.9rem;
+      color: #3d3228;
+    }
+    .travel-includes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+      text-align: left;
+    }
+    .travel-include-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: rgba(61,50,40,0.05);
+      border: 1px solid rgba(61,50,40,0.12);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .travel-include-icon { font-size: 1.6rem; flex-shrink: 0; line-height: 1; }
+    .travel-include-text { font-size: 1rem; color: #3d3228; line-height: 1.6; }
+    .travel-include-text strong { display: block; color: #2a1f14; font-size: 1.05rem; margin-bottom: 4px; }
+    .travel-info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .travel-info-card {
+      background: rgba(61,50,40,0.06);
+      border: 1px solid rgba(61,50,40,0.15);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .travel-info-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #5a4a38;
+      margin-bottom: 8px;
+    }
+    .travel-info-value { font-size: 1.3rem; font-weight: 600; color: #2a1f14; }
+    .travel-leader {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      background: rgba(61,50,40,0.05);
+      border: 1px solid rgba(61,50,40,0.12);
+      border-radius: 16px;
+      padding: 28px;
+      margin-top: 16px;
+      text-align: left;
+    }
+    .travel-leader-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: rgba(61,50,40,0.1);
+    }
+    .travel-leader-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+    .travel-leader-initials {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: rgba(61,50,40,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #5a4a38;
+    }
+    .travel-leader-name { font-size: 1.3rem; font-weight: 600; color: #2a1f14; margin-bottom: 4px; }
+    .travel-leader-role { font-size: 0.88rem; font-style: italic; color: #5a4a38; margin-bottom: 10px; }
+    .travel-leader-desc { font-size: 1rem; color: #3d3228; line-height: 1.65; }
+    @media (max-width: 600px) {
+      .travel-hero-title { font-size: 2rem; }
+      .travel-leader { flex-direction: column; align-items: center; text-align: center; }
+      .travel-leader-photo, .travel-leader-initials { width: 80px; height: 80px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html" style="color:inherit;text-decoration:none;">ERRA SPACE</a></h1>
+    <p class="hero-text" id="subtitle">Простір, де тіло знаходить опору, а розум — тишу.</p>
+  </header>
+
+  <nav class="page-nav">
+    <a href="index.html" class="page-nav-link" id="nav-home">Головна</a>
+    <a href="classes.html" class="page-nav-link" id="nav-classes">Напрямки</a>
+    <a href="trainers.html" class="page-nav-link" id="nav-trainers">Тренери</a>
+    <a href="prices.html" class="page-nav-link" id="nav-prices">Ціни</a>
+    <a href="locations.html" class="page-nav-link" id="nav-locations">Локації</a>
+    <a href="about.html" class="page-nav-link" id="nav-about">Про нас</a>
+    <a href="travel.html" class="page-nav-link active" id="nav-travel">Подорожі</a>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <div class="travel-hero">
+      <p class="travel-hero-date">22 — 28 серпня 2026</p>
+      <h1 class="travel-hero-title">Каппадокія</h1>
+      <p class="travel-hero-sub">Подорож, після якої ти повернешся іншою</p>
+      <div class="travel-hero-tags">
+        <span class="travel-tag">🧘 Йога на світанку</span>
+        <span class="travel-tag">🎈 Політ на кулі</span>
+        <span class="travel-tag">📸 Фотосесія</span>
+        <span class="travel-tag">♨️ SPA та басейн</span>
+        <span class="travel-tag">👩‍🤝‍👩 До 12 осіб</span>
+      </div>
+      <a href="https://t.me/ERRA_SPASE?text=Хочу дізнатись про ретрит в Каппадокію 22-28 серпня"
+         target="_blank" rel="noopener noreferrer"
+         class="cta-button primary">Дізнатись ціну в Telegram</a>
+    </div>
+
+    <!-- Інформація -->
+    <section>
+      <h2>Деталі поїздки</h2>
+      <div class="travel-info-grid">
+        <div class="travel-info-card">
+          <div class="travel-info-label">Дати</div>
+          <div class="travel-info-value">22–28 серпня</div>
+        </div>
+        <div class="travel-info-card">
+          <div class="travel-info-label">Практик</div>
+          <div class="travel-info-value">4 дні</div>
+        </div>
+        <div class="travel-info-card">
+          <div class="travel-info-label">Місць</div>
+          <div class="travel-info-value">до 12 осіб</div>
+        </div>
+        <div class="travel-info-card">
+          <div class="travel-info-label">Ціна</div>
+          <div class="travel-info-value">в Telegram</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Що входить -->
+    <section>
+      <h2>Що на вас чекає</h2>
+      <div class="travel-includes">
+        <div class="travel-include-item">
+          <div class="travel-include-icon">🎈</div>
+          <div class="travel-include-text">
+            <strong>Повітряні кулі на світанку</strong>
+            Місячні ландшафти і печерні міста Каппадокії з висоти пташиного польоту
+          </div>
+        </div>
+        <div class="travel-include-item">
+          <div class="travel-include-icon">🧘</div>
+          <div class="travel-include-text">
+            <strong>Йога на світанку та заході сонця</strong>
+            Практика в атмосфері абсолютного спокою з тренером Альоною Єрохіною
+          </div>
+        </div>
+        <div class="travel-include-item">
+          <div class="travel-include-icon">📸</div>
+          <div class="travel-include-text">
+            <strong>Фотосесія на сході сонця</strong>
+            Фотосупровід від професійного фотографа Юлії Носенко — унікальні кадри на фоні куль
+          </div>
+        </div>
+        <div class="travel-include-item">
+          <div class="travel-include-icon">🏨</div>
+          <div class="travel-include-text">
+            <strong>Комфортний готель</strong>
+            З місцевим колоритом, SPA та басейном — справжній відпочинок після практик
+          </div>
+        </div>
+        <div class="travel-include-item">
+          <div class="travel-include-icon">🍽️</div>
+          <div class="travel-include-text">
+            <strong>Місцева кухня та екскурсії</strong>
+            Смаколики, дегустації та знайомство з культурою унікального регіону
+          </div>
+        </div>
+        <div class="travel-include-item">
+          <div class="travel-include-icon">🤍</div>
+          <div class="travel-include-text">
+            <strong>Жіноче коло</strong>
+            Простір, де легко бути собою — підтримка, єднання і натхнення
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Провідники -->
+    <section>
+      <h2>Провідники подорожі</h2>
+
+      <div class="travel-leader">
+        <div class="travel-leader-photo">
+          <img src="erokhina.jpg" alt="Альона Єрохіна">
+        </div>
+        <div>
+          <div class="travel-leader-name">Альона Єрохіна</div>
+          <div class="travel-leader-role">Засновниця ERRA SPACE · Тренер з йоги та флай-йоги</div>
+          <div class="travel-leader-desc">
+            Для Альони йога — це не лише практика на килимку, а те, що проходить крізь кожен момент життя. У цій подорожі вона поєднає рух, дихання і красу Каппадокії в неповторний досвід.
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-leader">
+        <div class="travel-leader-photo">
+          <img src="nosenko.jpg" alt="Юлія Носенко">
+        </div>
+        <div>
+          <div class="travel-leader-name">Юлія Носенко</div>
+          <div class="travel-leader-role">Професійний фотограф</div>
+          <div class="travel-leader-desc">
+            Юлія подарує вам унікальні кадри на фоні повітряних куль на світанку — спогади, які залишаться на все життя.
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:24px;">
+        <a href="https://www.instagram.com/erohina_ya?igsh=MWU5ZWE2MGZvNDB4eA=="
+           target="_blank" rel="noopener noreferrer"
+           class="cta-button primary">Instagram Альони</a>
+        <a href="https://www.instagram.com/juli_nosenko_photo?igsh=a244OXh1bHAyMGpm"
+           target="_blank" rel="noopener noreferrer"
+           class="cta-button">Instagram Юлії</a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="text-align:center;">
+      <h2>Місць залишилось мало</h2>
+      <p class="section-subtitle">До 12 учасниць — камерна атмосфера і увага до кожної</p>
+      <div class="cta">
+        <a href="https://t.me/ERRA_SPASE?text=Хочу дізнатись про ретрит в Каппадокію 22-28 серпня"
+           target="_blank" rel="noopener noreferrer"
+           class="cta-button primary">Дізнатись ціну та забронювати</a>
+        <a href="https://www.instagram.com/erraspace.ua"
+           target="_blank" rel="noopener noreferrer"
+           class="cta-button">Instagram ERRA SPACE</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p id="footer-text">© 2026 Erra Studio. Всі права захищені.</p>
+    <p style="margin-top:8px; font-size:.85em;">
+      <a href="oferta.html">Публічна оферта</a>
+    </p>
+  </footer>
+
+</body>
+</html>
