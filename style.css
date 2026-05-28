@@ -36,9 +36,7 @@ header {
 }
 
 .hero-header {
-  background:
-    linear-gradient(rgba(240,232,213,0.82), rgba(240,232,213,0.82)),
-    url('studio-leaves2.jpg') center center / cover no-repeat !important;
+  background: rgba(61,50,40,0.08);
   border: 1px solid rgba(61,50,40,0.18);
   border-radius: 16px;
   padding: 48px 24px 36px;
@@ -634,8 +632,31 @@ section, footer { animation: fadeInUp 0.8s ease both; }
   .price-card-name { font-size: 1.15rem; }
   .price-amount { font-size: 1.7rem; }
 }
-.leaf-bg {
-  background:
-    linear-gradient(rgba(240,232,213,0.82), rgba(240,232,213,0.82)),
-    url('studio-leaves2.jpg') center center / cover no-repeat !important;
+
+/* ── Кнопка Подорожі в навігації ── */
+.page-nav-link.travel {
+  background: rgba(61,50,40,0.12);
+  border-color: rgba(61,50,40,0.4);
+  color: #2a1f14;
+  font-weight: 600;
+  position: relative;
+}
+.page-nav-link.travel::after {
+  content: '✨ NEW';
+  position: absolute;
+  top: -10px;
+  right: -4px;
+  background: #2a1f14;
+  color: #F0E8D5;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 2px 6px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+.page-nav-link.travel:hover,
+.page-nav-link.travel.active {
+  background: rgba(61,50,40,0.2);
+  border-color: rgba(61,50,40,0.6);
 }
