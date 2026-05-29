@@ -1,3 +1,4 @@
+// Поточна мова — зчитуємо збережену або UA за замовчуванням
 let currentLang = localStorage.getItem('erraLang') || 'ua';
 
 // Переклади
@@ -51,6 +52,25 @@ const translations = {
     "faq-q-5": "Як записатися?",
     "faq-a-5": "Найшвидше — написати нам у Telegram або через instasport.ua. Ми підберемо зручний час і напрямок. Пробне заняття коштує 250 грн — це найкращий спосіб познайомитися зі студією.",
     "faq-cta": "Є ще питання? Напишіть нам",
+
+    // Квіз
+    "quiz-title": "Не знаєш з чого почати?",
+    "quiz-subtitle": "Дай відповідь на 2 питання — ми підкажемо твій напрямок",
+    "quiz-q1-label": "Питання 1 з 2",
+    "quiz-q1-text": "Що для тебе зараз найважливіше?",
+    "quiz-q1-a1": "🧘 Розслабитись і зняти стрес",
+    "quiz-q1-a2": "💻 Спина, постава, сидяча робота",
+    "quiz-q1-a3": "🔥 Тонус, сила, форма",
+    "quiz-q1-a4": "🤍 Вагітність",
+    "quiz-q2-label": "Питання 2 з 2",
+    "quiz-q2-text": "Який формат тобі ближчий?",
+    "quiz-q2-a1": "👥 Група (до 10 людей)",
+    "quiz-q2-a2": "👤 Індивідуально",
+    "quiz-q2-a3": "💻 Онлайн",
+    "quiz-back-btn": "← Назад",
+    "quiz-result-label": "Твій напрямок",
+    "quiz-result-btn-text": "Записатися на пробне — 250 грн",
+    "quiz-restart-btn": "↻ Пройти ще раз",
 
     // Як почати
     "steps-title": "Як почати",
@@ -237,6 +257,25 @@ const translations = {
     "faq-a-5": "The fastest way is to message us on Telegram or book via instasport.ua. We'll find a convenient time and class for you. A trial class costs 250 UAH — the best way to get to know the studio.",
     "faq-cta": "More questions? Message us",
 
+    // Quiz
+    "quiz-title": "Not sure where to start?",
+    "quiz-subtitle": "Answer 2 questions — we'll suggest your direction",
+    "quiz-q1-label": "Question 1 of 2",
+    "quiz-q1-text": "What matters most to you right now?",
+    "quiz-q1-a1": "🧘 Relax and reduce stress",
+    "quiz-q1-a2": "💻 Back, posture, desk work",
+    "quiz-q1-a3": "🔥 Tone, strength, shape",
+    "quiz-q1-a4": "🤍 Pregnancy",
+    "quiz-q2-label": "Question 2 of 2",
+    "quiz-q2-text": "Which format suits you better?",
+    "quiz-q2-a1": "👥 Group (up to 10 people)",
+    "quiz-q2-a2": "👤 One-on-one",
+    "quiz-q2-a3": "💻 Online",
+    "quiz-back-btn": "← Back",
+    "quiz-result-label": "Your direction",
+    "quiz-result-btn-text": "Book a trial — 250 UAH",
+    "quiz-restart-btn": "↻ Take again",
+
     // How to start
     "steps-title": "How to start",
     "steps-subtitle": "Three simple steps to your first class",
@@ -377,6 +416,7 @@ const translations = {
 // Функція перемикання мови
 function setLanguage(lang) {
   currentLang = lang;
+  window.currentLang = lang;
   localStorage.setItem('erraLang', lang);
 
   const dict = translations[lang] || {};
