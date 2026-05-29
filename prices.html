@@ -21,20 +21,20 @@
     .price-tab {
       padding: 9px 20px;
       border-radius: 20px;
-      border: 1px solid rgba(232,228,210,0.25);
+      border: 1px solid rgba(61,50,40,0.3);
       background: transparent;
-      color: rgba(255,255,255,0.65);
+      color: #3d3228;
       font-family: 'Cormorant Garamond', serif;
       font-size: 1rem;
       cursor: pointer;
       transition: all 0.25s;
       letter-spacing: 0.04em;
     }
-    .price-tab:hover { background: rgba(232,228,210,0.1); color: #fff; }
+    .price-tab:hover { background: rgba(61,50,40,0.1); color: #2a1f14; }
     .price-tab.active {
-      background: rgba(232,228,210,0.18);
-      border-color: rgba(232,228,210,0.5);
-      color: #fff;
+      background: rgba(61,50,40,0.16);
+      border-color: rgba(61,50,40,0.5);
+      color: #2a1f14;
       font-weight: 600;
     }
     .price-panel { display: none; }
@@ -46,8 +46,8 @@
       margin-top: 8px;
     }
     .price-card {
-      background: rgba(232,228,210,0.07);
-      border: 1px solid rgba(232,228,210,0.13);
+      background: rgba(61,50,40,0.06);
+      border: 1px solid rgba(61,50,40,0.15);
       border-radius: 16px;
       padding: 24px 20px 22px;
       display: flex;
@@ -55,15 +55,15 @@
       transition: background 0.3s;
       position: relative;
     }
-    .price-card:hover { background: rgba(232,228,210,0.12); }
-    .price-card.popular { border-color: rgba(232,228,210,0.45); }
+    .price-card:hover { background: rgba(61,50,40,0.1); }
+    .price-card.popular { border-color: rgba(61,50,40,0.45); }
     .price-badge {
       position: absolute;
       top: -12px;
       left: 50%;
       transform: translateX(-50%);
-      background: rgba(232,228,210,0.9);
-      color: #35342a;
+      background: #2a1f14;
+      color: #F0E8D5;
       font-size: 0.72rem;
       font-weight: 700;
       letter-spacing: 0.12em;
@@ -75,65 +75,58 @@
     .price-card-name {
       font-size: 1.3rem;
       font-weight: 600;
-      color: #fff;
+      color: #2a1f14;
       text-align: center;
       margin-bottom: 4px;
-      letter-spacing: 0.03em;
     }
     .price-card-sub {
       font-size: 0.85rem;
       font-style: italic;
-      color: rgba(255,255,255,0.45);
+      color: #5a4a38;
       text-align: center;
       margin-bottom: 18px;
     }
-    .price-details {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-bottom: 20px;
-    }
+    .price-details { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
     .price-detail-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 8px 10px;
-      background: rgba(232,228,210,0.05);
+      background: rgba(61,50,40,0.06);
       border-radius: 8px;
     }
     .price-detail-label {
       font-size: 0.72rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.38);
+      color: #5a4a38;
     }
     .price-detail-value {
       font-size: 0.95rem;
-      color: rgba(255,255,255,0.85);
+      color: #2a1f14;
       font-weight: 600;
-      text-align: right;
     }
     .price-amount {
       font-size: 2rem;
       font-weight: 700;
-      color: #fff;
+      color: #2a1f14;
       text-align: center;
       margin: 4px 0 16px;
     }
     .price-amount span {
       font-size: 1.1rem;
       font-weight: 400;
-      color: rgba(255,255,255,0.5);
+      color: #5a4a38;
       margin-left: 4px;
     }
     .price-btn {
       display: block;
       text-align: center;
       padding: 12px 16px;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.25);
+      background: rgba(61,50,40,0.1);
+      border: 1px solid rgba(61,50,40,0.3);
       border-radius: 8px;
-      color: #fff;
+      color: #2a1f14;
       text-decoration: none;
       font-family: 'Cormorant Garamond', serif;
       font-size: 1rem;
@@ -142,13 +135,13 @@
       transition: all 0.25s;
       margin-top: auto;
     }
-    .price-btn:hover { background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.5); }
-    .price-btn.primary { background: rgba(255,255,255,0.92); color: #35342a; border-color: #fff; }
-    .price-btn.primary:hover { background: #fff; }
+    .price-btn:hover { background: rgba(61,50,40,0.18); border-color: rgba(61,50,40,0.5); }
+    .price-btn.primary { background: #2a1f14; color: #F0E8D5; border-color: #2a1f14; }
+    .price-btn.primary:hover { background: #4a3828; }
     .price-note {
       font-size: 0.9rem;
       font-style: italic;
-      color: rgba(255,255,255,0.45);
+      color: #5a4a38;
       text-align: center;
       margin-top: 20px;
     }
@@ -179,6 +172,7 @@
     <a href="prices.html"    class="page-nav-link active" id="nav-prices">Ціни</a>
     <a href="locations.html" class="page-nav-link" id="nav-locations">Локації</a>
     <a href="about.html"     class="page-nav-link" id="nav-about">Про нас</a>
+    <a href="travel.html" class="page-nav-link travel" id="nav-travel">Подорожі</a>
   </nav>
 
   <main>
@@ -191,7 +185,6 @@
         <button class="price-tab" id="tab-kids-btn"    onclick="showTab('kids', this)">🧒 Дітям</button>
         <button class="price-tab" id="tab-private-btn" onclick="showTab('private', this)">🤝 Індивідуальні</button>
         <button class="price-tab" id="tab-online-btn"  onclick="showTab('online', this)">💻 Онлайн</button>
-        <button class="price-tab" id="tab-fitness-btn" onclick="showTab('fitness', this)">💪 Фітнес</button>
       </div>
 
       <!-- ═══ ДОРОСЛІ ═══ -->
@@ -489,51 +482,7 @@
         <p class="price-note" id="online-note">Заняття проводяться через Zoom або Google Meet — посилання надсилаємо після запису</p>
       </div>
 
-      <!-- ═══ ФІТНЕС ═══ -->
-      <div class="price-panel" id="tab-fitness">
-        <div class="price-grid">
-
-          <div class="price-card">
-            <div class="price-card-name" id="fitness-single-name">Fitness Kids</div>
-            <div class="price-card-sub"  id="fitness-single-sub">разове</div>
-            <div class="price-details">
-              <div class="price-detail-row">
-                <span class="price-detail-label" id="fitness-single-lbl-count">Кількість</span>
-                <span class="price-detail-value"  id="fitness-single-val-count">1 відвідування</span>
-              </div>
-              <div class="price-detail-row">
-                <span class="price-detail-label" id="fitness-single-lbl-term">Термін дії</span>
-                <span class="price-detail-value"  id="fitness-single-val-term">1 день</span>
-              </div>
-            </div>
-            <div class="price-amount">250 <span>грн</span></div>
-            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=fitness-kids"
-               target="_blank" class="price-btn primary" id="fitness-single-btn">Придбати</a>
-          </div>
-
-          <div class="price-card popular">
-            <div class="price-badge" id="badge-fitness-value">Вигідно</div>
-            <div class="price-card-name" id="fitness-unlim-name">Fitness Kids</div>
-            <div class="price-card-sub"  id="fitness-unlim-sub">абонемент безліміт</div>
-            <div class="price-details">
-              <div class="price-detail-row">
-                <span class="price-detail-label" id="fitness-unlim-lbl-count">Кількість</span>
-                <span class="price-detail-value"  id="fitness-unlim-val-count">Безліміт</span>
-              </div>
-              <div class="price-detail-row">
-                <span class="price-detail-label" id="fitness-unlim-lbl-term">Термін дії</span>
-                <span class="price-detail-value"  id="fitness-unlim-val-term">30 днів</span>
-              </div>
-            </div>
-            <div class="price-amount">2 000 <span>грн</span></div>
-            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=fitness-kids-unlim"
-               target="_blank" class="price-btn primary" id="fitness-unlim-btn">Придбати</a>
-          </div>
-
-        </div>
-        <p class="price-note" id="fitness-note">Fitness Kids — дитячі фітнес-тренування у студії</p>
-      </div>
-
+      
     </section>
 
     <div class="cta">
@@ -570,9 +519,7 @@
         'prices-subtitle': 'Оберіть формат, який підходить саме вам',
         'tab-adults-btn': '🧘 Дорослі', 'tab-kids-btn': '🧒 Дітям',
         'tab-private-btn': '🤝 Індивідуальні', 'tab-online-btn': '💻 Онлайн',
-        'tab-fitness-btn': '💪 Фітнес',
         'cta-button': 'Записатися на пробне — 250 грн', 'btn-schedule': 'Розклад',
-        // Дорослі
         'trial-name': 'Пробне', 'trial-sub': 'тренування',
         'trial-lbl-count': 'Кількість', 'trial-val-count': '1 відвідування',
         'trial-lbl-term': 'Термін дії', 'trial-val-term': '1 день', 'trial-btn': 'Записатися',
@@ -592,7 +539,6 @@
         'sub12-lbl-term': 'Термін дії', 'sub12-val-term': '30 днів',
         'sub12-lbl-freeze': 'Заморозка', 'sub12-val-freeze': '1 × 7 днів', 'sub12-btn': 'Придбати',
         'adults-note': 'Заняття діють на всі групові напрямки для дорослих',
-        // Дітям
         'kids-trial-name': 'Fly Kids', 'kids-trial-sub': 'Пробне',
         'kids-trial-lbl-count': 'Кількість', 'kids-trial-val-count': '1 відвідування',
         'kids-trial-lbl-term': 'Термін дії', 'kids-trial-val-term': '1 день', 'kids-trial-btn': 'Записатися',
@@ -604,7 +550,6 @@
         'kids-unlim-lbl-count': 'Кількість', 'kids-unlim-val-count': 'Безліміт',
         'kids-unlim-lbl-term': 'Термін дії', 'kids-unlim-val-term': '31 день', 'kids-unlim-btn': 'Придбати',
         'kids-note': 'Fly Kids — заняття у гамаках для дітей з тренером Світланою Арнаутовою',
-        // Індивідуальні
         'priv60m-name': '60 хв', 'priv60m-sub': 'Майстер',
         'priv60m-lbl-dur': 'Тривалість', 'priv60m-val-dur': '60 хвилин',
         'priv60m-lbl-trainer': 'Тренер', 'priv60m-val-trainer': 'Майстер', 'priv60m-btn': 'Записатися',
@@ -619,7 +564,6 @@
         'priv90t-lbl-dur': 'Тривалість', 'priv90t-val-dur': '90 хвилин',
         'priv90t-lbl-trainer': 'Тренер', 'priv90t-val-trainer': 'ТОП тренер', 'priv90t-btn': 'Записатися',
         'private-note': 'Для запису — напишіть нам у Telegram, узгодимо зручний час',
-        // Онлайн
         'online-group-name': 'Online', 'online-group-sub': 'групове тренування',
         'online-group-lbl-count': 'Кількість', 'online-group-val-count': '1 відвідування',
         'online-group-lbl-format': 'Формат', 'online-group-val-format': 'Групове', 'online-group-btn': 'Записатися',
@@ -627,15 +571,6 @@
         'online-priv-lbl-count': 'Кількість', 'online-priv-val-count': '1 відвідування',
         'online-priv-lbl-format': 'Формат', 'online-priv-val-format': 'Персональне', 'online-priv-btn': 'Записатися',
         'online-note': 'Заняття проводяться через Zoom або Google Meet — посилання надсилаємо після запису',
-        // Фітнес
-        'fitness-single-name': 'Fitness Kids', 'fitness-single-sub': 'разове',
-        'fitness-single-lbl-count': 'Кількість', 'fitness-single-val-count': '1 відвідування',
-        'fitness-single-lbl-term': 'Термін дії', 'fitness-single-val-term': '1 день', 'fitness-single-btn': 'Придбати',
-        'badge-fitness-value': 'Вигідно',
-        'fitness-unlim-name': 'Fitness Kids', 'fitness-unlim-sub': 'абонемент безліміт',
-        'fitness-unlim-lbl-count': 'Кількість', 'fitness-unlim-val-count': 'Безліміт',
-        'fitness-unlim-lbl-term': 'Термін дії', 'fitness-unlim-val-term': '30 днів', 'fitness-unlim-btn': 'Придбати',
-        'fitness-note': 'Fitness Kids — дитячі фітнес-тренування у студії',
       },
       en: {
         'subtitle': 'A space where the body finds ground, and the mind finds stillness.',
@@ -646,9 +581,7 @@
         'prices-subtitle': 'Choose the format that suits you best',
         'tab-adults-btn': '🧘 Adults', 'tab-kids-btn': '🧒 Kids',
         'tab-private-btn': '🤝 Private', 'tab-online-btn': '💻 Online',
-        'tab-fitness-btn': '💪 Fitness',
         'cta-button': 'Book a trial class — 250 UAH', 'btn-schedule': 'Schedule',
-        // Adults
         'trial-name': 'Trial', 'trial-sub': 'class',
         'trial-lbl-count': 'Visits', 'trial-val-count': '1 visit',
         'trial-lbl-term': 'Valid for', 'trial-val-term': '1 day', 'trial-btn': 'Book now',
@@ -668,7 +601,6 @@
         'sub12-lbl-term': 'Valid for', 'sub12-val-term': '30 days',
         'sub12-lbl-freeze': 'Freeze', 'sub12-val-freeze': '1 × 7 days', 'sub12-btn': 'Buy',
         'adults-note': 'Valid for all group adult classes',
-        // Kids
         'kids-trial-name': 'Fly Kids', 'kids-trial-sub': 'Trial',
         'kids-trial-lbl-count': 'Visits', 'kids-trial-val-count': '1 visit',
         'kids-trial-lbl-term': 'Valid for', 'kids-trial-val-term': '1 day', 'kids-trial-btn': 'Book now',
@@ -680,7 +612,6 @@
         'kids-unlim-lbl-count': 'Visits', 'kids-unlim-val-count': 'Unlimited',
         'kids-unlim-lbl-term': 'Valid for', 'kids-unlim-val-term': '31 days', 'kids-unlim-btn': 'Buy',
         'kids-note': 'Fly Kids — hammock classes for children with instructor Svitlana Arnautova',
-        // Private
         'priv60m-name': '60 min', 'priv60m-sub': 'Master trainer',
         'priv60m-lbl-dur': 'Duration', 'priv60m-val-dur': '60 minutes',
         'priv60m-lbl-trainer': 'Trainer', 'priv60m-val-trainer': 'Master', 'priv60m-btn': 'Book now',
@@ -695,7 +626,6 @@
         'priv90t-lbl-dur': 'Duration', 'priv90t-val-dur': '90 minutes',
         'priv90t-lbl-trainer': 'Trainer', 'priv90t-val-trainer': 'TOP trainer', 'priv90t-btn': 'Book now',
         'private-note': 'To book — message us on Telegram and we\'ll find a convenient time',
-        // Online
         'online-group-name': 'Online', 'online-group-sub': 'group class',
         'online-group-lbl-count': 'Visits', 'online-group-val-count': '1 visit',
         'online-group-lbl-format': 'Format', 'online-group-val-format': 'Group', 'online-group-btn': 'Book now',
@@ -703,15 +633,6 @@
         'online-priv-lbl-count': 'Visits', 'online-priv-val-count': '1 visit',
         'online-priv-lbl-format': 'Format', 'online-priv-val-format': 'Personal', 'online-priv-btn': 'Book now',
         'online-note': 'Classes via Zoom or Google Meet — link sent after booking',
-        // Fitness
-        'fitness-single-name': 'Fitness Kids', 'fitness-single-sub': 'single class',
-        'fitness-single-lbl-count': 'Visits', 'fitness-single-val-count': '1 visit',
-        'fitness-single-lbl-term': 'Valid for', 'fitness-single-val-term': '1 day', 'fitness-single-btn': 'Buy',
-        'badge-fitness-value': 'Best value',
-        'fitness-unlim-name': 'Fitness Kids', 'fitness-unlim-sub': 'unlimited pass',
-        'fitness-unlim-lbl-count': 'Visits', 'fitness-unlim-val-count': 'Unlimited',
-        'fitness-unlim-lbl-term': 'Valid for', 'fitness-unlim-val-term': '30 days', 'fitness-unlim-btn': 'Buy',
-        'fitness-note': 'Fitness Kids — children\'s fitness training at the studio',
       }
     };
 
