@@ -1,4 +1,3 @@
-// Поточна мова — зчитуємо збережену або UA за замовчуванням
 let currentLang = localStorage.getItem('erraLang') || 'ua';
 
 // Переклади
@@ -27,7 +26,6 @@ const translations = {
     "nav-trainers": "Тренери",
 
     // Відгуки
-        // Відгуки (оновлені)
     "reviews-subtitle": "Що кажуть наші клієнти",
     "reviews-count": "3 відгуки",
     "reviews-google-btn": "Читати в Google",
@@ -38,7 +36,7 @@ const translations = {
     "review-3-meta": "рік тому",
     "review-3-text": "«★★★★★»",
     "reviews-btn-more": "Залишити відгук в Google",
- 
+
     // FAQ
     "faq-title": "Часті питання",
     "faq-subtitle": "Відповіді на найпоширеніші запитання",
@@ -53,6 +51,7 @@ const translations = {
     "faq-q-5": "Як записатися?",
     "faq-a-5": "Найшвидше — написати нам у Telegram або через instasport.ua. Ми підберемо зручний час і напрямок. Пробне заняття коштує 250 грн — це найкращий спосіб познайомитися зі студією.",
     "faq-cta": "Є ще питання? Напишіть нам",
+
     // Як почати
     "steps-title": "Як почати",
     "steps-subtitle": "Три прості кроки до першого заняття",
@@ -205,14 +204,13 @@ const translations = {
     "hero-trust-line": "Perfect for beginners · Safe for your body",
     "sticky-cta-btn": "Trial class — 250 UAH",
     "nav-home": "Home",
-    "nav-prices": "Prices", 
+    "nav-prices": "Prices",
     "nav-classes": "Classes",
     "nav-locations": "Locations",
     "nav-about": "About",
     "nav-trainers": "Trainers",
 
     // Reviews
-    // Reviews (updated)
     "reviews-subtitle": "What our clients say",
     "reviews-count": "3 reviews",
     "reviews-google-btn": "Read on Google",
@@ -223,7 +221,7 @@ const translations = {
     "review-3-meta": "a year ago",
     "review-3-text": "\"★★★★★\"",
     "reviews-btn-more": "Leave a review on Google",
- 
+
     // FAQ
     "faq-title": "FAQ",
     "faq-subtitle": "Answers to the most common questions",
@@ -238,6 +236,7 @@ const translations = {
     "faq-q-5": "How do I sign up?",
     "faq-a-5": "The fastest way is to message us on Telegram or book via instasport.ua. We'll find a convenient time and class for you. A trial class costs 250 UAH — the best way to get to know the studio.",
     "faq-cta": "More questions? Message us",
+
     // How to start
     "steps-title": "How to start",
     "steps-subtitle": "Three simple steps to your first class",
@@ -470,8 +469,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
-
-// ═══ ДОДАТИ В КІНЕЦЬ script.js ═══
 
 // ── FAQ toggle ──
 function toggleFaq(btn) {
