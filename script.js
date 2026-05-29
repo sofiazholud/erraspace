@@ -25,6 +25,7 @@ const translations = {
     "nav-locations": "Локації",
     "nav-about": "Про нас",
     "nav-trainers": "Тренери",
+    "nav-travel": "Подорожі",
 
     // Відгуки
     "reviews-subtitle": "Що кажуть наші клієнти",
@@ -229,6 +230,7 @@ const translations = {
     "nav-locations": "Locations",
     "nav-about": "About",
     "nav-trainers": "Trainers",
+    "nav-travel": "Travel",
 
     // Reviews
     "reviews-subtitle": "What our clients say",
