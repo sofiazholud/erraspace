@@ -21,20 +21,20 @@
     .price-tab {
       padding: 9px 20px;
       border-radius: 20px;
-      border: 1px solid rgba(61,50,40,0.3);
+      border: 1px solid rgba(232,228,210,0.25);
       background: transparent;
-      color: #3d3228;
+      color: rgba(255,255,255,0.65);
       font-family: 'Cormorant Garamond', serif;
       font-size: 1rem;
       cursor: pointer;
       transition: all 0.25s;
       letter-spacing: 0.04em;
     }
-    .price-tab:hover { background: rgba(61,50,40,0.1); color: #2a1f14; }
+    .price-tab:hover { background: rgba(232,228,210,0.1); color: #fff; }
     .price-tab.active {
-      background: rgba(61,50,40,0.16);
-      border-color: rgba(61,50,40,0.5);
-      color: #2a1f14;
+      background: rgba(232,228,210,0.18);
+      border-color: rgba(232,228,210,0.5);
+      color: #fff;
       font-weight: 600;
     }
     .price-panel { display: none; }
@@ -46,8 +46,8 @@
       margin-top: 8px;
     }
     .price-card {
-      background: rgba(61,50,40,0.06);
-      border: 1px solid rgba(61,50,40,0.15);
+      background: rgba(232,228,210,0.07);
+      border: 1px solid rgba(232,228,210,0.13);
       border-radius: 16px;
       padding: 24px 20px 22px;
       display: flex;
@@ -55,15 +55,15 @@
       transition: background 0.3s;
       position: relative;
     }
-    .price-card:hover { background: rgba(61,50,40,0.1); }
-    .price-card.popular { border-color: rgba(61,50,40,0.45); }
+    .price-card:hover { background: rgba(232,228,210,0.12); }
+    .price-card.popular { border-color: rgba(232,228,210,0.45); }
     .price-badge {
       position: absolute;
       top: -12px;
       left: 50%;
       transform: translateX(-50%);
-      background: #2a1f14;
-      color: #F0E8D5;
+      background: rgba(232,228,210,0.9);
+      color: #35342a;
       font-size: 0.72rem;
       font-weight: 700;
       letter-spacing: 0.12em;
@@ -75,58 +75,65 @@
     .price-card-name {
       font-size: 1.3rem;
       font-weight: 600;
-      color: #2a1f14;
+      color: #fff;
       text-align: center;
       margin-bottom: 4px;
+      letter-spacing: 0.03em;
     }
     .price-card-sub {
       font-size: 0.85rem;
       font-style: italic;
-      color: #5a4a38;
+      color: rgba(255,255,255,0.45);
       text-align: center;
       margin-bottom: 18px;
     }
-    .price-details { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+    .price-details {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
     .price-detail-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 8px 10px;
-      background: rgba(61,50,40,0.06);
+      background: rgba(232,228,210,0.05);
       border-radius: 8px;
     }
     .price-detail-label {
       font-size: 0.72rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #5a4a38;
+      color: rgba(255,255,255,0.38);
     }
     .price-detail-value {
       font-size: 0.95rem;
-      color: #2a1f14;
+      color: rgba(255,255,255,0.85);
       font-weight: 600;
+      text-align: right;
     }
     .price-amount {
       font-size: 2rem;
       font-weight: 700;
-      color: #2a1f14;
+      color: #fff;
       text-align: center;
       margin: 4px 0 16px;
     }
     .price-amount span {
       font-size: 1.1rem;
       font-weight: 400;
-      color: #5a4a38;
+      color: rgba(255,255,255,0.5);
       margin-left: 4px;
     }
     .price-btn {
       display: block;
       text-align: center;
       padding: 12px 16px;
-      background: rgba(61,50,40,0.1);
-      border: 1px solid rgba(61,50,40,0.3);
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.25);
       border-radius: 8px;
-      color: #2a1f14;
+      color: #fff;
       text-decoration: none;
       font-family: 'Cormorant Garamond', serif;
       font-size: 1rem;
@@ -135,13 +142,13 @@
       transition: all 0.25s;
       margin-top: auto;
     }
-    .price-btn:hover { background: rgba(61,50,40,0.18); border-color: rgba(61,50,40,0.5); }
-    .price-btn.primary { background: #2a1f14; color: #F0E8D5; border-color: #2a1f14; }
-    .price-btn.primary:hover { background: #4a3828; }
+    .price-btn:hover { background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.5); }
+    .price-btn.primary { background: rgba(255,255,255,0.92); color: #35342a; border-color: #fff; }
+    .price-btn.primary:hover { background: #fff; }
     .price-note {
       font-size: 0.9rem;
       font-style: italic;
-      color: #5a4a38;
+      color: rgba(255,255,255,0.45);
       text-align: center;
       margin-top: 20px;
     }
@@ -172,7 +179,6 @@
     <a href="prices.html"    class="page-nav-link active" id="nav-prices">Ціни</a>
     <a href="locations.html" class="page-nav-link" id="nav-locations">Локації</a>
     <a href="about.html"     class="page-nav-link" id="nav-about">Про нас</a>
-    <a href="travel.html" class="page-nav-link travel" id="nav-travel">Подорожі</a>
   </nav>
 
   <main>
@@ -185,6 +191,7 @@
         <button class="price-tab" id="tab-kids-btn"    onclick="showTab('kids', this)">🧒 Дітям</button>
         <button class="price-tab" id="tab-private-btn" onclick="showTab('private', this)">🤝 Індивідуальні</button>
         <button class="price-tab" id="tab-online-btn"  onclick="showTab('online', this)">💻 Онлайн</button>
+        <button class="price-tab" id="tab-fitness-btn" onclick="showTab('fitness', this)">💪 Фітнес</button>
       </div>
 
       <!-- ═══ ДОРОСЛІ ═══ -->
@@ -482,7 +489,51 @@
         <p class="price-note" id="online-note">Заняття проводяться через Zoom або Google Meet — посилання надсилаємо після запису</p>
       </div>
 
-      
+      <!-- ═══ ФІТНЕС ═══ -->
+      <div class="price-panel" id="tab-fitness">
+        <div class="price-grid">
+
+          <div class="price-card">
+            <div class="price-card-name" id="fitness-single-name">Fitness Kids</div>
+            <div class="price-card-sub"  id="fitness-single-sub">разове</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label" id="fitness-single-lbl-count">Кількість</span>
+                <span class="price-detail-value"  id="fitness-single-val-count">1 відвідування</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label" id="fitness-single-lbl-term">Термін дії</span>
+                <span class="price-detail-value"  id="fitness-single-val-term">1 день</span>
+              </div>
+            </div>
+            <div class="price-amount">250 <span>грн</span></div>
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=fitness-kids"
+               target="_blank" class="price-btn primary" id="fitness-single-btn">Придбати</a>
+          </div>
+
+          <div class="price-card popular">
+            <div class="price-badge" id="badge-fitness-value">Вигідно</div>
+            <div class="price-card-name" id="fitness-unlim-name">Fitness Kids</div>
+            <div class="price-card-sub"  id="fitness-unlim-sub">абонемент безліміт</div>
+            <div class="price-details">
+              <div class="price-detail-row">
+                <span class="price-detail-label" id="fitness-unlim-lbl-count">Кількість</span>
+                <span class="price-detail-value"  id="fitness-unlim-val-count">Безліміт</span>
+              </div>
+              <div class="price-detail-row">
+                <span class="price-detail-label" id="fitness-unlim-lbl-term">Термін дії</span>
+                <span class="price-detail-value"  id="fitness-unlim-val-term">30 днів</span>
+              </div>
+            </div>
+            <div class="price-amount">2 000 <span>грн</span></div>
+            <a href="https://instasport.ua/uk/portal/erraspace?utm_source=site&utm_medium=prices&utm_content=fitness-kids-unlim"
+               target="_blank" class="price-btn primary" id="fitness-unlim-btn">Придбати</a>
+          </div>
+
+        </div>
+        <p class="price-note" id="fitness-note">Fitness Kids — дитячі фітнес-тренування у студії</p>
+      </div>
+
     </section>
 
     <div class="cta">
@@ -513,7 +564,7 @@
       ua: {
         'subtitle': 'Простір, де тіло знаходить опору, а розум — тишу.',
         'nav-home': 'Головна', 'nav-classes': 'Напрямки', 'nav-trainers': 'Тренери',
-        'nav-prices': 'Ціни', 'nav-locations': 'Локації', 'nav-about': 'Про нас',
+        'nav-prices': 'Ціни', 'nav-locations': 'Локації', 'nav-about': 'Про нас', 'nav-travel': 'Подорожі',
         'footer-text': '© 2026 Erra Studio. Всі права захищені.',
         'prices-title': '💳 Абонементи та ціни',
         'prices-subtitle': 'Оберіть формат, який підходить саме вам',
@@ -589,7 +640,7 @@
       en: {
         'subtitle': 'A space where the body finds ground, and the mind finds stillness.',
         'nav-home': 'Home', 'nav-classes': 'Classes', 'nav-trainers': 'Trainers',
-        'nav-prices': 'Prices', 'nav-locations': 'Locations', 'nav-about': 'About',
+        'nav-prices': 'Prices', 'nav-locations': 'Locations', 'nav-about': 'About', 'nav-travel': 'Travel',
         'footer-text': '© 2026 Erra Studio. All rights reserved.',
         'prices-title': '💳 Memberships & Prices',
         'prices-subtitle': 'Choose the format that suits you best',
