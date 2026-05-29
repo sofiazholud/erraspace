@@ -53,7 +53,16 @@ const translations = {
     "faq-q-5": "Як записатися?",
     "faq-a-5": "Найшвидше — написати нам у Telegram або через instasport.ua. Ми підберемо зручний час і напрямок. Пробне заняття коштує 250 грн — це найкращий спосіб познайомитися зі студією.",
     "faq-cta": "Є ще питання? Напишіть нам",
-    
+    // Як почати
+    "steps-title": "Як почати",
+    "steps-subtitle": "Три прості кроки до першого заняття",
+    "step-1-title": "Обери напрямок",
+    "step-1-text": "Підкажемо формат під твій стан і цілі — просто напиши нам",
+    "step-2-title": "Приходь на пробне заняття",
+    "step-2-text": "250 грн — познайомишся зі студією і тренером без зобов'язань",
+    "step-3-title": "Обери комфортний формат",
+    "step-3-text": "Тренер підкаже оптимальний абонемент саме для тебе",
+    "steps-btn": "Записатися на пробне — 250 грн",
 
     // Блок "для кого"
     "for-whom-title": "Обери заняття під свій стан",
@@ -229,6 +238,16 @@ const translations = {
     "faq-q-5": "How do I sign up?",
     "faq-a-5": "The fastest way is to message us on Telegram or book via instasport.ua. We'll find a convenient time and class for you. A trial class costs 250 UAH — the best way to get to know the studio.",
     "faq-cta": "More questions? Message us",
+    // How to start
+    "steps-title": "How to start",
+    "steps-subtitle": "Three simple steps to your first class",
+    "step-1-title": "Choose a direction",
+    "step-1-text": "We'll suggest a format for your state and goals — just message us",
+    "step-2-title": "Come to a trial class",
+    "step-2-text": "250 UAH — get to know the studio and trainer with no commitment",
+    "step-3-title": "Pick a comfortable format",
+    "step-3-text": "The trainer will suggest the best subscription just for you",
+    "steps-btn": "Book a trial — 250 UAH",
 
     // For whom block
     "for-whom-title": "Choose a class for your state",
