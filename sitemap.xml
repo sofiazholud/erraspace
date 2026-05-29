@@ -2,32 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://erraspace.com.ua/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://erraspace.com.ua/prices.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://erraspace.com.ua/classes.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://erraspace.com.ua/trainers.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://erraspace.com.ua/travel.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://erraspace.com.ua/cappadocia.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://erraspace.com.ua/locations.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://erraspace.com.ua/about.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
-<url>
-  <loc>https://erraspace.com.ua/prices.html</loc>
-  <lastmod>2026-05-25</lastmod>
-  <priority>0.8</priority>
-</url>
