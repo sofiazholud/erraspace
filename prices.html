@@ -651,6 +651,14 @@
       const saved = localStorage.getItem('erraLang');
       if (saved && saved !== 'ua') window.setLanguage(saved);
     });
+    // Якщо прийшли з квіза за посиланням #private — відкрити вкладку "Індивідуальні"
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.location.hash === '#private') {
+        const btn = document.getElementById('tab-private-btn');
+        if (btn) btn.click();
+        document.getElementById('tab-private-btn').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
   </script>
 
 </body>
