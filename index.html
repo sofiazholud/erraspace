@@ -481,12 +481,10 @@
       const btn = document.getElementById('quiz-result-btn');
       const btnText = document.getElementById('quiz-result-btn-text');
       if (quizAnswers[2] === 'private') {
-        // Індивідуальне — ведемо на прайс, бо ціна залежить від тренера
         btn.href = 'prices.html#private';
         btn.target = '_self';
         btnText.textContent = (lang() === 'en') ? 'See private session prices' : 'Переглянути ціни на індивідуальні';
       } else {
-        // Група / онлайн — пробне через Telegram
         const msg = d.msg(r.goal, d.formatLabel[quizAnswers[2]]);
         btn.href = 'https://t.me/ERRA_SPASE?text=' + encodeURIComponent(msg);
         btn.target = '_blank';
