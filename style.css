@@ -645,7 +645,6 @@ section, footer { animation: fadeInUp 0.8s ease both; }
   position: relative;
 }
 .page-nav-link.travel::after {
-  content: '✨ NEW';
   position: absolute;
   top: -8px;
   pointer-events: none;
