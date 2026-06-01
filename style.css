@@ -356,7 +356,8 @@ h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: 1px; margin-bottom: 15
   transition: background 0.3s;
 }
 .for-whom-card:hover { background: rgba(61,50,40,0.1); }
-.for-whom-icon { font-size: 2rem; }
+.for-whom-icon { line-height: 0; }
+.for-whom-icon svg { width: 34px; height: 34px; color: #5a4a38; }
 .for-whom-card-title { font-size: 1.15rem; font-weight: 700; color: #2a1f14; letter-spacing: 0.5px; }
 .for-whom-card-text { font-size: 1rem; color: #3d3228; line-height: 1.6; }
 .for-whom-rec { font-size: 0.88rem; color: #5a4a38; font-style: italic; margin-top: 4px; }
