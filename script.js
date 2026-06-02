@@ -164,7 +164,7 @@ const translations = {
     "about-btn-classes": "Переглянути напрямки",
 
     // Напрямки (classes.html)
-    "classes-yoga-title": "🧘 Йога",
+    "classes-yoga-title":  "Йога",
     "classes-yoga-subtitle": "М'який, свідомий підхід до тіла та внутрішнього стану",
     "c-fly-yoga-title": "Флай Йога",
     "c-fly-yoga-desc": "Практика у спеціальних гамаках, що дарує відчуття польоту та легкості. Допомагає зняти напругу з хребта, розвиває гнучкість і додає енергії. Ідеально для тих, хто хоче поєднати рух із глибоким розслабленням.",
@@ -176,7 +176,7 @@ const translations = {
     "c-adho-yoga-desc": "Поєднання гнучкості та сили, статики й динаміки, дихальних і медитативних технік. Базується на науковому підході до фізіології — кожен результат зрозумілий і відчутний.",
     "c-pregnancy-yoga-title": "Йога для вагітних",
     "c-pregnancy-yoga-desc": "М'які практики для підтримки фізичного стану та емоційного балансу майбутніх мам. Вправи адаптовані для різних термінів вагітності та допомагають підготуватися до пологів.",
-    "classes-fitness-title": "💪 Фітнес",
+    "classes-fitness-title": "Фітнес",
     "classes-fitness-subtitle": "Сила, витривалість і баланс — без «фітнес-агресії»",
     "c-pilates-title": "Пілатес",
     "c-pilates-desc": "Система вправ для зміцнення м'язів, розвитку гнучкості та формування здорової постави. Покращує координацію та дарує відчуття легкості у рухах.",
@@ -184,7 +184,7 @@ const translations = {
     "c-functional-desc": "Комплекс вправ для розвитку сили, витривалості та мобільності. Готує тіло до щоденних навантажень, покращує фізичну форму та підвищує загальну працездатність.",
     "c-private-title": "Індивідуальні тренування",
     "c-private-desc": "Персональний формат, що враховує ваші цілі, стан здоров'я та рівень підготовки. Тренер будує програму спеціально під вас — без шаблонів, лише те, що потрібно саме вашому тілу.",
-    "classes-kids-title": "🧒 Для дітей",
+    "classes-kids-title": " Для дітей",
     "classes-kids-subtitle": "Рух, радість і впевненість у собі з раннього віку",
     "c-fly-kids-title": "Флай Кідс",
     "c-fly-kids-desc": "Веселі та безпечні заняття у гамаках для дітей. Розвивають гнучкість, координацію та впевненість у собі, даруючи малюкам радість руху й нові емоції.",
@@ -370,7 +370,7 @@ const translations = {
     "about-btn-classes": "View classes",
 
     // Classes page
-    "classes-yoga-title": "🧘 Yoga",
+    "classes-yoga-title": "Yoga",
     "classes-yoga-subtitle": "A gentle, mindful approach to body and inner state",
     "c-fly-yoga-title": "Fly Yoga",
     "c-fly-yoga-desc": "Practice in special hammocks that gives a feeling of flight and lightness. Helps relieve spinal tension, develops flexibility and boosts energy. Ideal for combining physical activity with deep relaxation.",
@@ -382,7 +382,7 @@ const translations = {
     "c-adho-yoga-desc": "A combination of flexibility and strength, static and dynamic elements, breathing and meditative techniques. Based on a scientific approach to physiology — every result is clear and felt.",
     "c-pregnancy-yoga-title": "Pregnancy Yoga",
     "c-pregnancy-yoga-desc": "Gentle practices to support the physical condition and emotional balance of expectant mothers. Exercises are adapted for different pregnancy stages and help prepare the body for childbirth.",
-    "classes-fitness-title": "💪 Fitness",
+    "classes-fitness-title": "Fitness",
     "classes-fitness-subtitle": "Strength, endurance and balance — without 'fitness aggression'",
     "c-pilates-title": "Pilates",
     "c-pilates-desc": "A system of exercises to strengthen muscles, increase flexibility and develop healthy posture. Improves coordination and provides a sense of ease in movement.",
@@ -390,7 +390,7 @@ const translations = {
     "c-functional-desc": "A set of exercises for strength, endurance and mobility. Prepares the body for daily demands, improves fitness and increases overall performance.",
     "c-private-title": "Private Lessons",
     "c-private-desc": "A personalized training format tailored to your goals, health and fitness level. Your trainer builds a programme specifically for you — no templates, only what your body truly needs.",
-    "classes-kids-title": "🧒 For children",
+    "classes-kids-title": " For children",
     "classes-kids-subtitle": "Movement, joy and confidence from an early age",
     "c-fly-kids-title": "Fly Kids",
     "c-fly-kids-desc": "Fun and safe hammock classes for children. They develop flexibility, coordination and confidence, giving kids joy of movement and new experiences.",
