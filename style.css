@@ -335,6 +335,7 @@ h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: 1px; margin-bottom: 15
   padding: 22px;
 }
 .about-card-icon { font-size: 2rem; margin-bottom: 10px; }
+.about-card-icon svg { width: 34px; height: 34px; color: #5a4a38; }
 .about-card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: #2a1f14; letter-spacing: 0.5px; }
 .about-card-text { font-size: 1rem; color: #3d3228; line-height: 1.65; }
 
