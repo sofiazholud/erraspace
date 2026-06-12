@@ -709,3 +709,16 @@ section, footer { animation: fadeInUp 0.8s ease both; }
   position: relative;
   z-index: 1;
 }
+
+@media (max-width: 480px) {
+  .hero-header { padding-top: 44px !important; overflow: visible !important; }
+  .hero-header #title {
+    font-size: 1.45rem !important;
+    letter-spacing: 0.1em !important;
+    line-height: 1.4 !important;
+    margin-top: 0 !important;
+    padding-top: 4px !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+  }
+}
