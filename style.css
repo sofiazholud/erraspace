@@ -700,10 +700,12 @@ section, footer { animation: fadeInUp 0.8s ease both; }
 
 @media (max-width: 480px) {
   .hero-header {
-    padding-top: 24px !important; 
-    overflow: hidden !important; 
-    background-position: center top
-    background: #F0E8D5 !important;
+    padding-top: 24px !important;       /* менший відступ */
+    overflow: hidden !important;        /* ховає зайве */
+    background:
+      linear-gradient(rgba(240,232,213,0.92), rgba(240,232,213,0.92)),
+      url('studio-leaves.jpg') center top / contain no-repeat !important;
+    background-color: #F0E8D5 !important; /* запасний фон */
   }
 
   .hero-header #title {
