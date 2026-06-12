@@ -670,3 +670,18 @@ section, footer { animation: fadeInUp 0.8s ease both; }
     linear-gradient(rgba(240,232,213,0.88), rgba(240,232,213,0.88)),
     url('studio-leaves2.jpg') center center / cover no-repeat !important;
 }
+/* ── Кнопка "Розклад" у hero на мобільному ── */
+@media (max-width: 480px) {
+  .hero-header .cta-button:not(.primary) {
+    background: rgba(240, 232, 213, 0.92);
+    color: #2a1f14;
+    border: 1.5px solid rgba(240, 232, 213, 0.95);
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  .hero-header .cta-button:not(.primary):hover {
+    background: #f0e8d5;
+    border-color: #f0e8d5;
+  }
+}
