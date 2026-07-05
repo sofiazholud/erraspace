@@ -25,14 +25,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
   .schedule-btns-wrap{display:flex;flex-direction:column;align-items:center;gap:6px;}
-  .schedule-btns-label{
-    font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;
-    margin-bottom:4px;opacity:0.55;
-    display:flex;align-items:center;gap:8px;white-space:nowrap;
-  }
-  .schedule-btns-label::before,.schedule-btns-label::after{
-    content:'';flex:1;height:1px;background:currentColor;opacity:0.4;
-  }
   .schedule-btns-row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;}
   .schedule-btn{font-size:0.9rem!important;padding:10px 16px!important;letter-spacing:0.02em!important;margin:0!important;}
   @media(max-width:480px){
@@ -59,8 +51,8 @@
     </a>
     <div class="schedule-btns-wrap" style="width:100%;">
       <div class="schedule-btns-row">
-        <a href="https://instasport.ua/club/erraspacevy/schedule/day/576?activity=0&instructor=0&template=0&zone=521&hallPhone=%2B380632072462&utm_source=site&utm_medium=hero&utm_content=schedule-vy" target="_blank" rel="noopener noreferrer" class="cta-button schedule-btn" id="hero-schedule-vy">📍 Вишгород · Розклад</a>
-        <a href="https://instasport.ua/club/erraspacemr/schedule/day/963?activity=0&instructor=0&template=0&zone=1136&hallPhone=%2B380632072462&utm_source=site&utm_medium=hero&utm_content=schedule-mr" target="_blank" rel="noopener noreferrer" class="cta-button schedule-btn" id="hero-schedule-mr">📍 Міжріччя · Розклад</a>
+        <a href="https://instasport.ua/club/erraspacevy/schedule/day/576?activity=0&instructor=0&template=0&zone=521&hallPhone=%2B380632072462&utm_source=site&utm_medium=hero&utm_content=schedule-vy" target="_blank" rel="noopener noreferrer" class="cta-button schedule-btn" id="hero-schedule-vy">Розклад Вишгород</a>
+        <a href="https://instasport.ua/club/erraspacemr/schedule/day/963?activity=0&instructor=0&template=0&zone=1136&hallPhone=%2B380632072462&utm_source=site&utm_medium=hero&utm_content=schedule-mr" target="_blank" rel="noopener noreferrer" class="cta-button schedule-btn" id="hero-schedule-mr">Розклад Міжріччя</a>
       </div>
     </div>
     <p class="hero-trust-line" id="hero-trust-line">Підійде для новачків · Безпечне навантаження</p>
@@ -80,7 +72,6 @@
 
   <main>
 
-    <!-- Соцмережі -->
     <section class="leaf-bg">
       <h2 id="social-title">Ми в соцмережах</h2>
       <div class="social-icons">
@@ -92,7 +83,6 @@
       </div>
     </section>
 
-    <!-- Для кого -->
     <section id="for-whom" class="leaf-bg">
       <h2 id="for-whom-title">Обери заняття під свій стан</h2>
       <p class="section-subtitle" id="for-whom-subtitle">Не знаєш з чого почати? Ми підкажемо.</p>
@@ -132,7 +122,6 @@
       </div>
     </section>
 
-    <!-- КВІЗ — незмінний -->
     <section class="leaf-bg" id="quiz-section" style="display:none;">
       <h2 id="quiz-title">Який напрямок твій?</h2>
       <p class="section-subtitle" id="quiz-subtitle">Дай відповідь на 2 питання — ми підкажемо твій напрямок</p>
@@ -167,7 +156,6 @@
       </div>
     </section>
 
-    <!-- Напрямки -->
     <section>
       <h2 id="directions-title">Напрямки</h2>
       <div class="directions-grid">
@@ -193,7 +181,6 @@
     <div id="adho-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('adho-yoga')">&times;</span><h2 id="modal-title-adho-yoga">Адхо-йога</h2><p id="modal-desc-adho-yoga">Практика, яка поєднує гнучкість і силову роботу, статику й динаміку, витривалість і баланс.</p></div></div>
     <div id="private-lesson" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('private-lesson')">&times;</span><h2 id="modal-title-private-lesson">Індивідуальне тренування</h2><p id="modal-desc-private-lesson">Персональний формат тренування, який враховує ваші цілі, стан здоров'я та рівень підготовки.</p></div></div>
 
-    <!-- Відгуки -->
     <section class="reviews-section leaf-bg">
       <h2 id="reviews-title">Відгуки</h2>
       <p class="section-subtitle" id="reviews-subtitle">Що кажуть наші клієнти</p>
@@ -214,7 +201,6 @@
       <div style="text-align:center; margin-top:24px;"><a href="https://maps.app.goo.gl/r5swhJfu5CrqNYNb6" target="_blank" rel="noopener noreferrer" class="cta-button" id="reviews-btn-more">Залишити відгук в Google</a></div>
     </section>
 
-    <!-- FAQ -->
     <section class="faq-section leaf-bg">
       <h2 id="faq-title">Часті питання</h2>
       <p class="section-subtitle" id="faq-subtitle">Відповіді на найпоширеніші запитання</p>
@@ -228,7 +214,6 @@
       <div style="text-align:center; margin-top:28px;"><a href="https://t.me/ERRA_SPASE" target="_blank" rel="noopener noreferrer" class="cta-button primary" id="faq-cta">Є ще питання? Напишіть нам</a></div>
     </section>
 
-    <!-- Контакти -->
     <section class="leaf-bg">
       <h2 id="contacts-title">Контакти</h2>
       <p class="contacts-subtitle" id="contacts-subtitle">Студія йоги та фітнесу у Вишгороді та Міжріччі</p>
@@ -247,7 +232,6 @@
       </div>
     </section>
 
-    <!-- Подорожі -->
     <section class="leaf-bg">
       <h2> Подорожі з ERRA SPACE</h2>
       <p class="section-subtitle">Йога, природа і жіноче коло — виїзні ретрити та табори</p>
@@ -295,17 +279,7 @@
   <script>
   (function(){
     const quizAnswers={1:null,2:null};
-    const quizData={ua:{results:{relax:{title:'Йога для спокою',text:'Ішвара-йога або Флай-йога — м'які практики, що знімають напругу і повертають внутрішній баланс.',goal:'розслабитись і зняти стрес'},back:{title:'Флай-йога та Пілатес',text:'Розвантаження хребта, зміцнення глибоких м'язів і повернення легкості руху. Ідеально при сидячій роботі.',goal:'попрацювати зі спиною і поставою'},tone:{title:'Адхо-йога та Функціональні',text:'Динамічні силові заняття з контролем тіла — для тонусу, сили і витривалості.',goal:'тонус і силу'},pregnancy:{title:'Йога для вагітних',text:'Безпечні практики, адаптовані під кожен триместр, з уважним супроводом тренера.',goal:'заняття під час вагітності'}},formatText:{group:'У групі до 10 людей — тренер бачить кожного.',private:'Індивідуально — програма повністю під тебе.',online:'Онлайн — займайся з дому у зручний час.'},formatLabel:{group:'група',private:'індивідуально',online:'онлайн'},msg:function(goal,fmt){return'Привіт! 👋 Пройшла квіз на сайті.
-
-Мене цікавить: '+goal+'
-Формат: '+fmt+'
-
-Хочу записатися на пробне заняття 🙏';}},en:{results:{relax:{title:'Yoga for calm',text:'Ishvara Yoga or Fly Yoga — gentle practices that release tension and restore inner balance.',goal:'relax and reduce stress'},back:{title:'Fly Yoga & Pilates',text:'Spinal decompression, strengthening deep muscles and restoring ease of movement.',goal:'work on back and posture'},tone:{title:'Adho Yoga & Functional',text:'Dynamic strength classes with body control — for tone, strength and endurance.',goal:'tone and strength'},pregnancy:{title:'Pregnancy Yoga',text:'Safe practices adapted for each trimester, with attentive guidance from the trainer.',goal:'classes during pregnancy'}},formatText:{group:'In a group of up to 10 — the trainer sees everyone.',private:'One-on-one — a programme entirely for you.',online:'Online — practise from home at a convenient time.'},formatLabel:{group:'group',private:'private',online:'online'},msg:function(goal,fmt){return'Hi! 👋 I took the quiz on the website.
-
-I'm interested in: '+goal+'
-Format: '+fmt+'
-
-I'd like to book a trial class 🙏';}}};
+    const quizData={ua:{results:{relax:{title:'Йога для спокою',text:'Ішвара-йога або Флай-йога — м\u2019які практики, що знімають напругу і повертають внутрішній баланс.',goal:'розслабитись і зняти стрес'},back:{title:'Флай-йога та Пілатес',text:'Розвантаження хребта, зміцнення глибоких м\u2019язів і повернення легкості руху. Ідеально при сидячій роботі.',goal:'попрацювати зі спиною і поставою'},tone:{title:'Адхо-йога та Функціональні',text:'Динамічні силові заняття з контролем тіла — для тонусу, сили і витривалості.',goal:'тонус і силу'},pregnancy:{title:'Йога для вагітних',text:'Безпечні практики, адаптовані під кожен триместр, з уважним супроводом тренера.',goal:'заняття під час вагітності'}},formatText:{group:'У групі до 10 людей — тренер бачить кожного.',private:'Індивідуально — програма повністю під тебе.',online:'Онлайн — займайся з дому у зручний час.'},formatLabel:{group:'група',private:'індивідуально',online:'онлайн'},msg:function(goal,fmt){return'Привіт! 👋 Пройшла квіз на сайті.\n\nМене цікавить: '+goal+'\nФормат: '+fmt+'\n\nХочу записатися на пробне заняття 🙏';}},en:{results:{relax:{title:'Yoga for calm',text:'Ishvara Yoga or Fly Yoga — gentle practices that release tension and restore inner balance.',goal:'relax and reduce stress'},back:{title:'Fly Yoga & Pilates',text:'Spinal decompression, strengthening deep muscles and restoring ease of movement.',goal:'work on back and posture'},tone:{title:'Adho Yoga & Functional',text:'Dynamic strength classes with body control — for tone, strength and endurance.',goal:'tone and strength'},pregnancy:{title:'Pregnancy Yoga',text:'Safe practices adapted for each trimester, with attentive guidance from the trainer.',goal:'classes during pregnancy'}},formatText:{group:'In a group of up to 10 — the trainer sees everyone.',private:'One-on-one — a programme entirely for you.',online:'Online — practise from home at a convenient time.'},formatLabel:{group:'group',private:'private',online:'online'},msg:function(goal,fmt){return'Hi! 👋 I took the quiz on the website.\n\nI\'m interested in: '+goal+'\nFormat: '+fmt+'\n\nI\'d like to book a trial class 🙏';}}};
     function lang(){return(window.currentLang==='en')?'en':'ua';}
     window.quizAnswer=function(step,value){quizAnswers[step]=value;if(step===1){document.getElementById('quiz-step-1').style.display='none';document.getElementById('quiz-step-2').style.display='block';}else{showResult();}};
     window.quizBack=function(){document.getElementById('quiz-step-2').style.display='none';document.getElementById('quiz-step-1').style.display='block';};
