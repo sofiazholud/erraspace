@@ -5,28 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ERRA SPACE — студія фітнесу та йоги у Вишгороді та Міжріччі</title>
   <meta name="description" content="ERRA SPACE — йога і фітнес без болю та тиску. Пробне заняття — 250 грн. Вишгород та Міжріччя.">
-
   <link rel="canonical" href="https://erraspace.com.ua/">
   <link rel="alternate" hreflang="uk" href="https://erraspace.com.ua/">
   <link rel="alternate" hreflang="en" href="https://erraspace.com.ua/?lang=en">
-
   <meta property="og:title" content="ERRA SPACE — студія фітнесу та йоги у Вишгороді">
   <meta property="og:description" content="Йога і фітнес без болю та тиску. Пробне заняття — 250 грн.">
   <meta property="og:image" content="https://erraspace.com.ua/fly-yoga.JPG">
   <meta property="og:url" content="https://erraspace.com.ua">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="uk_UA">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ERRA SPACE — студія фітнесу та йоги">
   <meta name="twitter:description" content="Йога і фітнес без болю та тиску. Пробне — 250 грн.">
   <meta name="twitter:image" content="https://erraspace.com.ua/fly-yoga.JPG">
-
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+  .schedule-btns-wrap{display:flex;flex-direction:column;align-items:center;gap:6px;}
+  .schedule-btns-label{font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-bottom:2px;}
+  .schedule-btns-row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;}
+  .schedule-btn{font-size:0.9rem!important;padding:10px 16px!important;letter-spacing:0.02em!important;margin:0!important;}
+  @media(max-width:480px){
+    .schedule-btns-row{flex-direction:column;gap:6px;width:100%;}
+    .schedule-btn{width:100%;text-align:center;box-sizing:border-box;}
+  }
+  </style>
 </head>
 <body>
 
@@ -44,11 +50,13 @@
        class="cta-button primary hero-main-btn" id="hero-main-btn">
       Пробне заняття — 250 грн
     </a>
-    <a href="https://instasport.ua/uk/club/erraspacevy/schedule/day?utm_source=site&utm_medium=hero&utm_content=schedule"
-   target="_blank" rel="noopener noreferrer"
-   class="cta-button hero-schedule-btn" id="hero-schedule-btn">
-  Розклад
-</a>
+    <div class="schedule-btns-wrap" style="width:100%;">
+      <span class="schedule-btns-label">Розклад</span>
+      <div class="schedule-btns-row">
+        <a href="https://instasport.ua/club/erraspacevy/schedule/day/576?activity=0&instructor=0&template=0&zone=521&hallPhone=%2B380632072462&utm_source=site&utm_medium=hero&utm_content=schedule-vy" target="_blank" rel="noopener noreferrer" class="cta-button schedule-btn" id="hero-schedule-vy">📍 Вишгород</a>
+        <a href="https://instasport.ua/club/erraspacemr/schedule/day/963?activity=0&instructor=0&template=0&zone=1136&hallPhone=%2B380632072462&utm_source=site&utm_medium=hero&utm_content=schedule-mr" target="_blank" rel="noopener noreferrer" class="cta-button schedule-btn" id="hero-schedule-mr">📍 Міжріччя</a>
+      </div>
+    </div>
     <p class="hero-trust-line" id="hero-trust-line">Підійде для новачків · Безпечне навантаження</p>
   </header>
 
@@ -59,13 +67,8 @@
     <a href="trainers.html" class="page-nav-link" id="nav-trainers">Тренери</a>
     <a href="locations.html" class="page-nav-link" id="nav-locations">Локації</a>
     <a href="about.html" class="page-nav-link" id="nav-about">Про нас</a>
-    <div class="schedule-btns-wrap" style="width:100%;">
-  <span class="schedule-btns-label">Розклад</span>
-  <div class="schedule-btns-row">
-    <a href="https://instasport.ua/club/erraspacevy/schedule/day/576?activity=0&instructor=0&template=0&zone=521&hallPhone=%2B380632072462&utm_source=site&utm_medium=hero&utm_content=schedule-vy" target="_blank" rel="noopener noreferrer" class="cta-button schedule-btn" id="hero-schedule-vy">📍 Вишгород</a>
-    <a href="https://instasport.ua/club/erraspacemr/schedule/day/963?activity=0&instructor=0&template=0&zone=1136&hallPhone=%2B380632072462&utm_source=site&utm_medium=hero&utm_content=schedule-mr" target="_blank" rel="noopener noreferrer" class="cta-button schedule-btn" id="hero-schedule-mr">📍 Міжріччя</a>
-  </div>
-</div>
+    <a href="https://instasport.ua/club/erraspacevy/schedule/day/576?activity=0&instructor=0&template=0&zone=521&hallPhone=%2B380632072462&utm_source=site&utm_medium=nav&utm_content=schedule-vy" target="_blank" rel="noopener noreferrer" class="page-nav-link" id="nav-schedule-vy">Розклад · Вишгород</a>
+    <a href="https://instasport.ua/club/erraspacemr/schedule/day/963?activity=0&instructor=0&template=0&zone=1136&hallPhone=%2B380632072462&utm_source=site&utm_medium=nav&utm_content=schedule-mr" target="_blank" rel="noopener noreferrer" class="page-nav-link" id="nav-schedule-mr">Розклад · Міжріччя</a>
     <a href="travel.html" class="page-nav-link travel" id="nav-travel">Подорожі</a>
   </nav>
 
@@ -75,30 +78,14 @@
     <section class="leaf-bg">
       <h2 id="social-title">Ми в соцмережах</h2>
       <div class="social-icons">
-        <a href="https://www.instagram.com/erraspace.ua?utm_source=site&utm_medium=social&utm_content=instagram"
-           target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Instagram">
-           <img src="instagram.svg" alt="Instagram ERRA SPACE">
-        </a>
-        <a href="https://www.facebook.com/people/dance_yoga_fitness_/100070016075579/?utm_source=site&utm_medium=social&utm_content=facebook"
-           target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Facebook">
-           <img src="facebook.svg" alt="Facebook ERRA SPACE">
-        </a>
-        <a href="https://www.tiktok.com/@erraspace.ua?utm_source=site&utm_medium=social&utm_content=tiktok"
-           target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE TikTok">
-           <img src="tiktok.svg" alt="TikTok ERRA SPACE">
-        </a>
-        <a href="https://www.threads.net/@erraspace.ua?utm_source=site&utm_medium=social&utm_content=threads"
-           target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Threads">
-           <img src="threads.svg" alt="Threads ERRA SPACE">
-        </a>
-        <a href="https://t.me/ERRA_SPASE?utm_source=site&utm_medium=social&utm_content=telegram"
-           target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Telegram">
-           <img src="telegram.svg" alt="Telegram ERRA SPACE">
-        </a>
+        <a href="https://www.instagram.com/erraspace.ua?utm_source=site&utm_medium=social&utm_content=instagram" target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Instagram"><img src="instagram.svg" alt="Instagram ERRA SPACE"></a>
+        <a href="https://www.facebook.com/people/dance_yoga_fitness_/100070016075579/?utm_source=site&utm_medium=social&utm_content=facebook" target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Facebook"><img src="facebook.svg" alt="Facebook ERRA SPACE"></a>
+        <a href="https://www.tiktok.com/@erraspace.ua?utm_source=site&utm_medium=social&utm_content=tiktok" target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE TikTok"><img src="tiktok.svg" alt="TikTok ERRA SPACE"></a>
+        <a href="https://www.threads.net/@erraspace.ua?utm_source=site&utm_medium=social&utm_content=threads" target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Threads"><img src="threads.svg" alt="Threads ERRA SPACE"></a>
+        <a href="https://t.me/ERRA_SPASE?utm_source=site&utm_medium=social&utm_content=telegram" target="_blank" rel="noopener noreferrer" aria-label="ERRASPACE Telegram"><img src="telegram.svg" alt="Telegram ERRA SPACE"></a>
       </div>
     </section>
 
-    
     <!-- Для кого -->
     <section id="for-whom" class="leaf-bg">
       <h2 id="for-whom-title">Обери заняття під свій стан</h2>
@@ -109,51 +96,41 @@
           <div class="for-whom-card-title" id="fw-1-title">Я новачок і хвилююся</div>
           <div class="for-whom-card-text" id="fw-1-text">М'які заняття з увагою до тіла, дихання і опори. Без гонитви й «треба через біль».</div>
           <div class="for-whom-rec" id="fw-1-rec">Рекомендуємо: Ішвара-йога, Йога Айенгара</div>
-          <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%99%8F%0A%0A%D0%AF%20%D0%BD%D0%BE%D0%B2%D0%B0%D1%87%D0%BE%D0%BA%20%D1%96%20%D1%85%D0%B2%D0%B8%D0%BB%D1%8E%D1%8E%D1%81%D1%8F%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%BC%27%D1%8F%D0%BA%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D1%82%D1%8F"
-             target="_blank" rel="noopener noreferrer"
-             class="cta-button primary for-whom-btn" id="fw-1-btn">Записатися на пробне заняття</a>
+          <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%99%8F%0A%0A%D0%AF%20%D0%BD%D0%BE%D0%B2%D0%B0%D1%87%D0%BE%D0%BA%20%D1%96%20%D1%85%D0%B2%D0%B8%D0%BB%D1%8E%D1%8E%D1%81%D1%8F%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%BC%27%D1%8F%D0%BA%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D1%82%D1%8F" target="_blank" rel="noopener noreferrer" class="cta-button primary for-whom-btn" id="fw-1-btn">Записатися на пробне заняття</a>
         </div>
         <div class="for-whom-card">
           <div class="for-whom-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M9 5h6"/><path d="M9 9h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg></div>
           <div class="for-whom-card-title" id="fw-2-title">Болить спина / сидяча робота</div>
           <div class="for-whom-card-text" id="fw-2-text">Знімаємо напругу, розвантажуємо хребет, повертаємо легкість руху.</div>
           <div class="for-whom-rec" id="fw-2-rec">Рекомендуємо: Флай-йога, Пілатес</div>
-          <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%92%BB%0A%0A%D0%91%D0%BE%D0%BB%D0%B8%D1%82%D1%8C%20%D1%81%D0%BF%D0%B8%D0%BD%D0%B0%20%2F%20%D1%81%D0%B8%D0%B4%D1%8F%D1%87%D0%B0%20%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C%20%D0%A4%D0%BB%D0%B0%D0%B9-%D0%B9%D0%BE%D0%B3%D0%B0%20%D1%82%D0%B0%20%D0%9F%D1%96%D0%BB%D0%B0%D1%82%D0%B5%D1%81"
-             target="_blank" rel="noopener noreferrer"
-             class="cta-button primary for-whom-btn" id="fw-2-btn">Записатися</a>
+          <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%92%BB%0A%0A%D0%91%D0%BE%D0%BB%D0%B8%D1%82%D1%8C%20%D1%81%D0%BF%D0%B8%D0%BD%D0%B0%20%2F%20%D1%81%D0%B8%D0%B4%D1%8F%D1%87%D0%B0%20%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C%20%D0%A4%D0%BB%D0%B0%D0%B9-%D0%B9%D0%BE%D0%B3%D0%B0%20%D1%82%D0%B0%20%D0%9F%D1%96%D0%BB%D0%B0%D1%82%D0%B5%D1%81" target="_blank" rel="noopener noreferrer" class="cta-button primary for-whom-btn" id="fw-2-btn">Записатися</a>
         </div>
         <div class="for-whom-card">
           <div class="for-whom-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5v11"/><path d="M3.5 9v5"/><path d="M17.5 6.5v11"/><path d="M20.5 9v5"/><path d="M6.5 12h11"/></svg></div>
           <div class="for-whom-card-title" id="fw-3-title">Хочу навантаження і тонус</div>
           <div class="for-whom-card-text" id="fw-3-text">Динамічні, силові заняття без хаосу — з відчуттям тіла і контролю.</div>
           <div class="for-whom-rec" id="fw-3-rec">Рекомендуємо: Адхо-йога, Функціональні тренування</div>
-          <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%94%A5%0A%0A%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F%20%D1%96%20%D1%82%D0%BE%D0%BD%D1%83%D1%81%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C%20%D0%90%D0%B4%D1%85%D0%BE-%D0%B9%D0%BE%D0%B3%D0%B0%20%D1%82%D0%B0%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%96%20%D1%82%D1%80%D0%B5%D0%BD%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F"
-             target="_blank" rel="noopener noreferrer"
-             class="cta-button primary for-whom-btn" id="fw-3-btn">Записатися</a>
+          <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%94%A5%0A%0A%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F%20%D1%96%20%D1%82%D0%BE%D0%BD%D1%83%D1%81%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C%20%D0%90%D0%B4%D1%85%D0%BE-%D0%B9%D0%BE%D0%B3%D0%B0%20%D1%82%D0%B0%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%96%20%D1%82%D1%80%D0%B5%D0%BD%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" target="_blank" rel="noopener noreferrer" class="cta-button primary for-whom-btn" id="fw-3-btn">Записатися</a>
         </div>
         <div class="for-whom-card">
           <div class="for-whom-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-9.5a4 4 0 0 1 7-2.5 4 4 0 0 1 7 2.5c0 5-7 9.5-7 9.5z"/></svg></div>
           <div class="for-whom-card-title" id="fw-4-title">Вагітність</div>
           <div class="for-whom-card-text" id="fw-4-text">Безпечний простір і уважний супровід на кожному етапі.</div>
           <div class="for-whom-rec" id="fw-4-rec">Рекомендуємо: Йога для вагітних</div>
-          <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%A4%8D%0A%0A%D0%92%D0%B0%D0%B3%D1%96%D1%82%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C%20%D0%B9%D0%BE%D0%B3%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D0%B0%D0%B3%D1%96%D1%82%D0%BD%D0%B8%D1%85"
-             target="_blank" rel="noopener noreferrer"
-             class="cta-button primary for-whom-btn" id="fw-4-btn">Записатися</a>
+          <a href="https://t.me/ERRA_SPASE?text=%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%F0%9F%A4%8D%0A%0A%D0%92%D0%B0%D0%B3%D1%96%D1%82%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%E2%80%94%20%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C%20%D0%B9%D0%BE%D0%B3%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D0%B0%D0%B3%D1%96%D1%82%D0%BD%D0%B8%D1%85" target="_blank" rel="noopener noreferrer" class="cta-button primary for-whom-btn" id="fw-4-btn">Записатися</a>
         </div>
       </div>
       <p class="for-whom-hint" id="for-whom-hint">Ми підкажемо формат, якщо сумніваєтесь — просто напишіть нам.</p>
       <div style="margin-top:20px;">
-  <button onclick="document.getElementById('quiz-section').style.display='block'; document.getElementById('quiz-section').scrollIntoView({behavior:'smooth'});" class="cta-button" style="font-family:'Cormorant Garamond',serif;">Пройти тест на визначення напрямку</button>
-</div>
+        <button onclick="document.getElementById('quiz-section').style.display='block'; document.getElementById('quiz-section').scrollIntoView({behavior:'smooth'});" class="cta-button" style="font-family:'Cormorant Garamond',serif;">Пройти тест на визначення напрямку</button>
+      </div>
     </section>
 
-    <!-- КВІЗ -->
+    <!-- КВІЗ — незмінний -->
     <section class="leaf-bg" id="quiz-section" style="display:none;">
       <h2 id="quiz-title">Який напрямок твій?</h2>
       <p class="section-subtitle" id="quiz-subtitle">Дай відповідь на 2 питання — ми підкажемо твій напрямок</p>
-
       <div id="quiz-box" style="max-width:560px; margin:24px auto 0; background:rgba(61,50,40,0.06); border:1px solid rgba(61,50,40,0.15); border-radius:16px; padding:32px 28px;">
-
         <div id="quiz-step-1" class="quiz-step">
           <div style="font-size:0.8rem; letter-spacing:0.15em; text-transform:uppercase; color:#5a4a38; margin-bottom:8px;" id="quiz-q1-label">Питання 1 з 2</div>
           <div style="font-size:1.3rem; font-weight:700; color:#2a1f14; margin-bottom:20px;" id="quiz-q1-text">Що для тебе зараз найважливіше?</div>
@@ -164,7 +141,6 @@
             <button class="quiz-option" onclick="quizAnswer(1,'pregnancy')" id="quiz-q1-a4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M12 20s-7-4.5-7-9.5a4 4 0 0 1 7-2.5 4 4 0 0 1 7 2.5c0 5-7 9.5-7 9.5z"/></svg>Вагітність</button>
           </div>
         </div>
-
         <div id="quiz-step-2" class="quiz-step" style="display:none;">
           <div style="font-size:0.8rem; letter-spacing:0.15em; text-transform:uppercase; color:#5a4a38; margin-bottom:8px;" id="quiz-q2-label">Питання 2</div>
           <div style="font-size:1.3rem; font-weight:700; color:#2a1f14; margin-bottom:20px;" id="quiz-q2-text">Який формат тобі ближчий?</div>
@@ -175,20 +151,15 @@
           </div>
           <button onclick="quizBack()" id="quiz-back-btn" style="margin-top:16px; background:none; border:none; color:#5a4a38; cursor:pointer; font-family:'Cormorant Garamond',serif; font-size:0.95rem; text-decoration:underline;">← Назад</button>
         </div>
-
         <div id="quiz-result" class="quiz-step" style="display:none; text-align:center;">
           <div style="font-size:0.8rem; letter-spacing:0.15em; text-transform:uppercase; color:#5a4a38; margin-bottom:8px;" id="quiz-result-label">Твій напрямок</div>
           <div style="font-size:1.6rem; font-weight:700; color:#2a1f14; margin-bottom:12px;" id="quiz-result-title">—</div>
           <div style="font-size:1rem; color:#3d3228; line-height:1.6; margin-bottom:24px;" id="quiz-result-text">—</div>
           <a id="quiz-result-btn" href="https://t.me/ERRA_SPASE" target="_blank" rel="noopener noreferrer" class="cta-button primary" style="display:inline-block;"><span id="quiz-result-btn-text">Записатися на пробне — 250 грн</span></a>
-          <div style="margin-top:16px;">
-            <button onclick="quizRestart()" id="quiz-restart-btn" style="background:none; border:none; color:#5a4a38; cursor:pointer; font-family:'Cormorant Garamond',serif; font-size:0.95rem; text-decoration:underline;">↻ Пройти ще раз</button>
-          </div>
+          <div style="margin-top:16px;"><button onclick="quizRestart()" id="quiz-restart-btn" style="background:none; border:none; color:#5a4a38; cursor:pointer; font-family:'Cormorant Garamond',serif; font-size:0.95rem; text-decoration:underline;">↻ Пройти ще раз</button></div>
         </div>
-
       </div>
     </section>
-
 
     <!-- Напрямки -->
     <section>
@@ -206,82 +177,35 @@
       </div>
     </section>
 
-    <!-- Модальні вікна -->
-    <div id="fly-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('fly-yoga')">&times;</span><h2 id="modal-title-fly-yoga">Флай Йога</h2><p id="modal-desc-fly-yoga">Практика у спеціальних гамаках, що дарує відчуття польоту та легкості. Вона допомагає зняти напругу з хребта, розвиває гнучкість і додає енергії. Ідеально підходить для тих, хто хоче поєднати фізичну активність із глибоким розслабленням.</p></div></div>
-    <div id="ishvara-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ishvara-yoga')">&times;</span><h2 id="modal-title-ishvara-yoga">Ішвара Йога</h2><p id="modal-desc-ishvara-yoga">Це напрям хатха-йоги, що вирізняється увагою до внутрішніх принципів роботи з тілом. Вони пояснюють, чому певні асани не виходять, де помилка і як її виправити. Практика допомагає зібрати тіло в цілісність, узгодити роботу м'язів і поступово підвищувати якість виконання асан.</p></div></div>
-    <div id="iyengar-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('iyengar-yoga')">&times;</span><h2 id="modal-title-iyengar-yoga">Йога Айенгара</h2><p id="modal-desc-iyengar-yoga">Методика, що акцентує увагу на точності виконання асан і правильному вирівнюванні тіла. Використання допоміжних матеріалів робить практику доступною для всіх рівнів та сприяє поступовому й безпечному розвитку.</p></div></div>
-    <div id="pilates" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('pilates')">&times;</span><h2 id="modal-title-pilates">Пілатес</h2><p id="modal-desc-pilates">Система вправ для зміцнення м'язів, розвитку гнучкості та формування здорової постави. Пілатес допомагає відчути контроль над тілом, покращує координацію та дарує відчуття легкості у рухах.</p></div></div>
-    <div id="functional-training" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('functional-training')">&times;</span><h2 id="modal-title-functional-training">Функціональні тренування</h2><p id="modal-desc-functional-training">Комплекс вправ, спрямований на розвиток сили, витривалості та мобільності. Такі заняття допомагають підготувати тіло до щоденних навантажень, покращують фізичну форму та додають енергії.</p></div></div>
-    <div id="fly-kids" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('fly-kids')">&times;</span><h2 id="modal-title-fly-kids">Флай Кідс</h2><p id="modal-desc-fly-kids">Веселі та безпечні заняття у гамаках для дітей. Вони розвивають гнучкість, координацію та впевненість у собі, даруючи малюкам радість руху й нові емоції.</p></div></div>
-    <div id="pregnancy-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('pregnancy-yoga')">&times;</span><h2 id="modal-title-pregnancy-yoga">Йога для вагітних</h2><p id="modal-desc-pregnancy-yoga">М'які практики, що підтримують фізичний стан і емоційний баланс майбутніх мам. Вправи адаптовані для різних етапів вагітності та допомагають підготувати тіло до пологів.</p></div></div>
-    <div id="adho-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('adho-yoga')">&times;</span><h2 id="modal-title-adho-yoga">Адхо-йога</h2><p id="modal-desc-adho-yoga">Практика, яка поєднує гнучкість і силову роботу, статику й динаміку, витривалість і баланс, а також дихальні та медитативні техніки. ADHO yoga базується на науковому підході до фізіології практики, щоб кожен процес і результат були зрозумілі й відчутні.</p></div></div>
-    <div id="private-lesson" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('private-lesson')">&times;</span><h2 id="modal-title-private-lesson">Індивідуальне тренування</h2><p id="modal-desc-private-lesson">Персональний формат тренування, який враховує ваші цілі, стан здоров'я та рівень підготовки. Тренер будує програму спеціально під вас — без шаблонів, лише те, що потрібно саме вашому тілу.</p></div></div>
+    <div id="fly-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('fly-yoga')">&times;</span><h2 id="modal-title-fly-yoga">Флай Йога</h2><p id="modal-desc-fly-yoga">Практика у спеціальних гамаках, що дарує відчуття польоту та легкості. Вона допомагає зняти напругу з хребта, розвиває гнучкість і додає енергії.</p></div></div>
+    <div id="ishvara-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ishvara-yoga')">&times;</span><h2 id="modal-title-ishvara-yoga">Ішвара Йога</h2><p id="modal-desc-ishvara-yoga">Це напрям хатха-йоги, що вирізняється увагою до внутрішніх принципів роботи з тілом.</p></div></div>
+    <div id="iyengar-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('iyengar-yoga')">&times;</span><h2 id="modal-title-iyengar-yoga">Йога Айенгара</h2><p id="modal-desc-iyengar-yoga">Методика, що акцентує увагу на точності виконання асан і правильному вирівнюванні тіла.</p></div></div>
+    <div id="pilates" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('pilates')">&times;</span><h2 id="modal-title-pilates">Пілатес</h2><p id="modal-desc-pilates">Система вправ для зміцнення м'язів, розвитку гнучкості та формування здорової постави.</p></div></div>
+    <div id="functional-training" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('functional-training')">&times;</span><h2 id="modal-title-functional-training">Функціональні тренування</h2><p id="modal-desc-functional-training">Комплекс вправ, спрямований на розвиток сили, витривалості та мобільності.</p></div></div>
+    <div id="fly-kids" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('fly-kids')">&times;</span><h2 id="modal-title-fly-kids">Флай Кідс</h2><p id="modal-desc-fly-kids">Веселі та безпечні заняття у гамаках для дітей.</p></div></div>
+    <div id="pregnancy-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('pregnancy-yoga')">&times;</span><h2 id="modal-title-pregnancy-yoga">Йога для вагітних</h2><p id="modal-desc-pregnancy-yoga">М'які практики, що підтримують фізичний стан і емоційний баланс майбутніх мам.</p></div></div>
+    <div id="adho-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('adho-yoga')">&times;</span><h2 id="modal-title-adho-yoga">Адхо-йога</h2><p id="modal-desc-adho-yoga">Практика, яка поєднує гнучкість і силову роботу, статику й динаміку, витривалість і баланс.</p></div></div>
+    <div id="private-lesson" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('private-lesson')">&times;</span><h2 id="modal-title-private-lesson">Індивідуальне тренування</h2><p id="modal-desc-private-lesson">Персональний формат тренування, який враховує ваші цілі, стан здоров'я та рівень підготовки.</p></div></div>
 
     <!-- Відгуки -->
     <section class="reviews-section leaf-bg">
       <h2 id="reviews-title">Відгуки</h2>
       <p class="section-subtitle" id="reviews-subtitle">Що кажуть наші клієнти</p>
-
       <div class="reviews-rating-row">
         <div class="reviews-google-badge">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
-            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-          </svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
           <span class="reviews-score">5.0</span>
           <div class="reviews-stars">★★★★★</div>
           <span class="reviews-count" id="reviews-count">3 відгуки</span>
         </div>
-        <a href="https://maps.app.goo.gl/r5swhJfu5CrqNYNb6"
-           target="_blank" rel="noopener noreferrer"
-           class="reviews-google-btn" id="reviews-google-btn">Читати в Google</a>
+        <a href="https://maps.app.goo.gl/r5swhJfu5CrqNYNb6" target="_blank" rel="noopener noreferrer" class="reviews-google-btn" id="reviews-google-btn">Читати в Google</a>
       </div>
-
       <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-header">
-            <div class="review-avatar" style="background:rgba(234,67,53,0.2); color:#EA4335;">Я</div>
-            <div>
-              <div class="review-name">Яна Пономаренко</div>
-              <div class="review-meta" id="review-1-meta">Local Guide · рік тому</div>
-            </div>
-            <div class="review-stars-small">★★★★★</div>
-          </div>
-          <p class="review-text" id="review-1-text">«Я і моя дитина вже рік як займаємось в цьому прекрасному місці. Близькість до дому і кваліфікація тренерів на вищому рівні! Дякую що ви є!»</p>
-        </div>
-
-        <div class="review-card">
-          <div class="review-header">
-            <div class="review-avatar" style="background:rgba(66,133,244,0.2); color:#4285F4;">А</div>
-            <div>
-              <div class="review-name">Анна Колпачова</div>
-              <div class="review-meta" id="review-2-meta">2 тижні тому</div>
-            </div>
-            <div class="review-stars-small">★★★★★</div>
-          </div>
-          <p class="review-text" id="review-2-text">«Чудова студія, багато цікавих напрямків, і є неймовірно круті тренери! Це супер профі у напрямку пілатесу всіх рівнів.»</p>
-        </div>
-
-        <div class="review-card">
-          <div class="review-header">
-            <div class="review-avatar" style="background:rgba(52,168,83,0.2); color:#34A853;">Н</div>
-            <div>
-              <div class="review-name">Наталя Трофімова</div>
-              <div class="review-meta" id="review-3-meta">рік тому</div>
-            </div>
-            <div class="review-stars-small">★★★★★</div>
-          </div>
-          <p class="review-text" id="review-3-text">«★★★★★»</p>
-        </div>
+        <div class="review-card"><div class="review-header"><div class="review-avatar" style="background:rgba(234,67,53,0.2); color:#EA4335;">Я</div><div><div class="review-name">Яна Пономаренко</div><div class="review-meta" id="review-1-meta">Local Guide · рік тому</div></div><div class="review-stars-small">★★★★★</div></div><p class="review-text" id="review-1-text">«Я і моя дитина вже рік як займаємось в цьому прекрасному місці. Близькість до дому і кваліфікація тренерів на вищому рівні! Дякую що ви є!»</p></div>
+        <div class="review-card"><div class="review-header"><div class="review-avatar" style="background:rgba(66,133,244,0.2); color:#4285F4;">А</div><div><div class="review-name">Анна Колпачова</div><div class="review-meta" id="review-2-meta">2 тижні тому</div></div><div class="review-stars-small">★★★★★</div></div><p class="review-text" id="review-2-text">«Чудова студія, багато цікавих напрямків, і є неймовірно круті тренери! Це супер профі у напрямку пілатесу всіх рівнів.»</p></div>
+        <div class="review-card"><div class="review-header"><div class="review-avatar" style="background:rgba(52,168,83,0.2); color:#34A853;">Н</div><div><div class="review-name">Наталя Трофімова</div><div class="review-meta" id="review-3-meta">рік тому</div></div><div class="review-stars-small">★★★★★</div></div><p class="review-text" id="review-3-text">«★★★★★»</p></div>
       </div>
-
-      <div style="text-align:center; margin-top:24px;">
-        <a href="https://maps.app.goo.gl/r5swhJfu5CrqNYNb6"
-           target="_blank" rel="noopener noreferrer"
-           class="cta-button" id="reviews-btn-more">Залишити відгук в Google</a>
-      </div>
+      <div style="text-align:center; margin-top:24px;"><a href="https://maps.app.goo.gl/r5swhJfu5CrqNYNb6" target="_blank" rel="noopener noreferrer" class="cta-button" id="reviews-btn-more">Залишити відгук в Google</a></div>
     </section>
 
     <!-- FAQ -->
@@ -289,56 +213,13 @@
       <h2 id="faq-title">Часті питання</h2>
       <p class="section-subtitle" id="faq-subtitle">Відповіді на найпоширеніші запитання</p>
       <div class="faq-list">
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)" id="faq-q-1">
-            <span>Чи потрібна підготовка?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p id="faq-a-1">Ні — жодної підготовки не потрібно. Ми приймаємо всіх незалежно від рівня фізичної форми. Тренер адаптує навантаження під вас прямо на занятті. Головне — бажання рухатися.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)" id="faq-q-2">
-            <span>Що взяти з собою?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p id="faq-a-2">Зручний одяг для руху, воду та хороший настрій. Килимок і всі необхідні матеріали є в студії. Для флай-йоги рекомендуємо одяг із довгими рукавами та штанинами — щоб гамак не натирав шкіру.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)" id="faq-q-3">
-            <span>Скільки людей у групі?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p id="faq-a-3">Групи невеликі — до 10 осіб. Це дозволяє тренеру приділяти увагу кожному і коригувати техніку. Ніякого відчуття натовпу — лише комфортна атмосфера.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)" id="faq-q-4">
-            <span>Чи можна вагітним?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p id="faq-a-4">Так — у нас є спеціальний напрямок «Йога для вагітних». Практика адаптована для кожного триместру і допомагає підтримувати тіло та емоційний стан. Перед початком рекомендуємо проконсультуватися з лікарем.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)" id="faq-q-5">
-            <span>Як записатися?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p id="faq-a-5">Найшвидше — написати нам у Telegram або через instasport.ua. Ми підберемо зручний час і напрямок. Пробне заняття коштує 250 грн — це найкращий спосіб познайомитися зі студією.</p>
-          </div>
-        </div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" id="faq-q-1"><span>Чи потрібна підготовка?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p id="faq-a-1">Ні — жодної підготовки не потрібно. Тренер адаптує навантаження під вас прямо на занятті.</p></div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" id="faq-q-2"><span>Що взяти з собою?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p id="faq-a-2">Зручний одяг для руху, воду та хороший настрій. Килимок і всі необхідні матеріали є в студії.</p></div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" id="faq-q-3"><span>Скільки людей у групі?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p id="faq-a-3">Групи невеликі — до 10 осіб. Тренер приділяє увагу кожному.</p></div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" id="faq-q-4"><span>Чи можна вагітним?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p id="faq-a-4">Так — у нас є спеціальний напрямок «Йога для вагітних», адаптований для кожного триместру.</p></div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" id="faq-q-5"><span>Як записатися?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p id="faq-a-5">Написати нам у Telegram або через instasport.ua. Пробне заняття — 250 грн.</p></div></div>
       </div>
-      <div style="text-align:center; margin-top:28px;">
-        <a href="https://t.me/ERRA_SPASE" target="_blank" rel="noopener noreferrer"
-           class="cta-button primary" id="faq-cta">Є ще питання? Напишіть нам</a>
-      </div>
+      <div style="text-align:center; margin-top:28px;"><a href="https://t.me/ERRA_SPASE" target="_blank" rel="noopener noreferrer" class="cta-button primary" id="faq-cta">Є ще питання? Напишіть нам</a></div>
     </section>
 
     <!-- Контакти -->
@@ -381,14 +262,11 @@
       </div>
     </section>
 
-    <!-- Завершальний емоційний блок -->
     <section class="closing-block leaf-bg">
       <p class="closing-text" id="closing-text">Не треба бути готовим.</p>
       <p class="closing-subtext" id="closing-subtext">Достатньо просто прийти.</p>
       <div class="cta" style="margin-top:24px;">
-        <a href="https://t.me/ERRA_SPASE"
-           target="_blank" rel="noopener noreferrer"
-           class="cta-button primary" id="closing-btn">Записатися на пробне заняття</a>
+        <a href="https://t.me/ERRA_SPASE" target="_blank" rel="noopener noreferrer" class="cta-button primary" id="closing-btn">Записатися на пробне заняття</a>
       </div>
     </section>
 
@@ -396,163 +274,43 @@
 
   <footer>
     <p id="footer-text">© 2026 Erra Studio. Всі права захищені.</p>
-    <p style="margin-top:8px; font-size:.85em;">
-      <a href="oferta.html">Публічна оферта</a>
-    </p>
+    <p style="margin-top:8px; font-size:.85em;"><a href="oferta.html">Публічна оферта</a></p>
   </footer>
 
   <div class="sticky-cta" id="sticky-cta">
-    <a href="https://t.me/ERRA_SPASE"
-       target="_blank" rel="noopener noreferrer"
-       class="sticky-cta-btn" id="sticky-cta-btn">
-      Пробне заняття — 250 грн
-    </a>
+    <a href="https://t.me/ERRA_SPASE" target="_blank" rel="noopener noreferrer" class="sticky-cta-btn" id="sticky-cta-btn">Пробне заняття — 250 грн</a>
   </div>
 
   <style>
-  .quiz-option {
-    background: rgba(240,232,213,0.6);
-    border: 1px solid rgba(61,50,40,0.18);
-    border-radius: 12px;
-    padding: 16px 20px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    color: #2a1f14;
-    cursor: pointer;
-    text-align: left;
-    transition: background 0.25s, border-color 0.25s;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .quiz-option:hover {
-    background: rgba(42,31,20,0.08);
-    border-color: rgba(61,50,40,0.35);
-  }
+  .quiz-option{background:rgba(240,232,213,0.6);border:1px solid rgba(61,50,40,0.18);border-radius:12px;padding:16px 20px;font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#2a1f14;cursor:pointer;text-align:left;transition:background 0.25s,border-color 0.25s;display:flex;align-items:center;gap:12px;}
+  .quiz-option:hover{background:rgba(42,31,20,0.08);border-color:rgba(61,50,40,0.35);}
   </style>
 
   <script>
   (function(){
-    const quizAnswers = { 1: null, 2: null };
-    const quizData = {
-      ua: {
-        results: {
-          relax:     { title: 'Йога для спокою', text: 'Ішвара-йога або Флай-йога — м\'які практики, що знімають напругу і повертають внутрішній баланс.', goal: 'розслабитись і зняти стрес' },
-          back:      { title: 'Флай-йога та Пілатес', text: 'Розвантаження хребта, зміцнення глибоких м\'язів і повернення легкості руху. Ідеально при сидячій роботі.', goal: 'попрацювати зі спиною і поставою' },
-          tone:      { title: 'Адхо-йога та Функціональні', text: 'Динамічні силові заняття з контролем тіла — для тонусу, сили і витривалості.', goal: 'тонус і силу' },
-          pregnancy: { title: 'Йога для вагітних', text: 'Безпечні практики, адаптовані під кожен триместр, з уважним супроводом тренера.', goal: 'заняття під час вагітності' }
-        },
-        formatText: {
-          group:   'У групі до 10 людей — тренер бачить кожного.',
-          private: 'Індивідуально — програма повністю під тебе.',
-          online:  'Онлайн — займайся з дому у зручний час.'
-        },
-        formatLabel: { group: 'група', private: 'індивідуально', online: 'онлайн' },
-        msg: function(goal, fmt){ return 'Привіт! 👋 Пройшла квіз на сайті.\n\nМене цікавить: ' + goal + '\nФормат: ' + fmt + '\n\nХочу записатися на пробне заняття 🙏'; }
-      },
-      en: {
-        results: {
-          relax:     { title: 'Yoga for calm', text: 'Ishvara Yoga or Fly Yoga — gentle practices that release tension and restore inner balance.', goal: 'relax and reduce stress' },
-          back:      { title: 'Fly Yoga & Pilates', text: 'Spinal decompression, strengthening deep muscles and restoring ease of movement. Perfect for desk work.', goal: 'work on back and posture' },
-          tone:      { title: 'Adho Yoga & Functional', text: 'Dynamic strength classes with body control — for tone, strength and endurance.', goal: 'tone and strength' },
-          pregnancy: { title: 'Pregnancy Yoga', text: 'Safe practices adapted for each trimester, with attentive guidance from the trainer.', goal: 'classes during pregnancy' }
-        },
-        formatText: {
-          group:   'In a group of up to 10 — the trainer sees everyone.',
-          private: 'One-on-one — a programme entirely for you.',
-          online:  'Online — practise from home at a convenient time.'
-        },
-        formatLabel: { group: 'group', private: 'private', online: 'online' },
-        msg: function(goal, fmt){ return 'Hi! 👋 I took the quiz on the website.\n\nI\'m interested in: ' + goal + '\nFormat: ' + fmt + '\n\nI\'d like to book a trial class 🙏'; }
-      }
-    };
-    function lang(){ return (window.currentLang === 'en') ? 'en' : 'ua'; }
-    window.quizAnswer = function(step, value){
-      quizAnswers[step] = value;
-      if (step === 1){
-        document.getElementById('quiz-step-1').style.display = 'none';
-        document.getElementById('quiz-step-2').style.display = 'block';
-      } else { showResult(); }
-    };
-    window.quizBack = function(){
-      document.getElementById('quiz-step-2').style.display = 'none';
-      document.getElementById('quiz-step-1').style.display = 'block';
-    };
-    window.quizRestart = function(){
-      quizAnswers[1] = null; quizAnswers[2] = null;
-      document.getElementById('quiz-result').style.display = 'none';
-      document.getElementById('quiz-step-2').style.display = 'none';
-      document.getElementById('quiz-step-1').style.display = 'block';
-    };
-    function showResult(){
-      const d = quizData[lang()];
-      const r = d.results[quizAnswers[1]];
-      const fmt = d.formatText[quizAnswers[2]] || '';
-      document.getElementById('quiz-result-title').textContent = r.title;
-      document.getElementById('quiz-result-text').textContent = r.text + ' ' + fmt;
-      const btn = document.getElementById('quiz-result-btn');
-      const btnText = document.getElementById('quiz-result-btn-text');
-      if (quizAnswers[2] === 'private') {
-        btn.href = 'prices.html#private';
-        btn.target = '_self';
-        btnText.textContent = (lang() === 'en') ? 'See private session prices' : 'Переглянути ціни на індивідуальні';
-      } else {
-        const msg = d.msg(r.goal, d.formatLabel[quizAnswers[2]]);
-        btn.href = 'https://t.me/ERRA_SPASE?text=' + encodeURIComponent(msg);
-        btn.target = '_blank';
-        btnText.textContent = (lang() === 'en') ? 'Book a trial — 250 UAH' : 'Записатися на пробне — 250 грн';
-      }
-      document.getElementById('quiz-step-1').style.display = 'none';
-      document.getElementById('quiz-step-2').style.display = 'none';
-      document.getElementById('quiz-result').style.display = 'block';
-    }
+    const quizAnswers={1:null,2:null};
+    const quizData={ua:{results:{relax:{title:'Йога для спокою',text:'Ішвара-йога або Флай-йога — м'які практики, що знімають напругу і повертають внутрішній баланс.',goal:'розслабитись і зняти стрес'},back:{title:'Флай-йога та Пілатес',text:'Розвантаження хребта, зміцнення глибоких м'язів і повернення легкості руху. Ідеально при сидячій роботі.',goal:'попрацювати зі спиною і поставою'},tone:{title:'Адхо-йога та Функціональні',text:'Динамічні силові заняття з контролем тіла — для тонусу, сили і витривалості.',goal:'тонус і силу'},pregnancy:{title:'Йога для вагітних',text:'Безпечні практики, адаптовані під кожен триместр, з уважним супроводом тренера.',goal:'заняття під час вагітності'}},formatText:{group:'У групі до 10 людей — тренер бачить кожного.',private:'Індивідуально — програма повністю під тебе.',online:'Онлайн — займайся з дому у зручний час.'},formatLabel:{group:'група',private:'індивідуально',online:'онлайн'},msg:function(goal,fmt){return'Привіт! 👋 Пройшла квіз на сайті.
+
+Мене цікавить: '+goal+'
+Формат: '+fmt+'
+
+Хочу записатися на пробне заняття 🙏';}},en:{results:{relax:{title:'Yoga for calm',text:'Ishvara Yoga or Fly Yoga — gentle practices that release tension and restore inner balance.',goal:'relax and reduce stress'},back:{title:'Fly Yoga & Pilates',text:'Spinal decompression, strengthening deep muscles and restoring ease of movement.',goal:'work on back and posture'},tone:{title:'Adho Yoga & Functional',text:'Dynamic strength classes with body control — for tone, strength and endurance.',goal:'tone and strength'},pregnancy:{title:'Pregnancy Yoga',text:'Safe practices adapted for each trimester, with attentive guidance from the trainer.',goal:'classes during pregnancy'}},formatText:{group:'In a group of up to 10 — the trainer sees everyone.',private:'One-on-one — a programme entirely for you.',online:'Online — practise from home at a convenient time.'},formatLabel:{group:'group',private:'private',online:'online'},msg:function(goal,fmt){return'Hi! 👋 I took the quiz on the website.
+
+I'm interested in: '+goal+'
+Format: '+fmt+'
+
+I'd like to book a trial class 🙏';}}};
+    function lang(){return(window.currentLang==='en')?'en':'ua';}
+    window.quizAnswer=function(step,value){quizAnswers[step]=value;if(step===1){document.getElementById('quiz-step-1').style.display='none';document.getElementById('quiz-step-2').style.display='block';}else{showResult();}};
+    window.quizBack=function(){document.getElementById('quiz-step-2').style.display='none';document.getElementById('quiz-step-1').style.display='block';};
+    window.quizRestart=function(){quizAnswers[1]=null;quizAnswers[2]=null;document.getElementById('quiz-result').style.display='none';document.getElementById('quiz-step-2').style.display='none';document.getElementById('quiz-step-1').style.display='block';};
+    function showResult(){const d=quizData[lang()];const r=d.results[quizAnswers[1]];const fmt=d.formatText[quizAnswers[2]]||'';document.getElementById('quiz-result-title').textContent=r.title;document.getElementById('quiz-result-text').textContent=r.text+' '+fmt;const btn=document.getElementById('quiz-result-btn');const btnText=document.getElementById('quiz-result-btn-text');if(quizAnswers[2]==='private'){btn.href='prices.html#private';btn.target='_self';btnText.textContent=(lang()==='en')?'See private session prices':'Переглянути ціни на індивідуальні';}else{const msg=d.msg(r.goal,d.formatLabel[quizAnswers[2]]);btn.href='https://t.me/ERRA_SPASE?text='+encodeURIComponent(msg);btn.target='_blank';btnText.textContent=(lang()==='en')?'Book a trial — 250 UAH':'Записатися на пробне — 250 грн';}document.getElementById('quiz-step-1').style.display='none';document.getElementById('quiz-step-2').style.display='none';document.getElementById('quiz-result').style.display='block';}
   })();
   </script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SportsActivityLocation",
-    "name": "ERRA SPACE",
-    "url": "https://erraspace.com.ua",
-    "telephone": "+380632072462",
-    "sameAs": [
-      "https://www.instagram.com/erraspace.ua",
-      "https://www.facebook.com/people/dance_yoga_fitness_/100070016075579",
-      "https://t.me/ERRA_SPASE"
-    ],
-    "location": [
-      {
-        "@type": "Place",
-        "name": "ERRA SPACE Вишгород",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "пр. Шевченка 6А",
-          "addressLocality": "Вишгород",
-          "addressCountry": "UA"
-        }
-      },
-      {
-        "@type": "Place",
-        "name": "ERRA SPACE Міжріччя",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "вул. Фісташкова 60",
-          "addressLocality": "Міжріччя",
-          "addressCountry": "UA"
-        }
-      }
-    ]
-  }
-  </script>
-
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"ERRA SPACE","url":"https://erraspace.com.ua","telephone":"+380632072462","sameAs":["https://www.instagram.com/erraspace.ua","https://www.facebook.com/people/dance_yoga_fitness_/100070016075579","https://t.me/ERRA_SPASE"],"location":[{"@type":"Place","name":"ERRA SPACE Вишгород","address":{"@type":"PostalAddress","streetAddress":"пр. Шевченка 6А","addressLocality":"Вишгород","addressCountry":"UA"}},{"@type":"Place","name":"ERRA SPACE Міжріччя","address":{"@type":"PostalAddress","streetAddress":"вул. Фісташкова 60","addressLocality":"Міжріччя","addressCountry":"UA"}}]}</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPHN8R7NDH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YPHN8R7NDH');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPHN8R7NDH');</script>
 
 </body>
 </html>
